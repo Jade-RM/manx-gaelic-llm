@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+env/
+.ipynb_checkpoints/
+
+# Model files
+*.pt
+*.bin
+*.h5
+
+# Data
+data/*.csv
+data/*.json
