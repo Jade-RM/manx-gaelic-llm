@@ -5,19 +5,15 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 
-# ============================================================
-# 1. LOAD CORPUS
-# ============================================================
-with open("manx_corpus.txt", "r", encoding="utf-8") as f:
+# Plug corpus into llama
+with open("manx_gaelic_corpus.txt", "r", encoding="utf-8") as f:
     corpus = [line.strip() for line in f if line.strip()]
 
 print("Training Corpus:")
 for doc in corpus:
     print(doc)
 
-# ============================================================
-# 2. INITIAL VOCAB (chars + </w>)
-# ============================================================
+# Initial vocabulary (chars + </w>)
 unique_chars = set()
 for doc in corpus:
     for char in doc:
@@ -31,9 +27,7 @@ print("\nInitial vocabulary:")
 print(vocab)
 print(f"Vocabulary size: {len(vocab)}")
 
-# ============================================================
-# 3. WORD SPLITS (char-level with </w>)
-# ============================================================
+# Word splits
 word_splits = {}
 for doc in corpus:
     words = doc.split(" ")
@@ -46,9 +40,7 @@ for doc in corpus:
 print("\nPre-tokenized word frequencies:")
 print(word_splits)
 
-# ============================================================
-# 4. BPE TRAINING
-# ============================================================
+# BPE training
 def get_pair_stats(splits):
     pair_counts = collections.defaultdict(int)
     for word_tuple, freq in splits.items():
@@ -101,9 +93,7 @@ stoi = {s: i for i, s in enumerate(final_vocab_sorted)}
 itos = {i: s for s, i in stoi.items()}
 vocab_size = len(stoi)
 
-# ============================================================
-# 5. ENCODER / DECODER (apply merges)
-# ============================================================
+# Apply merges
 def bpe_encode_word(word):
     symbols = list(word) + [end_of_word]
     while True:
@@ -136,9 +126,7 @@ def decode(indices):
     text = "".join([t.replace(end_of_word, " ") for t in tokens])
     return text.strip()
 
-# ============================================================
-# 6. TRANSFORMER MODEL (same as before)
-# ============================================================
+# Transformer
 block_size = 16
 n_embd = 64
 n_head = 4
@@ -213,9 +201,7 @@ class TinyTransformer(nn.Module):
         loss = F.cross_entropy(logits.view(-1, vocab_size), targets.view(-1))
         return logits, loss
 
-# ============================================================
-# 7. TRAINING
-# ============================================================
+# Training
 data = []
 for line in corpus:
     data.extend(encode(line))
@@ -242,9 +228,7 @@ for step in range(200):
     if step % 50 == 0:
         print(f"Step {step}, Loss: {loss.item():.4f}")
 
-# ============================================================
-# 8. TEXT GENERATION
-# ============================================================
+# Text generation
 def generate(model, start, max_new_tokens=30):
     model.eval()
     idx = torch.tensor([encode(start)], dtype=torch.long)
@@ -255,5 +239,6 @@ def generate(model, start, max_new_tokens=30):
         idx = torch.cat((idx, next_id), dim=1)
     return decode(idx[0].tolist())
 
-print("\n=== SAMPLE GENERATION ===")
+print("\n--- SAMPLE GENERATION ---")
 print(generate(model, "Ta mee"))
+
