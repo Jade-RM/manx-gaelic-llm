@@ -2,7 +2,12 @@
  Fastyr mie, ta mee braew. Gura mie ayd. Kys t'ou hene? 
  Moghrey mie, kys t'ou?
  Moghrey mie, ta mee braew, gura mie ayd. As oo hene?
+ Oie vie, kys t'ou?
+ Kys t'ou?
  Ta mee braew, gura mie ayd. As oo hene?
+ S'mie shen. Ta mee braew, gura mie ayd.
+ Slane lhiat.
+ Slane lhiat. Hee'm oo!
  Ta mee goll as gaccan. Kys t’ou, ghooinney?
  Ta mee braew, gura mie ayd. Kys t'ou hene?
  Ta mee mie dy liooar.
@@ -11,13 +16,33 @@
  Moghrey mie!
  Fastyr mie!
  Oie vie!
- Oie vie, kys t'ou?
+ Cre’n ennym t’ort?
+ T'an ennym orrym Stubbin.
+ Quoi uss?
+ Mish Stubbin.
+ Ta mee braew.
  Ta mee skee.
  Ta mee red beg skee.
  Ta mee red beg çhing.
  Ta mee goll as gaccan, ghooinney.
  Ta mee red beg skee, ghooinney.
- Ta mee skee, ghooiney
+ Ta mee skee, ghooiney.
+ Ta mee corree.
+ Ta mee feer vie.
+ Ta mee mie.
+ Ta mee çheh.
+ Ta mee feayr.
+ Vel oo braew?
+ Cha nel. Cha nel mee feer vie.
+ Vel oo skee?
+ Ta, ta mee red beg skee, son mee gobbragh jiu.
+ Vel oo corree? 
+ Cha nel. Cha nel mee corree.
+ Vel oo maynrey?
+ Ta, ta mee maynrey, son ta'n emshyr braew jiu.
+ Vel oo trimshagh?
+ Ta, ta mee red beg trimsagh jiu.
+ Kys t'ou? Cha nel mee feer vie. Ta mee çhing.
  Cha nel mee feer vie. Ta mee çhing.
  Cha nel oo feer vie. T'ou çhing.
  Cha nel eh feer vie. T'eh çhing.
@@ -26,18 +51,47 @@
  T'ou maynrey.
  T'eh maynrey.
  T'ad maynrey.
- Smie lhiam shappal
- Cha mie lhiam shappal
- Smie lhiam shooyl
- Cha mie lhiam shooyl
- Smie lhiam roie
- Cha mie lhiam roie
- Smie lhiam snaue
- Cha mie lhiam snaue
- Smie lhiat shappal
- Cha mie lhiat shappal
+ Ta mee trimshagh.
+ Ta mee feer vie. Ta mee maynrey.
+ Cha nel mee feer vie. Ta mee trimshagh.
+ Vel oo beaghey ayns Doolish?
+ Ta, ta mee beaghey ayns Doolish.
+ Vel oo beaghey ayns Purt ny Hinshey?
+ Ta, ta mee beaghey ayns Purt ny Hinshey.
+ Vel oo beaghey ayns Rhumsaa?
+ Ta, ta mee beaghey ayns Rhumsaa.
+ Cha nel mee beaghey ayns Rhumsaa.
+ Vel oo beaghey ayns Purt Çhiarn?
+ Cha nel mee beaghey ayns Purt Çhiarn.
+ Vel oo beaghey ayns Laksaa?
+ Ta, ta mee beaghey ayns Laksaa.
+ Vel oo beaghey ayns Balley Chashtal?
+ Cha nel, cha nel mee beaghey ayns Balley Chashtal.
+ Laik lhiat shappal?
+ S'laik lhiam shappal.
+ Cha laik lhiam shappal.
+ Laik lhiat snaue?
+ S'laik lhiam snaue.
+ Cha laik lhiam snaue.
+ Mie lhiat shappal?
+ S'mie lhiam shappal.
+ Cha mie lhiam shappal.
+ S'mie lhiam shooyl.
+ Cha mie lhiam shooyl.
+ S'mie lhiam roie.
+ Cha mie lhiam roie.
+ S'mie lhiam snaue.
+ Cha mie lhiam snaue.
+ S'mie lhiat shappal.
+ Cha mie lhiat shappal.
+ Ta mee laccal beaghey ayns Balley Chastal son ta mee gobbragh ayns Balley Chastal.
+ Cha nel mee laccal beaghey ayns Doolish son ta mee gobbragh ayns Balley Chastal.
+ Ta mee laccal beaghey ayns Purt ny Hinshey son s'laik lhiam Purt ny Hinshey.
+ Ta mee gobbragh ayns Laksaa.
+ Ta mee gobbragh ayns Laksaa, agh cha nel mee laccal beaghey ayns Laksaa.
  Kys t'an emshyr jiu?
  T'an emshyr braew jiu. 
+ Moghrey mie. Kys t'an emshyr jiu?
  T'eh feayr jiu.
  T'eh fliugh jiu.
  T'eh geayagh.
@@ -51,6 +105,7 @@
  T'eh fliugh ayns Mannin.
  T'eh ceau fliaghey ayns Sostyn.
  Vel oo beaghey ayns Doolish?
+ Vel oo gobbragh ayns Doolish?
  Cha nel mee beaghey ayns Doolish. Ta mee beaghey ayns Purt le Moirrey.
  Ta mee cummal ayns Doolish.
  Cha nel mee cummal ayns Doolish.
@@ -81,6 +136,9 @@
  S'mie lhiam lhaih.
  S'mie lhiam gynsagh çhengaghyn.
  S'mie lhiam snaue.
+ Ta mee laccal cadley.
+ Ta mee laccal cloie kiaull.
+ T'ou cloie kiaull.
  Ta mee roie.
  T'ou lhaih.
  T'eh lhaih.
@@ -114,7 +172,7 @@
  T'ee feer skee son t'ee gobbragh jiu.
  T’eh giu ushtey agh t’eh laccal giu caffee.
  Ta mee giu ushtey agh ta mee laccal giu feeyn jiarg.
- Ta shin laccal giu feeyn gial.
+ Ta shin laccal giu feeyn bane.
  Cha nel ee laccal gee peetsey.
  Cha nel eh laccal gee curry. 
  C’raad t’eh giu?
@@ -147,7 +205,8 @@
  Ta fys aym c’raad t’ou beaghey.
  Vel fys ayd cre t’ee gee?
  Share lhiam gynsagh Gaelg.  
- Nhare lhiat ushtey ny caffee?
+ Nhare lhiat ushtey ny tey?
+ S'laik lhiam tey agh share lhiam ushtey.
  Share lesh beaghey ayns thie.   
  Share lhee gobbragh ayns Rhumsaa.
  S’laik lhiam ushtey agh share lhiam feeyn.
@@ -156,7 +215,7 @@
  Vel fys ayd cre s’laik lesh jannoo?
  T’ee gee eeast dagh laa son s’laik lhee eeast.
  T'eh gee feill dagh laa son s'laik lesh feill.
- Nhare lesh feeyn jiarg ny feeyn gial?
+ Nhare lhiat feeyn jiarg ny feeyn bane?
  Vel baaghyn ayd?
  Vel biggin ayd?
  Ta, ta moddey aym.
@@ -313,6 +372,88 @@
  Ta moddey feer vooar aym.
  Ta lugh lheeah aym.
  Ta roddyn vane aym.
+ Ta eeast bwee aym.
  She kayt doo ayn.
  Cha nel kayt vane t'ayn.
  She conning vane as doo ayn.
+ Ta conning aalin aym.
+ T'eh conning aalin echey.
+ Vel fys ayd? Cha nel fys aym.
+ S'mie lhiam cloie kiaull ayns y voghrey.
+ S'mie lhiam shappal Jesarn.
+ Vel oo shappal dagh Jesarn?
+ Vel oo shappal dagh Jedoonee?
+ C'raad ren oo giu caffee Jesarn?
+ C'raad ren oo gee peetsey Jedoonee?
+ C'raad ren oo kionnagh Jedoonee?
+ Ren ee goll dys y thie-bee Jesarn.
+ Ta mee red beg skee, gow my leshtal.
+ Ren mee shappal ayns Purt ny Hinshey Jesarn.
+ Ren mee shappal ayns Doolish jea.
+ Cha ren mee shappal jea.
+ Ren mee gynsagh Gaelg jea.
+ Cha ren eh giu caffee ayns y voghrey.
+ Cha ren mee gee peetsey jea.
+ Ren shin kionnagh feeyn jea.
+ Cha ren mee gobbragh Jesarn.
+ Ree ee gynsagh Gaelg ayns y voghrey.
+ Ren shui gee Peetsey Jesarn?
+ Ren oo gynsagh Gaelg Jemayrt?
+ Ren eh gobbragh Jecrean?
+ Ren ad goll magh jea?
+ Ren oo gobbragh Jerdein?
+ Ren shiu shappal Jelune?
+ Ren ad goll dys y scoill Jelune?
+ Ren ad goll dys y thie-bee Jeheiney?
+ Ren oo jannoo Jelune?
+ Ren mee goll dys y scoill Jelune.
+ Ren oo jannoo Jemayrt?
+ Ren mee gobbragh Jemayrt?
+ Ren oo jannoo Jecrean?
+ Ren mee cloie bluckan coshey Jecrean.
+ Shen yn aght!
+ Ren oo jannoo Jerdein?
+ Ren mee goll dys y thie-bee Jerdein.
+ Ren oo jannoo Jeheiney?
+ Ren mee goll dys y thie jalloo Jeheiney.
+ Ren oo jannoo Jesarn?
+ Ren mee goll shappal ayns Rhumsaa Jesarn.
+ Yindyssagh! S'laik lhiam Rhumsaa.
+ Ren oo jannoo Jedoonee?
+ Ren mee goll dys y traie as giu tey Jedoonee.
+ Ren mee goll dys Purt ny Hinshey Jedoonee son ta mee laccal kionnagh ayns Purt ny Hinshey.
+ Nagh ren oo cloie bluckan coshey Jelune?
+ Cha ren mee cloie bluckan coshey Jelune.
+ Nagh ren oo gobbragh Jemayrt?
+ Ren, ren mee gobbragh Jemayrt. Ren oo gobbragh Jemayrt?
+ Nagh ren oo shappal ayns Doolish Jesarn?
+ Cha ren. Ren mee shappal ayns Rhumsaa Jesarn.
+ Ren oo gobbragh Jecrean?
+ Cha ren mee gobbragh Jecrean son mee feer litçheragh.
+ Nagh laik lhiat gobbragh?
+ Cha laik lhiam gobbragh son mee feer litçheragh.
+ Cre’n fa t’ou beaghey ayns Rhumsaa?
+ Ta mee beaghey ayns Rhumsaa son s'laik lhiam Rhumsaa.
+ Cre’n fa t’ou skee?
+ Ta mee skee son ren mee gobbragh ayns y voghrey.
+ S’laik lhiam yn moddey ayd agh share lhiam yn kayt aym.
+ Vel fys ayd c’raad ta’n lioar aym? 
+ Ta'n conning aym feer skee.
+ Conning boght! Cre’n oyr ta’n conning ayd feer skee?
+ Ta'n conning aym feer skee son t'eh feer litçheragh.
+ T'an kayt aym feer çhing.
+ Gow my leshtal. Cre’n oyr ta’n kayt ayd feer çhing?
+ T’ee çhing son ren ee gee peetsey jea.
+ Kayt boght!
+ T'an kayt aym gee yn eeast eck.
+ T'an conning aym gee yn carradjyn echey.
+ T'an moddey echey gee yn feill echey.
+ T'an cabbyl eck gee yn carradjyn eck.
+ Yn moddey ain gee feill.
+ Ta shiu beaghey ayns yn thie eu.
+ Yn kayt oc beaghey ayns yn thie.
+ T'an kayt ayd fee aalin.
+ T'an moddey ayd feer corree.
+ Yn arkan sonney gee feill.
+ Yn arkan sonney giu ushtey.
+
