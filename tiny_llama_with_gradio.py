@@ -4,7 +4,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
-import gradio as gr 
+import gradio as gr
 
 # Plug corpus into llama
 with open("manx_corpus.txt", "r", encoding="utf-8") as f:
@@ -130,7 +130,7 @@ def decode(indices):
     return text.strip()
 
 # Transformer
-block_size = 16
+block_size = 64
 n_embd = 64
 n_head = 4
 n_layer = 2
@@ -156,8 +156,11 @@ class MultiHeadAttention(nn.Module):
         super().__init__()
         self.heads = nn.ModuleList([Head(head_size) for _ in range(num_heads)])
         self.proj = nn.Linear(n_embd, n_embd)
+        self.dropout = nn.Dropout(0.1) # Added dropout
+
     def forward(self, x):
         out = torch.cat([h(x) for h in self.heads], dim=-1)
+        out = self.dropout(self.proj(out)) # Applied dropout here
         return self.proj(out)
 
 class FeedForward(nn.Module):
@@ -167,6 +170,7 @@ class FeedForward(nn.Module):
             nn.Linear(n_embd, 4*n_embd),
             nn.ReLU(),
             nn.Linear(4*n_embd, n_embd),
+            nn.Dropout(0.1),
         )
     def forward(self, x): return self.net(x)
 
@@ -210,7 +214,7 @@ for line in corpus:
     data.extend(encode(line))
 data = torch.tensor(data, dtype=torch.long)
 
-def get_batch(batch_size=4, block_size=8):
+def get_batch(batch_size=16, block_size=64):
     ix = torch.randint(len(data)-block_size, (batch_size,))
     x = torch.stack([data[i:i+block_size] for i in ix])
     y = torch.stack([data[i+1:i+block_size+1] for i in ix])
@@ -220,7 +224,7 @@ model = TinyTransformer()
 optimizer = optim.AdamW(model.parameters(), lr=1e-3)
 
 print("\n--- Starting model training ---")
-for step in range(200): # Using a smaller number for quicker testing
+for step in range(2000): # Using a smaller number for quicker testing
     xb, yb = get_batch(batch_size=16, block_size=block_size)
     logits, loss = model(xb, yb)
 
@@ -233,18 +237,26 @@ for step in range(200): # Using a smaller number for quicker testing
 print("--- Model training complete ---")
 
 # Text generation
-def generate(model, start, max_new_tokens=30):
+def generate(model, start, max_new_tokens=30, temperature=0.8): # Added temperature for better prediction
     model.eval()
     idx = torch.tensor([encode(start)], dtype=torch.long)
     for _ in range(max_new_tokens):
-        logits = model(idx[:, -block_size:])
-        probs = F.softmax(logits[:, -1, :], dim=-1)
+        # Ensure the input sequence to the model does not exceed block_size
+        idx_cond = idx[:, -block_size:]
+        logits = model(idx_cond)
+        # The logits from the model will be (batch_size, sequence_length, vocab_size)
+        # We only need the logits for the last token
+        logits = logits[:, -1, :]
+        # Apply softmax to get probabilities for the next token
+        probs = F.softmax(logits, dim=-1)
+        # Sample the next token
         next_id = torch.multinomial(probs, num_samples=1)
+        # Append the sampled token to the sequence
         idx = torch.cat((idx, next_id), dim=1)
     return decode(idx[0].tolist())
 
 print("\n--- SAMPLE GENERATION ---")
-print(generate(model, "Ta mee"))
+print(generate(model, "Ta mee", temperature=0.8))
 
 # Gradio interface
 
@@ -267,4 +279,4 @@ iface = gr.Interface(
 
 # Launch the UI
 print("\n--- Launching Gradio Interface ---")
-iface.launch()
+iface.launch(share=True)
