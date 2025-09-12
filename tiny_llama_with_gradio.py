@@ -68,7 +68,7 @@ def merge_pair(pair_to_merge, splits):
         new_splits[tuple(new_symbols)] = freq
     return new_splits
 
-num_merges = 150
+num_merges = 250
 merges = {}
 current_splits = word_splits.copy()
 
@@ -90,9 +90,20 @@ print("\nFinal vocabulary (sorted):")
 print(final_vocab_sorted)
 
 # Build lookup tables
-stoi = {s: i for i, s in enumerate(final_vocab_sorted)}
+# Modified: Include start and stop tokens in vocabulary
+start_token = "[SOS]"
+stop_token = "[EOS]"
+final_vocab_list = sorted(list(set(vocab)))
+final_vocab_list.append(start_token)
+final_vocab_list.append(stop_token)
+stoi = {s: i for i, s in enumerate(final_vocab_list)}
 itos = {i: s for s, i in stoi.items()}
 vocab_size = len(stoi)
+
+print(f"\nFinal vocabulary size (including start and stop tokens): {vocab_size}")
+print(f"Start token ID: {stoi[start_token]}")
+print(f"Stop token ID: {stoi[stop_token]}")
+
 
 # Apply merges
 def bpe_encode_word(word):
@@ -101,6 +112,8 @@ def bpe_encode_word(word):
         pairs = [(symbols[i], symbols[i+1]) for i in range(len(symbols)-1)]
         merge_candidates = [(p, merges[p]) for p in pairs if p in merges]
         if not merge_candidates:
+            # Initialize new_symbols here before breaking
+            new_symbols = symbols
             break
         # Upgrade this BPE later find the highest priority merge.
         # Taking the first merge is fine at this stage.
@@ -114,7 +127,7 @@ def bpe_encode_word(word):
                 new_symbols.append(symbols[i])
                 i += 1
         symbols = new_symbols
-    return symbols
+    return new_symbols
 
 def encode(text):
     ids = []
@@ -210,8 +223,15 @@ class TinyTransformer(nn.Module):
 
 # Training
 data = []
+# Modified: Get id for the start and stop tokens and append/prepend to each line in the corpus
+sos_token_id = stoi[start_token]
+eos_token_id = stoi[stop_token]
+
 for line in corpus:
-    data.extend(encode(line))
+    encoded_line = encode(line)
+    # Prepend start token and append stop token
+    data.extend([sos_token_id] + encoded_line + [eos_token_id])
+
 data = torch.tensor(data, dtype=torch.long)
 
 def get_batch(batch_size=16, block_size=64):
@@ -221,10 +241,11 @@ def get_batch(batch_size=16, block_size=64):
     return x, y
 
 model = TinyTransformer()
-optimizer = optim.AdamW(model.parameters(), lr=1e-3)
+optimizer = optim.AdamW(model.parameters(), lr=1e-4)
 
 print("\n--- Starting model training ---")
-for step in range(2000): # Using a smaller number for quicker testing
+num_training_steps = 15000
+for step in range(num_training_steps):
     xb, yb = get_batch(batch_size=16, block_size=block_size)
     logits, loss = model(xb, yb)
 
@@ -232,51 +253,87 @@ for step in range(2000): # Using a smaller number for quicker testing
     loss.backward()
     optimizer.step()
 
-    if step % 50 == 0:
+    if step % 100 == 0: # Print loss less frequently for more steps
         print(f"Step {step}, Loss: {loss.item():.4f}")
 print("--- Model training complete ---")
 
 # Text generation
-def generate(model, start, max_new_tokens=30, temperature=0.8): # Added temperature for better prediction
+# Modified: Added temperature and Top-K parameters, and stop token logic
+def generate(model, start, max_new_tokens=30, temperature=0.8, top_k=None, top_p=None):
     model.eval()
-    idx = torch.tensor([encode(start)], dtype=torch.long)
+    # Modified: Start with the start token followed by the encoded prompt
+    sos_token_id = stoi[start_token]
+    eos_token_id = stoi[stop_token]
+    start_ids = [sos_token_id] + encode(start)
+    idx = torch.tensor([start_ids], dtype=torch.long)
+
+
+    # Initialize generated tokens with the prompt tokens
+    generated_tokens = idx[0].tolist()
+
+
     for _ in range(max_new_tokens):
-        # Ensure the input sequence to the model does not exceed block_size
         idx_cond = idx[:, -block_size:]
         logits = model(idx_cond)
-        # The logits from the model will be (batch_size, sequence_length, vocab_size)
-        # We only need the logits for the last token
         logits = logits[:, -1, :]
-        # Apply softmax to get probabilities for the next token
-        probs = F.softmax(logits, dim=-1)
-        # Sample the next token
-        next_id = torch.multinomial(probs, num_samples=1)
-        # Append the sampled token to the sequence
-        idx = torch.cat((idx, next_id), dim=1)
-    return decode(idx[0].tolist())
 
-print("\n--- SAMPLE GENERATION ---")
-print(generate(model, "Ta mee", temperature=0.8))
+        # Apply temperature
+        logits = logits / temperature
+
+        # Apply Top-K sampling if top_k is specified
+        if top_k is not None:
+            v, _ = torch.topk(logits, min(top_k, logits.size(-1)))
+            logits[logits < v[:, [-1]]] = float('-inf')
+
+        # Apply Top-P (Nucleus) sampling if top_p is specified
+        if top_p is not None and top_p < 1.0:
+            sorted_logits, sorted_indices = torch.sort(logits, descending=True)
+            cumulative_probs = torch.cumsum(F.softmax(sorted_logits, dim=-1), dim=-1)
+
+            # Remove tokens with cumulative probability above the threshold
+            sorted_indices_to_remove = cumulative_probs > top_p
+            # Shift the indices to the right to keep the first token above the threshold
+            sorted_indices_to_remove[..., 1:] = sorted_indices_to_remove[..., :-1].clone()
+            sorted_indices_to_remove[..., 0] = False
+
+            indices_to_remove = sorted_indices[sorted_indices_to_remove]
+            logits[:, indices_to_remove] = float('-inf')
+
+        probs = F.softmax(logits, dim=-1)
+        next_id = torch.multinomial(probs, num_samples=1)
+
+        # Check if the sampled token is the stop token
+        if next_id.item() == eos_token_id:
+            break # Stop generation if the end of sequence is predicted
+
+        idx = torch.cat((idx, next_id), dim=1)
+        generated_tokens.append(next_id.item()) # Store generated tokens
+
+    # Decode generated tokens (excluding the start and stop token if present)
+    generated_indices = [i for i in generated_tokens if i != sos_token_id and i != eos_token_id]
+    return decode(generated_indices)
 
 # Gradio interface
+# Modified: Added temperature and Top-K sliders
+def generate_for_ui(prompt, max_tokens, temperature, top_k, top_p):
+    top_k_val = int(top_k) if top_k is not None and top_k > 0 else None
+    top_p_val = top_p if top_p is not None else None # Use None if slider is at default 1.0
+    return generate(model, prompt, max_new_tokens=int(max_tokens), temperature=temperature, top_k=top_k_val, top_p=top_p_val)
 
-# Create a function that wraps the generation logic for Gradio
-def generate_for_ui(prompt, max_tokens):
-    # Gradio sliders pass floats, so we cast them to int
-    return generate(model, prompt, max_new_tokens=int(max_tokens))
 
-# Create the Gradio interface
 iface = gr.Interface(
     fn=generate_for_ui,
     inputs=[
         gr.Textbox(lines=2, placeholder="Enter starting text here...", label="Prompt"),
-        gr.Slider(minimum=10, maximum=150, value=30, step=1, label="Max New Tokens")
+        gr.Slider(minimum=10, maximum=150, value=30, step=1, label="Max New Tokens"),
+        gr.Slider(minimum=0.1, maximum=2.0, value=0.8, step=0.1, label="Temperature"), # Added Temperature slider
+        gr.Slider(minimum=0, maximum=vocab_size, value=0, step=1, label="Top-K (0 to disable)"), # Added Top-K slider
+        gr.Slider(minimum=0.1, maximum=1.0, value=1.0, step=0.05, label="Top-P (Nucleus)"), # Added Top-P slider
     ],
     outputs=gr.Textbox(label="Generated Text"),
     title="Tiny Manx LLM",
     description="A small model trained on a Manx Gaelic corpus. Enter a prompt to generate text."
 )
 
-# Launch the UI
 print("\n--- Launching Gradio Interface ---")
 iface.launch(share=True)
