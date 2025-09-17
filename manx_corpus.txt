@@ -41,6 +41,18 @@
  Ta mee mie.
  Ta mee çheh.
  Ta mee feayr.
+ T'eh skee.
+ T'ou skee.
+ T'ee skee.
+ T'eh red beg skee.
+ T'ee red beg çhing.
+ T'eh corree.
+ T'ou corree.
+ T'ee corree.
+ T'eh feer vie.
+ T'ee mie.
+ T'ou feayr.
+ T'eh çheh.
  Kys t'ou? Ta mee braew.
  Kys t'ou? Ta mee skee.
  Kys t'ou? Ta mee red beg skee.
@@ -88,6 +100,22 @@
  Ta, ta mee beaghey ayns Laksaa.
  Vel oo beaghey ayns Balley Chashtal?
  Cha nel, cha nel mee beaghey ayns Balley Chashtal.
+ Ta mee beaghey ayns Ellan Vannin.
+ Vel oo cummal ayns Doolish?
+ Ta, ta mee cummal ayns Doolish.
+ Vel oo cummal ayns Purt ny Hinshey?
+ Ta, ta mee cummal ayns Purt ny Hinshey.
+ Vel oo cummal ayns Rhumsaa?
+ Ta, ta mee cummal ayns Rhumsaa.
+ Cha nel mee cummal ayns Rhumsaa.
+ Vel oo cummal ayns Purt Çhiarn?
+ Cha nel mee cummal ayns Purt Çhiarn.
+ Vel oo cummal ayns Laksaa?
+ Ta, ta mee cummal ayns Laksaa.
+ Vel oo cummal ayns Balley Chashtal?
+ Cha nel, cha nel mee cummal ayns Balley Chashtal.
+ Ta mee cummal ayns Ellan Vannin.
+ Ta mee cummal ayns Sostyn.
  Laik lhiat shappal?
  S'laik lhiam shappal.
  Cha laik lhiam shappal.
@@ -392,7 +420,37 @@
  Ta cooat bwee as jeenym gorrym aym.
  Ta cooat gorrym-jiarg as jeenym doo aym.
  Ta kayt lheeah as moddey bane aym.
- Ta edd geayney as cooat jiarg-bwee aym. # more colour sentences
+ Ta edd geayney as cooat jiarg-bwee aym.
+ Ta cassyl orrym.
+ Ta cassyl jiarg orrym.
+ Ta gooyn jiarg-bwee orrym.
+ Ta lheiney-T ghorrym ort.
+ Ta troosyn doo orrym.
+ Ta breeçhyn gorrym ort.
+ Ta troosyn jiarg er.
+ Ta cassyl jiarg-gorrym urree.
+ Ta lheiney-T jiarg-bwee orrin.
+ Ta troosyn doo erriu.
+ Ta troosyn gorrym orroo.
+ Ta jeans gorrym orrym.
+ Ta jeans doo orrym.
+ Ta braag jiarg-gorrym er.
+ Ta rumbyl gorrym urree.
+ Ta rumbyl geanyeny urree.
+ Ta lheiney-T jiarg-bane urree.
+ Ta lheiney vane er.
+ Ta lheiney ghorrym urree.
+ Ta carvat lheeah er.
+ Ta carvat jiarg-gorrym er.
+ Ta gansee jiarg-gorrym urree.
+ Ta braag dhone orrym.
+ Ta lheiney-T bwee orrym.
+ Ta braag lheeah orroo.
+ Ta braag bane erriu.
+ Ta troosyn geanyney orrin.
+ Ta gansee geanyeny orrym.
+ Ta oashyryn gorrym orrym.
+ Ta oashyryn bane ort.
  By vie lhiat jough?
  Cha by vie lhiam.
  By vie lhiam.
@@ -648,3 +706,56 @@
  Er-lhiam dy nhare lesh shappal mairish yn charrey echey.
  Er-lhiam dy nhare lesh cloie gitar.
  Er-lhiam dy nhare lhee cloie pianney.
+ Fastyr mie woieaghyn! Kys t'ou? Ta mee braew.
+ Fastyr mie! Mish Juan, ta mee kiare-jeig as ta mee beaghey ayns Ellan Vannin. Ta braar aym, enmyssit Paayl as t'eh shey-jeig. Ta shuyr aym, enmyssit Breeshey as t'ee nane-jeig. S'laik lhiam cloie gitar as snaue. 
+ Moghrey mie! Mish Brian, ta mee queig-jeig as ta mee cummal ayns Purt ny Hinshey. Ta kayt aym, enmyssit Felix, as three conning aym.
+ Er-lhiam dy vel eh corree.
+ Er-lhiam nagh row eh corree.
+ Er-lhiam nagh laik lesh snaue.
+ Er-lhiam dy nhare lhee snaue.
+ Ta Brian gobbragh ayns thie-bee ayns Laksaa.
+ Ta Juan gobbragh ayns thie-fillym ayns Rhumsaa.
+ Ta mee gobbragh ayns shapp ayns Purt ny Hinshey.
+ Fastyr mie! Mish Stubbin, ta mee queig as ta mee beaghey ayns Mannin. Ta conning bane aym, enmyssit Conning. Ta carrey aym, t'eh enmyssit Paayl as t'eh shiaght-jeig. Ta Paayl gobbragh er y traie. Er-lhiam dy laik lesh eeastagh, son s'laik lesh gee eeastyn. S'laik lhiam gee eeastyn neesht.
+ Cha laik lhiam goll dys scoill er y varroose dagh laa. Share lhiam shooyl dys scoill.
+ Ren mee goll dys y thie-fillym fastyr Jecrean as ren mee jeeaghyn yn ard-fillym. V'eh feer vie, feer vie dy jarroo.
+ C'raad ta Paayl beaghey?
+ Ta Paayl beaghey ayns Mannin.
+ Vel moddey echey?
+ Cha nel moddey echey. 
+ Ta eeast echey.
+ Vel carrey echey?
+ Ta. Ta carrey echey.
+ Cre t'an conning echey enmyssit?
+ Ta'n conning echey enmyssit Conning.
+ Laik lesh Paayl gobbragh?
+ S'laik lesh Paayl gobbragh.
+ Cre'n oyr laik lesh Paayl gobbragh?
+ S'laik lesh Paayl gobbragh son s'laik lesh Paayl gee eeastyn.
+ C'raad ta Paayl beaghey?
+ Ta Paayl beaghey ayns Mannin.
+ C'raad ta Paayl gobbragh?
+ Ta Paayl gobbragh er y traie.
+ Cuin ren mee goll dys y thie-fillym?
+ Ren mee goll dys y thie-fillym fastyr Jecrean.
+ Va mee skee moghrey jiu.
+ Row mee skee jea?
+ Cha row mee skee jea.
+ Nagh row mee skee moghrey jiu?
+ Va, va mee skee moghrey jiu.
+ Er-lhiam dy vel laik lesh Paayl gobbragh.
+ Er-lhiam nagh row eh maynrey.
+ Er-lhiam nagh laik lhee peetsey.
+ Er-lhiam dy nhare laik lesh eeast ny peetsey.
+ Vel eh corree?
+ Er-lhiam nagh eh corree.
+ Vel ee shappal ayns Rhumsaa?
+ Er-lhiam dy vel ee shappal ayns Rhumsaa.
+ Vel eh cloie bluckan coshey?
+ Er-lhiam dy vel eh cloie bluckan coshey.
+ Cre t'eh gee ayns y voghrey?
+ Er-lhiam dy vel eh gee arran greddan ayns y voghrey.
+ Laik lhee snaue?
+ Er-lhiam dy vel laik lhee snaue.
+ Er-lhiam dy nagh laik lhee roie.
+
