@@ -7,12 +7,11 @@ import torch.optim as optim
 import gradio as gr
 
 # Plug corpus into llama
+# Use the uploaded file directly
 with open("manx_corpus.txt", "r", encoding="utf-8") as f:
     corpus = [line.strip() for line in f if line.strip()]
 
-print("Training Corpus:")
-for doc in corpus:
-    print(doc)
+print(f"Loaded corpus with {len(corpus)} lines.")
 
 # Initial vocabulary (chars + </w>)
 unique_chars = set()
@@ -39,7 +38,10 @@ for doc in corpus:
             word_splits[word_tuple] = word_splits.get(word_tuple, 0) + 1
 
 print("\nPre-tokenized word frequencies:")
-print(word_splits)
+# Limit printing for large corpora
+print(list(word_splits.items())[:20])
+print("...")
+
 
 # BPE training
 def get_pair_stats(splits):
@@ -87,7 +89,10 @@ print("\n--- BPE merges complete ---")
 print(f"Final vocabulary size: {len(vocab)}")
 final_vocab_sorted = sorted(list(set(vocab)))
 print("\nFinal vocabulary (sorted):")
-print(final_vocab_sorted)
+# Limit printing for large vocabularies
+print(final_vocab_sorted[:50])
+print("...")
+
 
 # Build lookup tables
 # Modified: Include start and stop tokens in vocabulary
@@ -241,10 +246,12 @@ def get_batch(batch_size=16, block_size=64):
     return x, y
 
 model = TinyTransformer()
+# Adjusted learning rate
 optimizer = optim.AdamW(model.parameters(), lr=1e-4)
 
 print("\n--- Starting model training ---")
-num_training_steps = 15000
+# Increased training steps for larger corpus
+num_training_steps = 20000
 for step in range(num_training_steps):
     xb, yb = get_batch(batch_size=16, block_size=block_size)
     logits, loss = model(xb, yb)
@@ -253,7 +260,7 @@ for step in range(num_training_steps):
     loss.backward()
     optimizer.step()
 
-    if step % 100 == 0: # Print loss less frequently for more steps
+    if step % 1000 == 0: # Print loss less frequently for more steps
         print(f"Step {step}, Loss: {loss.item():.4f}")
 print("--- Model training complete ---")
 
@@ -337,3 +344,4 @@ iface = gr.Interface(
 
 print("\n--- Launching Gradio Interface ---")
 iface.launch(share=True)
+
