@@ -11,3 +11,14 @@ Status: The project contains a tiny LLM with a BPE tokenizer and a small corpus 
 Sources for the corpus: The corpus has been based on my own learning notes and inspired by the textbook Loayr Gaelg! Keim Nane and beginner lessons on the website learnmanx.com. At this stage the corpus is experimental. All data has been created by me and any sentences inspired by the above sources have been rephrased or paraphrased.
 
 Further development: The most important task at this stage is to expand the corpus. As the project progresses, my aim is to release small demos and seek collaboration with members of the Manx-speaking community. A full, open-source pipeline is planned. 
+
+I used the following language resources as inspiration and as aids to help me create a corpus:
+Loayr Gaelg! Keim Nane
+https://dictionaryq.com/gaelg/
+https://www.learnmanx.com/learning/beginner/
+
+I used the following resources and aids to help me build the transformer:
+Colab and colab AI assistant
+https://www.youtube.com/watch?v=5avSMc79V-w
+https://www.youtube.com/watch?v=UU1WVnMk4E8&t=5s
+https://www.youtube.com/watch?v=biveB0gOlak&list=WL&index=76&t=12s
