@@ -339,7 +339,7 @@ iface = gr.Interface(
     ],
     outputs=gr.Textbox(label="Generated Text"),
     title="Tiny Manx LLM",
-    description="A small model trained on a Manx Gaelic corpus. Enter a prompt to generate text."
+    description="A small model trained on a Manx (Gaelg) corpus. Enter a prompt to generate text."
 )
 
 print("\n--- Launching Gradio Interface ---")
