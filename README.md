@@ -1,7 +1,7 @@
 # manx-gaelic-llm
-An experimental open-source Large Language Model for the Manx Gaelic (Gaelg) language
+An experimental open-source Large Language Model for the Manx (Gaelg) language
 
-This project aims to support and promote the revitalisation of the Manx Gaelic language and to aid in learning this language. 
+This project aims to support and promote the revitalisation of the Manx language and to aid in learning this language. 
 It is intended as a text generation tool and, hopefully, a conversation partner with which to have very simple conversations so that learners at beginner/advanced beginner level can practice what they have learned during lessons.
 
 After searching, it was found that no such tool exists for use in this language to date, and therefore this model could fill a gap.
