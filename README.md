@@ -13,15 +13,15 @@ Sources for the corpus: The corpus has been based on my own learning notes and i
 Further development: The most important task at this stage is to expand the corpus. As the project progresses, my aim is to release small demos and seek collaboration with members of the Manx-speaking community. In addition to this, I am focusing on steps to expand and improve the transformer. A full, open-source pipeline is planned. 
 
 As well as my own learning notes, I used the following language resources as inspiration and as aids to help me create a corpus:
-Loayr Gaelg! Keim Nane
-https://dictionaryq.com/gaelg/
-https://www.learnmanx.com/learning/beginner/
-https://corpus.gaelg.im/
+* Loayr Gaelg! Keim Nane
+* https://dictionaryq.com/gaelg/
+* https://www.learnmanx.com/learning/beginner/
+* https://corpus.gaelg.im/
 
 Here is a list of some resources and aids which have been useful in helping me with ideas on how to best build the transformer (I built this transformer from scratch and am continually looking at ways to improve it):
-Colab (and colab AI assistant to help debug)
-https://www.youtube.com/watch?v=5avSMc79V-w
-https://www.youtube.com/watch?v=UU1WVnMk4E8&t=5s
-https://www.youtube.com/watch?v=biveB0gOlak&list=WL&index=76&t=12s
-https://www.youtube.com/watch?v=p3sij8QzONQ&list=WL&index=94
-course.fast.ai
+* Colab (and colab AI assistant to help debug)
+* https://www.youtube.com/watch?v=5avSMc79V-w
+* https://www.youtube.com/watch?v=UU1WVnMk4E8&t=5s
+* https://www.youtube.com/watch?v=biveB0gOlak&list=WL&index=76&t=12s
+* https://www.youtube.com/watch?v=p3sij8QzONQ&list=WL&index=94
+* course.fast.ai
