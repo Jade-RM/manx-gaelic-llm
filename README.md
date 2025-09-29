@@ -24,4 +24,4 @@ Here is a list of some resources and aids which have been useful in helping me w
 * https://www.youtube.com/watch?v=UU1WVnMk4E8&t=5s
 * https://www.youtube.com/watch?v=biveB0gOlak&list=WL&index=76&t=12s
 * https://www.youtube.com/watch?v=p3sij8QzONQ&list=WL&index=94
-* course.fast.ai
+* https://course.fast.ai/
