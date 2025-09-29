@@ -311,6 +311,16 @@
  Ta conning bane aym.
  T'eh conning doo aym.
  Ta moddey doo aym.
+ Ta roddan puissagh aym.
+ Ta muc rangagh aym.
+ Ta aarnieu aym.
+ Ta eeast aym.
+ Ta parrad aym.
+ Ta jialgheer aym.
+ Ta roddan puissagh dhone aym.
+ Ta aarnieu glass aym.
+ Ta parrad glass as ruy aym.
+ Ta jialgheer glass aym.
  Ta cabbyl dhone aym.
  Cre t’ou jannoo Jesarn?
  C’raad t’eh shappal Jesarn?
@@ -757,5 +767,84 @@
  Er-lhiam dy vel eh gee arran greddan ayns y voghrey.
  Laik lhee snaue?
  Er-lhiam dy vel laik lhee snaue.
- Er-lhiam dy nagh laik lhee roie.
-
+ Er-lhiam nagh laik lhee roie.
+ Laik lhee cloie bluckan coshey?
+ Er-lhiam nagh laik lhee cloie bluckan coshey.
+ Vel moddey doo eck?
+ Er-lhiam dy vel moddey bane eck.
+ Vel kayt doo echey?
+ Er-lhiam nagh kayt doo echey.
+ Ren ee goll dys y thie-bee Jedoonee?
+ Er-lhiam dy ren ee goll dys y thie-bee Jedoonee.
+ Ren eh goll dys y thie-fillym Jedoonee?
+ Er-lhiam nagh ren eh goll dys y thie-fillym Jedoonee.
+ Row ee ayns y thie-bee Jesarn?
+ Er-lhiam nagh row ee ayns y thie-bee Jesarn.
+ Row eh ayns y thie-fillym Jesarn?
+ Er-lhiam dy row eh ayns y thie-fillym Jesarn.
+ Ta mee gynsagh glenvaddaght ec university ayns Nalbin.
+ Ta mee gynsagh sheanse ec university ayns Nerin.
+ Ta mee gynsagh Germaanish ec university ayns Sostyn.
+ S'laik lhiam beiyn. Ta daa chayt as moddey aym.
+ S'laik lhiam beiyn. Ta kayt as daa voddey aym.
+ Ta mee moddey roauyr aym.
+ Ta mee kayt roauyr aym.
+ Ta mee moddey jollysagh aym.
+ Ta mee kayt jollysagh aym.
+ Va mee ayns y thie-fillym riyr.
+ Ta mee gobbragh ayns y scoill.
+ Ta mee laccal gobbragh ayns scoill.
+ Ta mee laccal gobbragh ayns thie-fillym ayns y traa ry-heet.
+ Ta mee laccal gobbragh ayns thie-bee ayns y traa ry-heet.
+ Ta mee laccal gobbragh ayns thie lheihys ayns y traa ry-heet.
+ Ta mee laccal gobbragh ayns scoill ayns y traa ry-heet.
+ Ta mee laccal gobbragh ayns shapp ayns y traa ry-heet.
+ S'laik lhiam beiyn as ta kayt aym, enmyssit Felix.
+ Va roddan aym, agh ren eh skellal ersooyl.
+ Va mee çhing riyr as ren mee tilgey.
+ Ren oo giu rour fastyr jea? Er-lhiam ren oo tilgey jea, ren mee fakin skeay ayns y tobbyr riyr.
+ Foddee dy ren yn kayt ayd gee yn eeast aym.
+ Foddee dy ren yn kayt aym gee yn lugh ayd.
+ Foddee dy ren yn conning ayd gee carradjyn aym.
+ Foddee dy ren yn braar ayd giu yn lhune ayd.
+ Foddee dy nagh yn carrey ayd giu yn cappan dy hey echey.
+ Foddee dy laik lhee roie dagh laa.
+ Foddee dy laik lesh cloie bluckan coshey dagh Jedoonee.
+ Foddee nagh laik lhee shappal ayns y voghrey.
+ Foddee nagh laik lesh roie ayns y voghrey.
+ Foddee nagh laik lhee beaghey ayns Rhumsaa.
+ Foddee dy laik lesh beaghey ayns Purt ny Hinshey.
+ T'eh licklee dy vel eh giu cappen dy hey son s'laik lesh tey.
+ T'eh licklee nagh yn braar ayd cloie bluckan coshey.
+ Er-lhiam dy vel ee çhing.
+ Er-lhiam dy vel eh maynrey.
+ Er-lhiam nagh vel ee corree.
+ Er-lhiam hagh vel eh trimshagh.
+ Foddee dy vel eh çhing.
+ Foddee nagh vel eh corree.
+ T'eh licklee dy vel ee corree.
+ T'eh licklee nagh vel eh trimshagh.
+ Bare lhiam tey.
+ Bare lhait caffee.
+ Bare lesh arran greddan.
+ Bare lhee feeyn bane.
+ Bare lhien cloie bluckan coshey.
+ Bare lhiu jeeaghyn er y chellveeish.
+ Bare lhieu giu lhune.
+ Bare lesh Juan goll dys y thie-fillym.
+ Cha bare lhiam giu tey.
+ Cha bare lhiat gee peetsey.
+ Cha bare lesh goll magh.
+ Cha bare lhee giu feeyn jiarg.
+ Cha bare lhien jeeagyhn er y chellveeish.
+ Cha bare lhiu cloie gitar.
+ Cha bare lhieu goll dys y thie-bee.
+ Cha bare lesh Juan gee arran.
+ C'raad bare lhiu goll?
+ Cre bare lhee giu?
+ Cuin bare lhiat gee?
+ Cre'n fa bare lhiat goll dys y thie-bee?
+ C'raad bare lhiat cloie?
+ Cre bare lhiu jannoo?
+ Cuin bare lhiu goll?
+ Cre'n fa bare lesh gee peetsey?
