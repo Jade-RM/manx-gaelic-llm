@@ -133,8 +133,8 @@
  Cha mie lhiam snaue.
  S'mie lhiat shappal.
  Cha mie lhiat shappal.
- Ta mee laccal beaghey ayns Balley Chastal son ta mee gobbragh ayns Balley Chastal.
- Cha nel mee laccal beaghey ayns Doolish son ta mee gobbragh ayns Balley Chastal.
+ Ta mee laccal beaghey ayns Balley Chashtal son ta mee gobbragh ayns Balley Chashtal.
+ Cha nel mee laccal beaghey ayns Doolish son ta mee gobbragh ayns Balley Chashtal.
  Ta mee laccal beaghey ayns Purt ny Hinshey son s'laik lhiam Purt ny Hinshey.
  Ta mee gobbragh ayns Laksaa.
  Ta mee gobbragh ayns Laksaa, agh cha nel mee laccal beaghey ayns Laksaa.
@@ -593,17 +593,17 @@
  Ta mee gee arran greddan ayns y voghrey.
  Cre t'ou giu ayns y voghrey?
  Ta mee giu yn cappan dy hey ayns y voghrey.
- Vel yn charrey ayd gynsagh Gaelg?
- Cha nel. Yn charrey ayd gynsagh Germaanish.
- T'an charrey ayd gynsagh Sheenish.
- Ren yn charrey cloie yn gitar echey ayns y thie-bee Jeheiney?
+ Vel yn carrey ayd gynsagh Gaelg?
+ Cha nel. Yn carrey ayd gynsagh Germaanish.
+ T'an carrey ayd gynsagh Sheenish.
+ Ren yn carrey cloie yn gitar echey ayns y thie-bee Jeheiney?
  Cha ren. Ren mee cloie yn gitar ayd ayns y thie-bee Jeheiney.
  Ren yn kayt ayd gee yn eeast ayd?
  Row oo ayns y thie bee jea?
  Cha row. Cha row mee ayns y thie bee jea.
  Va mee ayns y thie bee Jelune.
- Row yn charrey ayd skee jea?
- Va yn charrey aym skee jea.
+ Row yn carrey ayd skee jea?
+ Va yn carrey aym skee jea.
  Row oo skee jea?
  Cha row mee skee jea. Ta mee skee jiu.
  Cha row oo braew jea?
@@ -661,9 +661,9 @@
  Nagh row yn cabbyl ayd çhing Jedoonee?
  Ren mee gobbragh Jelune, cha ren mee goll magh fastyr Jelune, ren mee lhiah lioar vie, va mee ayns y thie as ren mee gee eeast, pishy as praaseyn.
  Cha ren mee goll dys obbyr Jemayrt, son va mee feer çhing. Va mee ayns y thie feiy'n laa as ren mee giu tey.
- Ren mee goll dys y thie bee mairish yn charrey aym moghrey Jecrean. Ren shin giu caffee as v'eh yindyssagh. Ren mee gobbragh as ren mee jeeaghyn er yn chellveeish fastry Jecrean.
+ Ren mee goll dys y thie bee mairish yn carrey aym moghrey Jecrean. Ren shin giu caffee as v'eh yindyssagh. Ren mee gobbragh as ren mee jeeaghyn er yn chellveeish fastry Jecrean.
  Ren mee goll dys y traie mairish yn moddey aym fastyr Jerdein, v'an emshyr yindyssagh. V'eh grianagh. Ren mee gee riojagyn as ren mee giu soo-mess. Va mee ayns y lhiabee aym fastyr Jerdein as ren mee lhiah lioar.
- Va mee feer skee Jeheiney agh ren goll dys obbyr reesht as ren mee gobbragh dagh laa. Ren mee shooyl mairish yn moddey aym fastyr jeheiney as ren mee giu feeyn jiarg mairish yn charrey aym.
+ Va mee feer skee Jeheiney agh ren goll dys obbyr reesht as ren mee gobbragh dagh laa. Ren mee shooyl mairish yn moddey aym fastyr jeheiney as ren mee giu feeyn jiarg mairish yn carrey aym.
  Va mee ayns y lhiabee aym as cha ren mee monney moghrey Jesarn. Ren mee goll dys y thie fillym fastyr Jesarn. Va yn fillym trimshagh as ren mee keayney.
  Ren mee goll dys y thie bee mairish yn braar as yn chuyr aym Jedoonee. Ren mee giu yn pynt lhune as ren mee gee pastey, unnishyn as caashey.
  Fastyr mie, mish Stubbin as ta mee voish Mannin, ta mee beaghey ayns balley enmyssit Rhumsaa. S'mie lhiam gee eeastyn as s'mie lhiam lugheraght. Cha mie lhiam moddee son t'ad bolvaneagh! Ta mee cadley dagh laa, ta mee goll magh as shooyl dagh oie.
@@ -713,7 +713,7 @@
  Er-lhiam dy nhare lesh ooylyn.
  Er-lhiam dy nhare lhee praaseyn.
  Er-lhiam dy nhare lhee gobbragh ayns Laksaa son t'ee beaghey ayns shen.
- Er-lhiam dy nhare lesh shappal mairish yn charrey echey.
+ Er-lhiam dy nhare lesh shappal mairish yn carrey echey.
  Er-lhiam dy nhare lesh cloie gitar.
  Er-lhiam dy nhare lhee cloie pianney.
  Fastyr mie woieaghyn! Kys t'ou? Ta mee braew.
@@ -848,3 +848,54 @@
  Cre bare lhiu jannoo?
  Cuin bare lhiu goll?
  Cre'n fa bare lesh gee peetsey?
+ Bare lhiam giu tey?
+ Cha bare lhiam giu tey. Bare lhiam giu feeyn jiarg.
+ Bare lhiat giu caffee?
+ Cha bare lhiam giu caffee. Bare lhiam giu tey.
+ Bare lesh gee peetsey?
+ Bare lesh gee peetsey.
+ Bare lhee goll dys y thie-bee fastyr Jedoonee?
+ Cha bare lhee goll dys y thie-bee fastyr Jedoonee. Bare lhee goll dys y thie-bee fastyr Jeheiney as bare lhee goll dys y thie-fillym fastyr Jedoonee.
+ Nagh bare lhiam lhiah yn lioar shen?
+ Cha bare lhiam lhiah yn lioar shen. Bare lhiam lhiah yn lioar shoh.
+ Nagh bare lhiat giu feeyn bane?
+ Cha bare lhiam giu feeyn bane. Bare lhiam giu feeyn jiarg.
+ Nagh bare lhee gee berreen?
+ Cha bare lhee gee berreen. Bare lhee gee ooylyn.
+ Nagh bare lesh goll magh?
+ Cha bare lesh goll magh. Bare lesh jeeaghyn er y chellveeish.
+ Nagh bare lhien goll dys y thie-bee?
+ Bare lhien goll dys y thie-bee.
+ Nagh bare lhiu gee peetsey?
+ Cha bare lhien gee peetsey. Bare lhien gee berreen.
+ Nagh bare lhieu cloie bluckan coshey?
+ Bare lhieu cloie bluckan coshey.
+ Nagh bare lesh Brian snaue?
+ Cha bare lesh Brian snaue. Bare lesh Brian roie.
+ Bare lhiat goll dys y thie-bee ny shooyl er y traie?
+ Bare lhiam goll dys y thie-bee.
+ Bare lhiat beaghey ayns Mannin ny ayns Sostyn?
+ Bare lhiam beaghey ayns Mannin.
+ Bare lhiat gee peetsey ny curry?
+ Bare lhiam gee curry.
+ Bare lhiat gee feeyn bane ny feeyn jiarg?
+ Bare lhiam gee feeyn bane.
+ Bare lhiat gynsagh Germaanish ny Sheenish?
+ Bare lhiat gynsagh Germaanish.
+ Bare lhiant roie ny snaue?
+ Bare lhiam snaue.
+ C'raad bare lhiat shappal, ayns Doolish ny ayns Rhumsaa?
+ Bare lhiam shappal ayns Rhumsaa.
+ C'raad bare lhiat goll dys y scoill, ayns Purt ny Hinshey ny ayns Laksaa?
+ Bare lhiam goll dys y scoill ayns Laksaa.
+ C'raad bare lhiat gobbragh, ayns Rhumsaa ny ayns Balley Chashtal?
+ Bare lhiam gobbragh ayns Rhumsaa.
+ Cuin bare lhiat goll dys y thie-bee, oie Jeheiney ny fastyr Jesarn?
+ Ta mee red beg accryssagh. Ta mee laccal gee schocklaid.
+ Ta mee paagh. Ta mee laccal giu ushtey.
+ Bare lhiam ve ayns Laksaa jiu.
+ Bare lhiam ve ayns y thie aym jiu.
+ Bare lhiam ve er y traie jiu, son t'an emshyr grianagh jiu.
+ Foddee dy bare lesh gobbragh jiu, son cha nel argid echey.
+ Foddee dy bare lhee goll magh jiu, son t'an emshyr braew jiu.
+ 
