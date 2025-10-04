@@ -149,7 +149,7 @@ def decode(indices):
 
 # Transformer
 block_size = 64
-n_embd = 64
+n_embd = 128
 n_head = 4
 n_layer = 2
 
@@ -247,7 +247,7 @@ def get_batch(batch_size=16, block_size=64):
 
 model = TinyTransformer()
 # Adjusted learning rate
-optimizer = optim.AdamW(model.parameters(), lr=1e-4)
+optimizer = optim.AdamW(model.parameters(), lr=5e-4)
 
 print("\n--- Starting model training ---")
 # Increased training steps for larger corpus
@@ -344,4 +344,5 @@ iface = gr.Interface(
 
 print("\n--- Launching Gradio Interface ---")
 iface.launch(share=True)
+
 
