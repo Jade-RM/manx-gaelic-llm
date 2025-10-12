@@ -1,3 +1,14 @@
+---
+title: manx-gaelic-llm
+emoji: 🇮🇲
+colorFrom: red
+colorTo: black
+sdk: gradio
+sdk_version: 4.44.0
+app_file: app.py
+pinned: false
+---
+
 # manx-gaelic-llm
 An experimental open-source Large Language Model for the Manx (Gaelg) language
 
