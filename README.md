@@ -1,6 +1,6 @@
 ---
 title: manx-gaelic-llm
-emoji: "\U0001F1EE\U0001F1F2"
+emoji: 🚀
 colorFrom: red
 colorTo: indigo
 sdk: gradio
