@@ -1,8 +1,8 @@
 ---
 title: manx-gaelic-llm
-emoji: 🇮🇲
+emoji: "\U0001F1EE\U0001F1F2"
 colorFrom: red
-colorTo: black
+colorTo: indigo
 sdk: gradio
 sdk_version: 4.44.0
 app_file: app.py
