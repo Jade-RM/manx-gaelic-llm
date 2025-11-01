@@ -371,7 +371,7 @@
  Ta mee gobbragh ayns Laksaa. C'raad t'ou gobbragh?
  Ta mee gobbragh ayns Balley Chastal. C'raad t'ou shooyl er y traie?
  Ta mee shooyl er y traie ayns Purt ny Hinshey.
- Braew. Ansherbeem ta mee shappal nish. Hee'm oo.
+ Braew. Ansherbee, ta mee shappal nish. Hee'm oo.
  Mie dy liooar. Hee'm oo.
  Fastyr mie! Kys t'ou?
  Ta mee beggan skee. As uss hene?
@@ -1003,4 +1003,66 @@
  Bare lhiam ve er y traie jiu, son t'an emshyr grianagh jiu.
  Foddee dy bare lesh gobbragh jiu, son cha nel argid echey.
  Foddee dy bare lhee goll magh jiu, son t'an emshyr braew jiu.
- 
+ Ta orrym gobbragh.
+ Ta ort gobbragh.
+ Ta orrym goll dys Rhumsaa Jedoonee.
+ Ta ort goll dys y scoill Jelune.
+ Ta urree goll magh fastyr jiu.
+ Ta er gobbragh mairagh.
+ Cha nel orrym gobbragh mairagh.
+ Cha nel ort goll dys y scoill mairagh.
+ Cha nel urree goll dys Doolish fastyr jiu.
+ Cha nel er goll dys Laksaa Jesarn.
+ Vel orrym goll magh moghrey jiu?
+ Vel ort gobbragh Jelune?
+ Vel urree goll dys Purt ny Hinshey Jecrean?
+ Vel er goll dys Doolish Jeheiney?
+ Ta orrin goll dys y thie-lhionney fastyr mairagh.
+ Ta erriu goll dys y scoill Jelune.
+ Ta orroo goll magh fasytr mairagh.
+ Ta er Paayl gobbragh moghrey jiu.
+ Cha nel orrin goll dys y thie-lhionney fastyr mairagh.
+ Cha nel erriu goll dys y scoill Jelune.
+ Cha nel orroo goll magh fasytr mairagh.
+ Cha nel er Juan gobbragh moghrey jiu.
+ Vel orrin goll dys y thie-lhionney fastyr mairagh?
+ Vel erriu goll dys y scoill Jelune?
+ Vel orroo goll magh fasytr mairagh?
+ Vel er Peddyr gobbragh moghrey jiu?
+ Nagh vel orrym goll magh moghrey jiu?
+ Nagh vel ort gobbragh Jelune?
+ Nagh vel urree goll dys Purt ny Hinshey Jecrean?
+ Nagh vel er goll dys Doolish Jeheiney?
+ Nagh vel orrin goll dys y thie-lhionney fastyr mairagh?
+ Nagh vel erriu goll dys y scoill Jelune?
+ Nagh vel orroo goll magh fasytr mairagh?
+ Nagh vel er Peddyr gobbragh moghrey jiu?
+ Kys t'ou fastyr jiu?
+ Cha nel mee feer vie. Ta mee feer skee.
+ Cre'n oyr?
+ Ta mee feer çhing jiu as ta orrym gobbragh fastyr jiu.
+ S'treih shen! Cha nel shen feer vie.
+ Kys t'ou fastyr jiu, bwo?
+ Ta mee braew, gura mie ayd. Cha nel mee skee edyr. Ren mee goll dys y thie-bee mairish ny paitçhyn aym moghrey jiu.
+ Ren mee goll dys y thie-bee mairish yn waree aym fastyr jiu.
+ Ren mee goll dys y thie-fillym mairish ny paitçhyn aym son v'ad laccal jeeaghyn er yn fillym.
+ Ren mee goll dys shen jea.
+ Ta orrym goll dys Laksaa mairish yn paitçhyn aym son t'ad laccal kionnagh liaoryn noa.
+ Cha nel orrym gobbragh dagh laa. Ta orrym gobbragh Jelune as Jeheiney.
+ Vel ort goll dys y thie-lhionney dagh laa?
+ Cha nel ee gobbragh dagh laa agh er-lhiam dy laik lhee gobbragh dagh laa.
+ Ta mee laccal goll dys y thie-fillym fastyr mairagh agh ta orrym gobbragh.
+ Va orrym gobbragh moghrey jiu.
+ Vel oo çhing jiu?
+ Vel oo beaghey ayns Purt ny Hinshey?
+ Vel oo laccal lhiah lioar?
+ Vel oo muc ayd?
+ Vel fys ayd quoi ta beaghey ayns y thie shen?
+ Vel ort gobbragh Jeheiney?
+ Laik lhiat roie?
+ Ren oo snaue Jesarn?
+ Row oo ayns y thie-fillym jea?
+ Bare lhiat ve gynsagh Germaanish?
+ Ren red ennagh agglagh taghyrt fastyr jiu. 
+ Vel oo laccal goll dys Doolish mairagh?
+ Ta, ta mee laccal goll dys Doolish mairagh.
