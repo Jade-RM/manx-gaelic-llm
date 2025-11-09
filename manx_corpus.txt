@@ -3,9 +3,11 @@
  Moghrey mie, kys t'ou?
  Moghrey mie, ta mee braew, gura mie ayd. As oo hene?
  Oie vie, kys t'ou?
+ Ta mee goll as gaccan.
  Kys t'ou?
  Ta mee braew, gura mie ayd. As oo hene?
  S'mie shen. Ta mee braew, gura mie ayd.
+ S'mie shen!
  Slane lhiat.
  Slane lhiat. Hee'm oo!
  Slane lhiat! Slane lhiat!
@@ -16,6 +18,7 @@
  Ta mee mie dy liooar.
  Cha nel mee mie dy liooar.
  Ta mee feer çhing as feer skee.
+ Ta mee feer skee jiu. Kys t'ou?
  Moghrey mie!
  Fastyr mie!
  Oie vie!
@@ -35,12 +38,15 @@
  Ta mee braew.
  Ta mee skee.
  Ta mee red beg skee.
+ Ta mee feer skee.
  Ta mee red beg çhing.
+ Ta mee feer çhing.
  Ta mee goll as gaccan, ghooinney.
  Ta mee red beg skee, ghooinney.
  Ta mee skee, ghooiney.
  Ta mee corree.
  Ta mee feer vie.
+ Cha nel mee feer vie.
  Ta mee mie.
  Ta mee çheh.
  Ta mee feayr.
@@ -48,7 +54,9 @@
  T'ou skee.
  T'ee skee.
  T'eh red beg skee.
+ T'ee red beg skee.
  T'ee red beg çhing.
+ Ta mee corree.
  T'eh corree.
  T'ou corree.
  T'ee corree.
@@ -65,11 +73,16 @@
  Kys t'ou? Ta mee skee, ghooiney.
  Kys t'ou? Ta mee corree.
  Kys t'ou? Ta mee feer vie.
+ Kys t'ou? Cha nel mee feer vie.
+ Kys t'ou? Ta mee feer skee jiu.
+ Kys t'ou? Ta mee feer çhing.
  Kys t'ou? Ta mee mie.
  Kys t'ou? Ta mee çheh.
  Kys t'ou? Ta mee feayr.
  Vel oo braew?
  Cha nel. Cha nel mee feer vie.
+ Vel oo braew?
+ Ta. Ta mee braew jiu.
  Vel oo skee?
  Ta, ta mee red beg skee, son mee gobbragh jiu.
  Vel oo corree? 
@@ -104,6 +117,10 @@
  Vel oo beaghey ayns Balley Chashtal?
  Cha nel, cha nel mee beaghey ayns Balley Chashtal.
  Ta mee beaghey ayns Ellan Vannin.
+ Vel oo beaghey ayns Sostyn?
+ Cha nel. Ta mee beaghey ayns Ellan Vannin.
+ Vel oo beaghey ayns Nerin?
+ Cha nel. Ta mee beaghey ayns Sostyn.
  C'raad t'ou cummal?
  Ta mee cummal ayns Purt Çhiarn. C'raad t'ou cummal?
  Ta mee cummal ayns Laksaa.
@@ -127,6 +144,7 @@
  Vel oo shappal moghrey jiu?
  Ta, ta mee shappal moghrey jiu. Ta mee shappal ayns Laksaa.
  Cha nel mee shappal jiu son cha mie lhiam shappal.
+ Cha mie lhiam shappal agh ta mee shappal ayns Doolish jiu.
  Laik lhiat shappal?
  S'laik lhiam shappal.
  Cha laik lhiam shappal.
@@ -136,29 +154,44 @@
  Mie lhiat shappal?
  S'mie lhiam shappal.
  Cha mie lhiam shappal.
+ Mie lhiat shooyl?
  S'mie lhiam shooyl.
  Cha mie lhiam shooyl.
+ Mie lhiat roie?
  S'mie lhiam roie.
  Cha mie lhiam roie.
+ Mie lhiat snaue?
  S'mie lhiam snaue.
  Cha mie lhiam snaue.
+ Mie lhiat shappal?
  S'mie lhiat shappal.
  Cha mie lhiat shappal.
+ Mie lhiat gynsagh Gaelg?
+ S'mie lhiam gynsagh Gaelg.
+ Cha mie lhiam gynsagh Gaelg.
  Ta mee laccal beaghey ayns Balley Chashtal son ta mee gobbragh ayns Balley Chashtal.
  Cha nel mee laccal beaghey ayns Doolish son ta mee gobbragh ayns Balley Chashtal.
  Ta mee laccal beaghey ayns Purt ny Hinshey son s'laik lhiam Purt ny Hinshey.
  Ta mee gobbragh ayns Laksaa.
  Ta mee gobbragh ayns Laksaa, agh cha nel mee laccal beaghey ayns Laksaa.
+ Ta mee gobbragh ayns Doolish, agh cha nel mee laccal beaghey ayns Doolish. Ta mee laccal beaghey ayns Balley Chastal.
  Kys t'an emshyr jiu?
  T'an emshyr braew jiu. 
  Moghrey mie. Kys t'an emshyr jiu?
  T'eh feayr jiu.
+ Fastyr mie! Kys t'an emshyr jiu?
  T'eh fliugh jiu.
+ Moghrey mie! Kys t'an emshyr jiu?
  T'eh geayagh.
+ Kys t'an emshyr jiu?
  T'eh çheh.
+ Kys t'an emshyr jiu?
  T'eh çhirrym.
+ Fastyr mie. Kys t'an emshyr jiu?
  T'eh ceau fliaghey.
+ Kys t'an emshyr jiu?
  T'eh ceau sniaghtey.
+ Kys t'an emshyr jiu?
  T'eh ceau sniaghtey garro.
  Moghrey mie. Kys t'ou?
  Ta mee braew, gura mie ayd, agh cha nel yn emshyr feer vie. T'eh bodjallagh jiu.
@@ -170,6 +203,12 @@
  T'an emshyr yindyssagh jiu. T'eh geayagh jiu.
  Kys t'an emshyr ayns Sostyn jiu?
  T'eh ceau fliaghey ayns Sostyn jiu.
+ Kys t'an emshyr ayns Mannin jiu?
+ T'eh bodjallagh jiu.
+ Kys t'an emshyr ayns Nerin jiu?
+ T'an emshyr braew ayns Nerin jiu.
+ Kys t'an emshyr ayns Nalbin jiu?
+ T'eh ceau sniaghtey jiu.
  Cred t'ou jannoo dagh laa?
  Cre gollrish yn emshyr jiu?
  T'eh fliugh ayns Mannin.
@@ -181,9 +220,13 @@
  Cha nel mee cummal ayns Doolish.
  C'raad voish t'ou?
  Ta mee voish Mannin.
- Ta mee voish Sostyn
+  C'raad voish t'ou?
+ Ta mee voish Sostyn.
+  C'raad voish t'ou?
  Ta mee voish Nalbin.
+  C'raad voish t'ou?
  Ta mee voish Nerin.
+  C'raad voish t'ou?
  Ta mee voish Bretyn.
  C'raad voish t'eh?
  T'eh voish Mannin.
@@ -195,20 +238,28 @@
  Ta shiu voish Nerin.
  C'raad voish t'ad?
  T'ad voish Bretyn.
+ C'raad voish t'ad?
  T'ad voish Mannin.
  Ta shin voish Sostyn.
  Vel Gaelg ayd?
- Ta Gaelg aym.
+ Ta. Ta Gaelg aym.
  Vel Baarle ayd?
- Ta Baarle as Gaelg ayd.
+ Ta. Ta Baarle as Gaelg ayd.
  C'red s'mie lhiat jannoo?
  S'mie lhiam roie.
+ C'red s'mie lhiat jannoo?
  S'mie lhiam lhaih.
+ C'red s'mie lhiat jannoo?
  S'mie lhiam gynsagh çhengaghyn.
+ C'red s'mie lhiat jannoo?
  S'mie lhiam snaue.
+ C'red s'laik lhiat jannoo?
  S'laik lhiam gee caashey.
+ C'red s'laik lhiat jannoo?
  S'laik lhiat giu caffee.
+ C'red s'laik lesh jannoo?
  S'laik lesh giu feeyn.
+ C'red s'laik lhee jannoo?
  S'laik lhee cloie gitar.
  Cha laik lhiam giu feeyn.
  Cha laik lhiat cloie gitar.
@@ -223,15 +274,21 @@
  Cha laik lhieu gobbragh.
  Cha laik lesh Brian gee pishy.
  Laik lhiam snaue?
+ Cha laik lhiam snaue.
  Laik lhiat cloie bluckan coshey?
+ Cha laik lhiat cloie bluckan coshey.
  Laik lesh giu lhune?
+ S'laik lesh giu lhune.
  Laik lhee moddee?
+ S'laik lhee moddee.
  Nagh laik lhiam kiyt?
  Nagh laik lhiat conningyn?
  Nagh laik lesh praaseyn?
  Nagh laik lhee gobbragh?
  Laik lhien gobbragh?
+ Cha laik lhien gobbragh.
  Laik lhiu gynsagh çhengaghyn?
+ S'laik lhiu gynsagh çhengaghyn.
  Laik lhieu cloie kiaull?
  Laik lesh Moirrey shappal?
  Nagh laik lhien peetsey?
@@ -240,6 +297,7 @@
  Nagh laik Paayl cloie feeal?
  Ta mee laccal cadley.
  Ta mee laccal cloie kiaull.
+ Ta mee laccal lhiah lioar.
  T'ou cloie kiaull.
  Ta mee roie.
  T'ou lhaih.
@@ -1060,6 +1118,30 @@
  Vel fys ayd quoi ta beaghey ayns y thie shen?
  Vel ort gobbragh Jeheiney?
  Laik lhiat roie?
+ Ren oo snaue Jesarn?
+ Row oo ayns y thie-fillym jea?
+ Bare lhiat ve gynsagh Germaanish?
+ Ren red ennagh agglagh taghyrt fastyr jiu. 
+ Vel oo laccal goll dys Doolish mairagh?
+ Ta, ta mee laccal goll dys Doolish mairagh.
+bee mairish ny paitçhyn aym moghrey jiu.
+ Ren mee goll dys y thie-bee mairish yn waree aym fastyr jiu.
+ Ren mee goll dys y thie-fillym mairish ny paitçhyn aym son v'ad laccal jeeaghyn er yn fillym.
+ Ren mee goll dys shen jea.
+ Ta orrym goll dys Laksaa mairish yn paitçhyn aym son t'ad laccal kionnagh liaoryn noa.
+ Cha nel orrym gobbragh dagh laa. Ta orrym gobbragh Jelune as Jeheiney.
+ Vel ort goll dys y thie-lhionney dagh laa?
+ Cha nel ee gobbragh dagh laa agh er-lhiam dy laik lhee gobbragh dagh laa.
+ Ta mee laccal goll dys y thie-fillym fastyr mairagh agh ta orrym gobbragh.
+ Va orrym gobbragh moghrey jiu.
+ Vel oo çhing jiu?
+ Vel oo beaghey ayns Purt ny Hinshey?
+ Vel oo laccal lhiah lioar?
+ Vel oo muc ayd?
+ Vel fys ayd quoi ta beaghey ayns y thie shen?
+ Vel ort gobbragh Jeheiney?
+ Laik lhiat roie?
+ Cha laik lhiam roie. Share lhiam snaue.
  Ren oo snaue Jesarn?
  Row oo ayns y thie-fillym jea?
  Bare lhiat ve gynsagh Germaanish?
