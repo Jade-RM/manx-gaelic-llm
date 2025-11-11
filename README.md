@@ -21,19 +21,19 @@ Status: The project contains a tiny LLM with a BPE tokenizer and a small corpus 
 
 Sources for the corpus: The corpus has been based on my own learning notes and inspired by the textbook Loayr Gaelg! Keim Nane and beginner lessons on the website learnmanx.com. At this stage the corpus is experimental. It only includes vocabulary and grammar structures taught at Level 1 (Keim Nane) and is intended as an aid for learners at this level. As the corpus grows, I plan to expand it to include language taught at Level 2 (Keim Jees) All data has been created by me and any sentences inspired by the above sources have been rephrased or paraphrased. However, I hope for halp from and collaboration with more fluent Manx speakers as the project grows. I have written and curated the corpus myself so that it contains the specific vocabulary and grammar structures that student learn at certain levels, and so that it is not contaminated with words or phrases from other languages (unless commonly used in Manx). The LLM is intended to be monolingual.
 
-Further development: The most important task at this stage is to expand the corpus. As the project progresses, my aim is to release small demos and seek collaboration with members of the Manx-speaking community. In addition to this, I am focusing on steps to expand and improve the transformer. A space has been created for the demo model on Hugging Face. A full, open-source pipeline is planned. 
+Further development: The most important task at this stage is to expand the corpus. I am also working on ways to make the LLM more conversation (i.e., answer questions instead of just using words as prompts to create its own sentences). This will, however, require a lot of further work on expanding the corpus at Keim Nane level. As the project progresses, my aim is to release small demos and seek collaboration with members of the Manx-speaking community. In addition to this, I am focusing on steps to expand and improve the transformer. A space has been created for the demo model on Hugging Face. A full, open-source pipeline is planned. 
 
 As well as my own learning notes, I used the following language resources as inspiration and as aids to help me create a corpus:
-* Loayr Gaelg! Keim Nane
-* Cowag Nane
-* https://dictionaryq.com/gaelg/
-* https://www.learnmanx.com/learning/beginner/
-* https://corpus.gaelg.im/
+* Keim Nane Level One of Coorse Gaelgagh cour sleih aasit A Manx course for adults Loayr Gaelg! Speak Manx! (n.d.). Retrieved November 11, 2025, from https://www.learnmanx.com/media//news%20pictures/New%202022%20pictures/FINAL%20Loayr%20Gaelg%20Keim%201.pdf
+* Cowag A series of conversational pieces and additional material, with accompanying CD, for the learner of Manx Gaelic Lioar Nane-Book One. (n.d.). Retrieved November 11, 2025, from https://www.learnmanx.com/media//cowag_1/cowag%2001.pdf
+* Fockleyreen: Manx - English Dictionary. (2025). Dictionaryq.com. https://dictionaryq.com/gaelg/‌
+* Beginner Lessons | Learn Manx. (2025). Learnmanx.com. https://www.learnmanx.com/learning/beginner/
+* Manx Corpus Search. (2025). Gaelg.im. https://corpus.gaelg.im/
 
 Here is a list of some resources and aids which have been useful in helping me with ideas on how to best build the transformer (I built this transformer from scratch and am continually looking at ways to improve it):
 * Colab (plus colab AI assistant to help debug and test)
-* https://www.youtube.com/watch?v=biveB0gOlak&list=WL&index=76&t=12s (the first version of this model was a tiny llama-type model based on the model built in this tutorial.)
-* https://www.youtube.com/watch?v=5avSMc79V-w
-* https://www.youtube.com/watch?v=UU1WVnMk4E8&t=5s
-* https://www.youtube.com/watch?v=p3sij8QzONQ&list=WL&index=94
-* https://course.fast.ai/
+* freeCodeCamp.org. (2025, April 24). Code Your Own Llama 4 LLM from Scratch – Full Course. YouTube. https://www.youtube.com/watch?v=biveB0gOlak (the first version of this model was a tiny llama-type model based on the model built in this tutorial.)
+* freeCodeCamp.org. (2025, April 1). Code DeepSeek V3 From Scratch in Python - Full Course. YouTube. https://www.youtube.com/watch?v=5avSMc79V-w
+* Create a Large Language Model from Scratch with Python – Tutorial. (n.d.). Www.youtube.com. https://www.youtube.com/watch?v=UU1WVnMk4E8
+* freeCodeCamp.org. (2025, September 23). LLMs from Scratch – Practical Engineering from Base Model to PPO RLHF. YouTube. https://www.youtube.com/watch?v=p3sij8QzONQ
+* Practical Deep Learning for Coders | Practical Deep Learning for Coders. (n.d.). Course.fast.ai. https://course.fast.ai/
