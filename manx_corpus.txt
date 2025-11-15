@@ -1,69 +1,71 @@
- Fastyr mie, kys t'ou?
- Fastyr mie, ta mee braew. Gura mie ayd. Kys t'ou hene? 
- Moghrey mie, kys t'ou?
- Moghrey mie, ta mee braew, gura mie ayd. As oo hene?
- Oie vie, kys t'ou?
- Ta mee goll as gaccan.
- Kys t'ou?
- Ta mee braew, gura mie ayd. As oo hene?
- S'mie shen. Ta mee braew, gura mie ayd.
+ [USER] Fastyr mie, kys t'ou? [BOT] Ta mee braew.
+ [USER] Fastyr mie! Kys t'ou? [BOT] Fastyr mie, ta mee braew. Gura mie ayd. Kys t'ou hene? 
+ [USER] Moghrey mie, kys t'ou? [BOT] Ta mee braew, gura mie ayd.
+ [USER] Moghrey mie! Kys t'ou? [BOT] Moghrey mie, ta mee braew, gura mie ayd. As oo hene?
+ [USER] Oie vie, kys t'ou? [BOT] Ta mee braew, gura mie ayd.
+ [USER] Kys t'ou? [BOT] Ta mee goll as gaccan.
+ [USER] Kys t'ou? [BOT] Ta mee braew.
+ [USER] Kys t'ou? [BOT] Ta mee my dy-liooar.
+ [USER] Kys t'ou? [BOT] Ta mee braew, gura mie ayd. As oo hene?
+ [USER] Kys t'ou? [BOT] Ta mee braew, gura mie ayd. As oo hene? 
+ [USER] Ta mee braew, gura mie ayd. As oo hene? [BOT] S'mie shen. Ta mee braew, gura mie ayd.
  S'mie shen!
- Slane lhiat.
- Slane lhiat. Hee'm oo!
- Slane lhiat! Slane lhiat!
- Slane lhiat! Hee'm shiu!
- Fastyr mie, kys t'ou? Fastyr, mie! Ta mee braew, gura mie ayd!
- Ta mee goll as gaccan. Kys t’ou, ghooinney?
- Ta mee braew, gura mie ayd. Kys t'ou hene?
- Ta mee mie dy liooar.
- Cha nel mee mie dy liooar.
- Ta mee feer çhing as feer skee.
- Ta mee feer skee jiu. Kys t'ou?
- Moghrey mie!
- Fastyr mie!
- Oie vie!
- Kys t'ou?
- Ta mee braew, gura mie ayd. As uss hene?
- Braew, gura mie ayd.
- Fastyr mie! Cre'n ennym t'ort?
- Fastyr mie! T'an ennym orrym Stubbin.
- Cre’n ennym t’ort?
- T'an ennym orrym Stubbin.
- Cre'n ennym t'ort? Ta'n ennym orrym Stubbin.
- Quoi uss?
- Mish Stubbin.
- Bannaghtyn Stubbin!
- Bannaghtyn!
- Kys t'ou, bwo?
- Ta mee braew.
- Ta mee skee.
- Ta mee red beg skee.
- Ta mee feer skee.
- Ta mee red beg çhing.
- Ta mee feer çhing.
- Ta mee goll as gaccan, ghooinney.
- Ta mee red beg skee, ghooinney.
- Ta mee skee, ghooiney.
- Ta mee corree.
- Ta mee feer vie.
- Cha nel mee feer vie.
- Ta mee mie.
- Ta mee çheh.
- Ta mee feayr.
- T'eh skee.
- T'ou skee.
- T'ee skee.
- T'eh red beg skee.
- T'ee red beg skee.
- T'ee red beg çhing.
- Ta mee corree.
- T'eh corree.
+ [USER] Slane lhiat. [BOT] Slane lhiat.
+ [USER] Slane lhiat. Hee'm oo! [BOT] Hee'm oo!
+ [USER] Slane lhiat! [BOT] Slane lhiat!
+ [USER] Slane lhiat! Hee'm shiu! [BOT] Slane lhiat!
+ [USER] Fastyr mie, kys t'ou? [BOT] Fastyr, mie! Ta mee braew, gura mie ayd!
+ [USER] Kys t'ou? [BOT] Ta mee goll as gaccan. Kys t’ou, ghooinney?
+ [USER] Kys t'ou, ghooinney? [BOT] Ta mee braew, gura mie ayd. Kys t'ou hene?
+ [USER] Kys t'ou, ghooinney? [BOT] Ta mee mie dy liooar.
+ [USER] Kys t'ou? [BOT] Cha nel mee mie dy liooar.
+ [USER] Kys t'ou? [BOT] Ta mee feer çhing as feer skee.
+ [USER] Kys t'ou? [BOT] Ta mee feer skee jiu. Kys t'ou?
+ [USER] Moghrey mie! [BOT] Moghrey mie!
+ [USER] Fastyr mie! [BOT] Fastyr mie!
+ [USER] Oie vie! [BOT] Oie vie!
+ [USER] Kys t'ou? [BOT] Ta mee red beg skee.
+ [USER] Kys t'ou? [BOT] Ta mee braew, gura mie ayd. As uss hene?
+ [USER] Kys t'ou? [BOT] Braew, gura mie ayd.
+ [USER] Fastyr mie! Cre'n ennym t'ort? [BOT] Fastyr mie! T'an ennym orrym Stubbin.
+ [USER] Moghrey mie! Cre'n ennym t'ort? [BOT] Moghrey mie! T'an ennym orrym Stubbin.
+ [USER] Cre’n ennym t’ort? [BOT] T'an ennym orrym Stubbin.
+ [USER] Cre’n ennym t’ort? [BOT] T'an ennym orrym Stubbin. Cre'n ennym t'ort?
+ [USER] Cre'n ennym t'ort? [BOT] Ta'n ennym orrym Stubbin. Quoi uss?
+ [USER] Quoi uss? [BOT] Mish Stubbin.
+ [USER] Cre'n ennym t'ort? [BOT] Mish Stubbin.
+ [USER] Bannaghtyn Stubbin! [BOT] Bannaghtyn, ghooinney!
+ [USER] Bannaghtyn! [BOT] Bannaghtyn!
+ [USER] Kys t'ou, bwo? [BOT] Ta mee braew, gura mie ayd.
+ [USER] Kys t'ou, bwo? [BOT] Ta mee braew.
+ [USER] Kys t'ou? [BOT] Ta mee skee.
+ [USER] Kys t'ou, bwo? [BOT] Ta mee red beg skee.
+ [USER] Kys t'ou? [BOT] Ta mee feer skee.
+ [USER] Kys t'ou? [BOT] Ta mee red beg çhing.
+ [USER] Kys t'ou? [BOT] Ta mee feer çhing.
+ [USER] Kys t'ou, bwo? [BOT] Ta mee goll as gaccan, ghooinney.
+ [USER] Kys t'ou? [BOT] Ta mee red beg skee, ghooinney.
+ [USER] Kys t'ou? [BOT] Ta mee skee, ghooiney.
+ [USER] Kys t'ou? [BOT] Ta mee corree.
+ [USER] Kys t'ou? [BOT] Ta mee feer vie.
+ [USER] Kys t'ou? [BOT] Cha nel mee feer vie.
+ [USER] Kys t'ou? [BOT] Ta mee mie.
+ [USER] Kys t'ou? [BOT] Ta mee çheh.
+ [USER] Kys t'ou? [BOT] Ta mee feayr.
+ [USER] Kys t'eh? [BOT] T'eh skee.
+ [USER] Kys ta shiu? [BOT] Ta shin skee.
+ [USER] Kys t'ee? [BOT] T'ee skee.
+ [USER] Kys t'eh? [BOT] T'eh red beg skee.
+ [USER] Kys t'ee? [BOT] T'ee red beg skee.
+ [USER] Kys t'ee? [BOT] T'ee red beg çhing.
+ [USER] Kys t'ou? [BOT] Ta mee corree.
+ [USER] Kys t'eh? [BOT] T'eh corree.
  T'ou corree.
- T'ee corree.
- T'eh feer vie.
- T'ee mie.
+ [USER] Kys t'ee? [BOT] T'ee corree.
+ [USER] Kys t'eh? [BOT] T'eh feer vie.
+ [USER] Kys t'ee? [BOT] T'ee mie.
  T'ou feayr.
- T'eh çheh.
+ [USER] Kys t'eh? [BOT] T'eh çheh.
  Kys t'ou? Ta mee braew.
  Kys t'ou? Ta mee skee.
  Kys t'ou? Ta mee red beg skee.
@@ -77,146 +79,148 @@
  Kys t'ou? Ta mee feer skee jiu.
  Kys t'ou? Ta mee feer çhing.
  Kys t'ou? Ta mee mie.
- Kys t'ou? Ta mee çheh.
- Kys t'ou? Ta mee feayr.
- Vel oo braew?
- Cha nel. Cha nel mee feer vie.
- Vel oo braew?
- Ta. Ta mee braew jiu.
- Vel oo skee?
- Ta, ta mee red beg skee, son mee gobbragh jiu.
- Vel oo corree? 
- Cha nel. Cha nel mee corree.
- Vel oo maynrey?
- Ta, ta mee maynrey, son ta'n emshyr braew jiu.
- Vel oo trimshagh?
- Ta, ta mee red beg trimshagh jiu.
- Kys t'ou? Cha nel mee feer vie. Ta mee çhing.
- Cha nel mee feer vie. Ta mee çhing.
+ [USER] Kys t'ou? [BOT] Ta mee çheh.
+ [USER] Kys t'ou? [BOT] Ta mee feayr.
+ [USER] Vel oo braew? [BOT] Ta, ta mee braew.
+ [USER] Vel oo braew? [BOT] Cha nel. Cha nel mee feer vie.
+ [USER] Vel oo braew? [BOT] Ta. Ta mee braew.
+ [USER] Vel oo braew? [BOT] Ta. Ta mee braew jiu.
+ [USER] Vel oo skee? [BOT] Ta, ta mee skee.
+ [USER] Vel oo skee? [BOT] Ta, ta mee red beg skee, son mee gobbragh jiu.
+ [USER] Vel oo skee? [BOT] Cha nel. Cha nel mee skee jiu.
+ [USER] Vel oo corree? [BOT] Ta. Ta mee feer corree.
+ [USER] Vel oo corree? [BOT] Cha nel. Cha nel mee corree.
+ [USER] Vel oo maynrey? [BOT] Cha nel. Ta mee trimshagh jiu.
+ [USER] Vel oo maynrey? [BOT] Ta, ta mee maynrey, son ta'n emshyr braew jiu.
+ [USER] Vel oo trimshagh? [BOT] Cha nel. Ta mee maynrey jiu.
+ [USER] Vel oo trimshagh? [BOT] Ta, ta mee red beg trimshagh jiu.
+ [USER] Kys t'ou? [BOT] Cha nel mee feer vie. Ta mee çhing.
+ [USER] Kys t'ou? [BOT] Cha nel mee feer vie. Ta mee çhing.
  Cha nel oo feer vie. T'ou çhing.
- Cha nel eh feer vie. T'eh çhing.
- Cha nel ee feer vie. T'ee çhing.
- Ta mee maynrey.
+ [USER] Kys t'eh? [BOT] Cha nel eh feer vie. T'eh çhing.
+ [USER] Kys t'ee? [BOT] Cha nel ee feer vie. T'ee çhing.
+ [USER] Kys t'ou? [BOT] Ta mee maynrey jiu.
  T'ou maynrey.
- T'eh maynrey.
- T'ad maynrey.
- Ta mee trimshagh.
- Ta mee feer vie. Ta mee maynrey.
- Cha nel mee feer vie. Ta mee trimshagh.
- Vel oo beaghey ayns Doolish?
- Ta, ta mee beaghey ayns Doolish.
- Vel oo beaghey ayns Purt ny Hinshey?
- Ta, ta mee beaghey ayns Purt ny Hinshey.
- Vel oo beaghey ayns Rhumsaa?
- Ta, ta mee beaghey ayns Rhumsaa.
- Cha nel mee beaghey ayns Rhumsaa.
- Vel oo beaghey ayns Purt Çhiarn?
- Cha nel mee beaghey ayns Purt Çhiarn.
- Vel oo beaghey ayns Laksaa?
- Ta, ta mee beaghey ayns Laksaa.
- Vel oo beaghey ayns Balley Chashtal?
- Cha nel, cha nel mee beaghey ayns Balley Chashtal.
- Ta mee beaghey ayns Ellan Vannin.
- Vel oo beaghey ayns Sostyn?
- Cha nel. Ta mee beaghey ayns Ellan Vannin.
- Vel oo beaghey ayns Nerin?
- Cha nel. Ta mee beaghey ayns Sostyn.
- C'raad t'ou cummal?
- Ta mee cummal ayns Purt Çhiarn. C'raad t'ou cummal?
- Ta mee cummal ayns Laksaa.
- S'mie lhiam Laksaa.
- S'mie lhiam Purt Çhiarn.
- Vel oo cummal ayns Doolish?
- Ta, ta mee cummal ayns Doolish.
- Vel oo cummal ayns Purt ny Hinshey?
- Ta, ta mee cummal ayns Purt ny Hinshey.
- Vel oo cummal ayns Rhumsaa?
- Ta, ta mee cummal ayns Rhumsaa.
- Cha nel mee cummal ayns Rhumsaa.
- Vel oo cummal ayns Purt Çhiarn?
- Cha nel mee cummal ayns Purt Çhiarn.
- Vel oo cummal ayns Laksaa?
- Ta, ta mee cummal ayns Laksaa.
- Vel oo cummal ayns Balley Chashtal?
- Cha nel, cha nel mee cummal ayns Balley Chashtal.
- Ta mee cummal ayns Ellan Vannin.
- Ta mee cummal ayns Sostyn.
- Vel oo shappal moghrey jiu?
- Ta, ta mee shappal moghrey jiu. Ta mee shappal ayns Laksaa.
- Cha nel mee shappal jiu son cha mie lhiam shappal.
+ [USER] Kys t'eh? [BOT] T'eh maynrey.
+ [USER] Kys t'ad? [BOT] T'ad maynrey.
+ [USER] Kys t'ou? [BOT] Ta mee trimshagh.
+ [USER] Kys t'ou? [BOT] Ta mee feer vie. Ta mee maynrey.
+ [USER] Kys t'ou? [BOT] Cha nel mee feer vie. Ta mee trimshagh.
+ [USER] Vel oo beaghey ayns Doolish? [BOT] Cha nel. Cha nel mee beaghey ayns Doolish.
+ [USER] Vel oo beaghey ayns Doolish? [BOT] Ta, ta mee beaghey ayns Doolish.
+ [USER] Vel oo beaghey ayns Purt ny Hinshey? [BOT] Cha nel. Cha nel mee beaghey ayns Purt ny Hinshey.
+ [USER] Vel oo beaghey ayns Purt ny Hinshey? [BOT] Ta, ta mee beaghey ayns Purt ny Hinshey.
+ [USER] Vel oo beaghey ayns Rhumsaa? [BOT] Cha nel. Cha nel mee beaghey ayns Rhumsaa.
+ [USER] Vel oo beaghey ayns Rhumsaa? [BOT] Ta, ta mee beaghey ayns Rhumsaa.
+ [USER] Vel oo beaghey ayns Rhumsaa? [BOT] Cha nel mee beaghey ayns Rhumsaa.
+ [USER] Vel oo beaghey ayns Purt Çhiarn? [BOT] Ta, ta mee beaghey ayns Purt Çhiarn.
+ [USER] Vel oo beaghey ayns Purt Çhiarn? [BOT] Cha nel mee beaghey ayns Purt Çhiarn.
+ [USER] Vel oo beaghey ayns Laksaa? [BOT] Cha nel mee beaghey ayns Laksaa.
+ [USER] Vel oo beaghey ayns Laksaa? [BOT] Ta, ta mee beaghey ayns Laksaa.
+ [USER] Vel oo beaghey ayns Balley Chashtal? [BOT] Ta, ta mee beaghey ayns Balley Chashtal.
+ [USER] Vel oo beaghey ayns Balley Chashtal? [BOT] Cha nel, cha nel mee beaghey ayns Balley Chashtal.
+ [USER] C'raad t'ou beaghey? [BOT] Ta mee beaghey ayns Ellan Vannin.
+ [USER] Vel oo beaghey ayns Sostyn? [BOT] Ta, ta mee beaghey ayns Sostyn.
+ [USER] Vel oo beaghey ayns Sostyn? [BOT] Cha nel. Ta mee beaghey ayns Ellan Vannin.
+ [USER] Vel oo beaghey ayns Nerin? [BOT] Ta, ta mee beaghey ayns Nerin.
+ [USER] Vel oo beaghey ayns Nerin? [BOT] Cha nel. Ta mee beaghey ayns Sostyn.
+ [USER] C'raad t'ou cummal? [BOT] Ta mee cummal ayns Doolish.
+ [USER] C'raad t'ou cummal? [BOT] Ta mee cummal ayns Purt Çhiarn. C'raad t'ou cummal?
+ [USER] C'raad t'ou cummal? [BOT] Ta mee cummal ayns Laksaa.
+ [USER] C'raad t'ou cummal? [BOT] Ta mee cummal ayns Rhumsaa.
+ [USER] C'raad t'ou cummal? [BOT] Ta mee cummal ayns Purt ny Hinshey.
+ [USER] C'raad t'ou cummal? [BOT] Ta mee cummal ayns Balley Chashtal.
+ [USER] C'raad t'ou beaghey? [BOT] Ta mee beaghey ayns Doolish.
+ [USER] C'raad t'ou beaghey? [BOT] Ta mee beaghey ayns Purt Çhiarn.
+ [USER] C'raad t'ou beaghey? [BOT] Ta mee beaghey ayns Laksaa.
+ [USER] C'raad t'ou beaghey? [BOT] Ta mee beaghey ayns Rhumsaa.
+ [USER] C'raad t'ou beaghey? [BOT] Ta mee beaghey ayns Purt ny Hinshey.
+ [USER] C'raad t'ou beaghey? [BOT] Ta mee beaghey ayns Balley Chashtal.
+ [USER] Mie lhiat Laksaa? [BOT] S'mie lhiam Laksaa.
+ [USER] Mie lhiat Purt Çhiarn? [BOT] S'mie lhiam Purt Çhiarn.
+ [USER] Vel oo cummal ayns Doolish? [BOT] Cha nel. Cha nel mee cummal ayns Doolish.
+ [USER] Vel oo cummal ayns Doolish? [BOT] Ta, ta mee cummal ayns Doolish.
+ [USER] Vel oo cummal ayns Purt ny Hinshey? [BOT] Cha nel. Cha nel mee cummal ayns Purt ny Hinshey.
+ [USER] Vel oo cummal ayns Purt ny Hinshey? [BOT] Ta, ta mee cummal ayns Purt ny Hinshey.
+ [USER] Vel oo cummal ayns Rhumsaa? [BOT] Cha nel. Cha nel mee cummal ayns Rhumsaa.
+ [USER] Vel oo cummal ayns Rhumsaa? [BOT] Ta, ta mee cummal ayns Rhumsaa.
+ [USER] Vel oo cummal ayns Rhumsaa? [BOT] Cha nel mee cummal ayns Rhumsaa.
+ [USER] Vel oo cummal ayns Purt Çhiarn? [BOT] Ta, ta mee cummal ayns Purt Çhiarn.
+ [USER] Vel oo cummal ayns Purt Çhiarn? [BOT] Cha nel mee cummal ayns Purt Çhiarn.
+ [USER] Vel oo cummal ayns Laksaa? [BOT] Cha nel mee cummal ayns Laksaa.
+ [USER] Vel oo cummal ayns Laksaa? [BOT] Ta, ta mee cummal ayns Laksaa.
+ [USER] Vel oo cummal ayns Balley Chashtal? [BOT] Ta, ta mee cummal ayns Balley Chastal.
+ [USER] Vel oo cummal ayns Balley Chashtal? [BOT] Cha nel, cha nel mee cummal ayns Balley Chashtal.
+ [USER] C'raad t'ou cummal? [BOT] Ta mee cummal ayns Ellan Vannin.
+ [USER] C'raad t'ou cummal? [BOT] Ta mee cummal ayns Sostyn.
+ [USER] Vel oo shappal moghrey jiu? [BOT] Ta, ta mee shappal moghrey jiu.
+ [USER] Vel oo shappal moghrey jiu? [BOT] Ta, ta mee shappal moghrey jiu. Ta mee shappal ayns Laksaa.
+ [USER] Vel oo shappal moghrey jiu? [BOT] Cha nel mee shappal jiu son cha mie lhiam shappal.
  Cha mie lhiam shappal agh ta mee shappal ayns Doolish jiu.
- Laik lhiat shappal?
- S'laik lhiam shappal.
- Cha laik lhiam shappal.
- Laik lhiat snaue?
- S'laik lhiam snaue.
- Cha laik lhiam snaue.
- Mie lhiat shappal?
- S'mie lhiam shappal.
- Cha mie lhiam shappal.
- Mie lhiat shooyl?
- S'mie lhiam shooyl.
- Cha mie lhiam shooyl.
- Mie lhiat roie?
- S'mie lhiam roie.
- Cha mie lhiam roie.
- Mie lhiat snaue?
- S'mie lhiam snaue.
- Cha mie lhiam snaue.
- Mie lhiat shappal?
- S'mie lhiat shappal.
- Cha mie lhiat shappal.
- Mie lhiat gynsagh Gaelg?
- S'mie lhiam gynsagh Gaelg.
- Cha mie lhiam gynsagh Gaelg.
- Mie lhiat cloie bluckan coshey?
- S'mie lhiam cloie bluckan coshey.
- Mie lhiat gobbragh?
- Cha mie lhiam gobbragh.
- Mie lhiat giu feeyn?
- S'mie lhiam giu feeyn.
- Mie lhiat gee curry?
- S'mie lhiam gee curry.
+ [USER] Laik lhiat shappal? [BOT] S'laik lhiam shappal.
+ [USER] Laik lhiat shappal? [BOT] Cha laik lhiam shappal.
+ [USER] Laik lhiat snaue? [BOT] S'laik lhiam snaue.
+ [USER] Laik lhiat snaue? [BOT] Cha laik lhiam snaue.
+ [USER] Mie lhiat shappal? [BOT] S'mie lhiam shappal.
+ [USER] Mie lhiat shappal? [BOT] Cha mie lhiam shappal.
+ [USER] Mie lhiat shooyl? [BOT] S'mie lhiam shooyl.
+ [USER] Mie lhiat shooyl? [BOT] Cha mie lhiam shooyl.
+ [USER] Mie lhiat roie? [BOT] S'mie lhiam roie.
+ [USER] Mie lhiat roie? [BOT] Cha mie lhiam roie.
+ [USER] Mie lhiat snaue? [BOT] Mie lhiat snaue? [BOT] S'mie lhiam snaue.
+ [USER] Mie lhiat snaue? [BOT] Cha mie lhiam snaue.
+ [USER] Mie lhiat gynsagh Gaelg? [BOT] S'mie lhiam gynsagh Gaelg.
+ [USER] Mie lhiat gynsagh Gaelg? [BOT] Cha mie lhiam gynsagh Gaelg.
+ [USER] Mie lhiat cloie bluckan coshey? [BOT] S'mie lhiam cloie bluckan coshey.
+ [USER] Mie lhiat cloie bluckan coshey? [BOT] Cha mie lhiam cloie bluckan coshey.
+ [USER] Mie lhiat gobbragh? [BOT] Cha mie lhiam gobbragh.
+ [USER] Mie lhiat gobbragh? [BOT] S'mie lhiam gobbragh.
+ [USER] Mie lhiat giu feeyn? [BOT] S'mie lhiam giu feeyn.
+ [USER] Mie lhiat giu feeyn? [BOT] Cha mie lhiam giu feeyn.
+ [USER] Mie lhiat gee curry? [BOT] S'mie lhiam gee curry.
+ [USER] Mie lhiat gee curry? [BOT] Cha mie lhiam gee curry.
  Ta mee laccal beaghey ayns Balley Chashtal son ta mee gobbragh ayns Balley Chashtal.
  Cha nel mee laccal beaghey ayns Doolish son ta mee gobbragh ayns Balley Chashtal.
  Ta mee laccal beaghey ayns Purt ny Hinshey son s'laik lhiam Purt ny Hinshey.
- Ta mee gobbragh ayns Laksaa.
- Ta mee gobbragh ayns Laksaa, agh cha nel mee laccal beaghey ayns Laksaa.
- Ta mee gobbragh ayns Doolish, agh cha nel mee laccal beaghey ayns Doolish. Ta mee laccal beaghey ayns Balley Chastal.
- Kys t'an emshyr jiu?
- T'an emshyr braew jiu. 
- Moghrey mie. Kys t'an emshyr jiu?
- T'eh feayr jiu.
- Fastyr mie! Kys t'an emshyr jiu?
- T'eh fliugh jiu.
- Moghrey mie! Kys t'an emshyr jiu?
- T'eh geayagh.
- Kys t'an emshyr jiu?
- T'eh çheh.
- Kys t'an emshyr jiu?
- T'eh çhirrym.
- Fastyr mie. Kys t'an emshyr jiu?
- T'eh ceau fliaghey.
- Kys t'an emshyr jiu?
- T'eh ceau sniaghtey.
- Kys t'an emshyr jiu?
- T'eh ceau sniaghtey garro.
- Moghrey mie. Kys t'ou?
- Ta mee braew, gura mie ayd, agh cha nel yn emshyr feer vie. T'eh bodjallagh jiu.
- T'eh feayr jiu. S'mie lhiam yn çhass as cha mie lhiam yn emshyr ayns Mannin.
- Cha row t'an emshyr olk jea agh t'eh olk jiu.
- T'eh feayr as ceau fliaghey.
- T'an emshyr braew jiu. T'eh çhirrym as geayagh.
- T'an emshyr aalin jiu. T'eh çheh as geayagh.
- T'an emshyr yindyssagh jiu. T'eh geayagh jiu.
- Kys t'an emshyr ayns Sostyn jiu?
- T'eh ceau fliaghey ayns Sostyn jiu.
- Kys t'an emshyr ayns Mannin jiu?
- T'eh bodjallagh jiu.
- Kys t'an emshyr ayns Nerin jiu?
- T'an emshyr braew ayns Nerin jiu.
- Kys t'an emshyr ayns Nalbin jiu?
- T'eh ceau sniaghtey jiu.
+ [USER] C'raad t'ou gobbragh? [BOT] Ta mee gobbragh ayns Laksaa.
+ [USER] C'raad t'ou gobbragh? [BOT] Ta mee gobbragh ayns Doolish.
+ [USER] C'raad t'ou gobbragh? [BOT] Ta mee gobbragh ayns Rhumsaa.
+ [USER] C'raad t'ou gobbragh? [BOT] Ta mee gobbragh ayns Purt ny Hinshey.
+ [USER] C'raad t'ou gobbragh? [BOT] Ta mee gobbragh ayns Laksaa, agh cha nel mee laccal beaghey ayns Laksaa.
+ [USER] C'raad t'ou gobbragh? [BOT] Ta mee gobbragh ayns Doolish, agh cha nel mee laccal beaghey ayns Doolish. Ta mee laccal beaghey ayns Balley Chastal.
+ [USER] Moghrey mie! Kys t'an emshyr jiu? [BOT] T'an emshyr braew jiu.
+ [USER] Kys t'an emshyr jiu? [BOT] T'an emshyr braew jiu. 
+ [USER] Moghrey mie. Kys t'an emshyr jiu? [BOT] T'eh feayr jiu.
+ [USER] Fastyr mie! Kys t'an emshyr jiu? [BOT] T'eh feayr jiu.
+ [USER] Fastyr mie! Kys t'an emshyr jiu? [BOT] T'eh fliugh jiu.
+ [USER] Moghrey mie! Kys t'an emshyr jiu? [BOT] T'eh fliugh jiu.
+ [USER] Moghrey mie! Kys t'an emshyr jiu? [BOT] T'eh geayagh.
+ [USER] Kys t'an emshyr jiu? [BOT] T'eh geayagh.
+ [USER] Moghrey mie! Kys t'an emshyr jiu? [BOT] T'eh çheh.
+ [USER] Kys t'an emshyr jiu? [BOT] T'eh çhirrym jiu.
+ [USER] Moghrey mie! Kys t'an emshyr jiu? [BOT] T'eh çhirrym.
+ [USER] Fastyr mie. Kys t'an emshyr jiu? [BOT] T'eh ceau fliaghey.
+ [USER] Kys t'an emshyr jiu? [BOT] T'eh ceau fliaghey.
+ [USER] Kys t'an emshyr jiu? [BOT] T'eh ceau sniaghtey.
+ [USER] Fastyr mie. Kys t'an emshyr jiu? [BOT] T'eh ceau sniaghtey.
+ [USER] Kys t'an emshyr jiu? [BOT] T'eh ceau sniaghtey garro.
+ [USER] Moghrye mie! Kys t'an emshyr jiu? [BOT] T'eh ceau sniaghtey garro.
+ [USER] Moghrey mie. Kys t'ou? [BOT] Ta mee braew, gura mie ayd, agh cha nel yn emshyr feer vie. T'eh ceau fliaghey jiu.
+ [USER] Moghrey mie. Kys t'ou? [BOT] Ta mee braew, gura mie ayd, agh cha nel yn emshyr feer vie. T'eh bodjallagh jiu.
+ [USER] Kys t'an emshyr jiu? [BOT] T'eh feayr jiu. S'mie lhiam yn çhass as cha mie lhiam yn emshyr ayns Mannin.
+ [USER] Kys t'an emshyr jiu? [BOT] Cha row t'an emshyr olk jea agh t'eh olk jiu.
+ [USER] Kys t'an emshyr jiu? [BOT] T'eh feayr as ceau fliaghey.
+ [USER] Kys t'an emshyr jiu? [BOT] T'an emshyr braew jiu. T'eh çhirrym as geayagh.
+ [USER] Kys t'an emshyr jiu? [BOT] T'an emshyr aalin jiu. T'eh çheh as geayagh.
+ [USER] Kys t'an emshyr jiu? [BOT] T'an emshyr yindyssagh jiu. T'eh geayagh jiu.
+ [USER] Kys t'an emshyr ayns Sostyn jiu? [BOT] T'eh çhirrym as geayagh.
+ [USER] Kys t'an emshyr ayns Sostyn jiu? [BOT] T'eh ceau fliaghey ayns Sostyn jiu.
+ [USER] Kys t'an emshyr ayns Mannin jiu? [BOT] T'an emshyr aalin jiu. T'eh çheh as geayagh.
+ [USER] Kys t'an emshyr ayns Mannin jiu? [BOT] T'eh bodjallagh jiu.
+ [USER] Kys t'an emshyr ayns Nerin jiu? [BOT] T'eh feayr as ceau fliaghey.
+ [USER] Kys t'an emshyr ayns Nerin jiu? [BOT] T'an emshyr braew ayns Nerin jiu.
+ [USER] Kys t'an emshyr ayns Nalbin jiu? [BOT] T'eh feayr jiu.
+ [USER] Kys t'an emshyr ayns Nalbin jiu? [BOT] T'eh ceau sniaghtey jiu.
  Cred t'ou jannoo dagh laa?
  Cre gollrish yn emshyr jiu?
  T'eh fliugh ayns Mannin.
