@@ -98,9 +98,13 @@ print("...")
 # Modified: Include start and stop tokens in vocabulary
 start_token = "[SOS]"
 stop_token = "[EOS]"
+user_token = "[USER]"
+bot_token = "[BOT]"
 final_vocab_list = sorted(list(set(vocab)))
 final_vocab_list.append(start_token)
 final_vocab_list.append(stop_token)
+final_vocab_list.append(user_token)
+final_vocab_list.append(bot_token)
 stoi = {s: i for i, s in enumerate(final_vocab_list)}
 itos = {i: s for s, i in stoi.items()}
 vocab_size = len(stoi)
@@ -136,10 +140,19 @@ def bpe_encode_word(word):
 
 def encode(text):
     ids = []
+    # Ensure user_token and bot_token are defined within this scope for direct use
+    user_token_id_local = stoi[user_token]
+    bot_token_id_local = stoi[bot_token]
+
     for word in text.split(" "):
-        for token in bpe_encode_word(word):
-            if token in stoi:
-                ids.append(stoi[token])
+        if word == user_token:
+            ids.append(user_token_id_local)
+        elif word == bot_token:
+            ids.append(bot_token_id_local)
+        else:
+            for token in bpe_encode_word(word):
+                if token in stoi:
+                    ids.append(stoi[token])
     return ids
 
 def decode(indices):
@@ -228,9 +241,12 @@ class TinyTransformer(nn.Module):
 
 # Training
 data = []
-# Modified: Get id for the start and stop tokens and append/prepend to each line in the corpus
+# Modified: Get id for all special tokens and append/prepend to each line in the corpus
 sos_token_id = stoi[start_token]
 eos_token_id = stoi[stop_token]
+# Get ids for the new conversational tokens
+user_token_id = stoi[user_token]
+bot_token_id = stoi[bot_token]
 
 for line in corpus:
     encoded_line = encode(line)
@@ -271,6 +287,10 @@ def generate(model, start, max_new_tokens=30, temperature=0.8, top_k=None, top_p
     # Modified: Start with the start token followed by the encoded prompt
     sos_token_id = stoi[start_token]
     eos_token_id = stoi[stop_token]
+    # Get ids for the new conversational tokens
+    user_token_id = stoi[user_token]
+    bot_token_id = stoi[bot_token]
+
     start_ids = [sos_token_id] + encode(start)
     idx = torch.tensor([start_ids], dtype=torch.long)
 
@@ -316,8 +336,8 @@ def generate(model, start, max_new_tokens=30, temperature=0.8, top_k=None, top_p
         idx = torch.cat((idx, next_id), dim=1)
         generated_tokens.append(next_id.item()) # Store generated tokens
 
-    # Decode generated tokens (excluding the start and stop token if present)
-    generated_indices = [i for i in generated_tokens if i != sos_token_id and i != eos_token_id]
+    # Decode generated tokens (excluding the start, stop, user and bot tokens if present)
+    generated_indices = [i for i in generated_tokens if i != sos_token_id and i != eos_token_id and i != user_token_id and i != bot_token_id]
     return decode(generated_indices)
 
 # Gradio interface
@@ -344,5 +364,3 @@ iface = gr.Interface(
 
 print("\n--- Launching Gradio Interface ---")
 iface.launch(share=True)
-
-
