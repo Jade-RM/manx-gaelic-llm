@@ -312,14 +312,40 @@
  Cha nel mee laccal cloie kiaull.
  Ta mee laccal lhiah lioar.
  Cha nel mee laccal lhiah lioar.
- T'ou cloie kiaull.
  Ta mee roie.
+ Ta mee shooyl.
+ Ta mee cloie bluckan coshey.
+ Ta mee lhaih.
+ Ta mee gynsagh çhengaghyn.
+ Ta mee gynsagh Gaelg.
+ Ta mee shappal.
+ Ta mee jeeaghyn er y chellveeish.
+ Cha nel mee roie.
+ Cha nel mee shooyl.
+ Cha nel mee cloie bluckan coshey.
+ Cha nel mee lhaih.
+ Cha nel mee gynsagh çhengaghyn.
+ Cha nel mee gynsagh Gaelg.
+ Cha nel mee shappal.
+ Cha nel mee jeeaghyn er y chellveeish.
  T'ou roie.
  T'ou shooyl.
  T'ou cloie bluckan coshey.
  T'ou lhaih.
  T'ou gynsagh çhengaghyn.
  T'ou gynsagh Gaelg.
+ T'ou shappal.
+ T'ou jeeaghyn er y chellveeish.
+ T'ou cloie kiaull.
+ Cha nel oo roie.
+ Cha nel oo shooyl.
+ Cha nel oo cloie bluckan coshey.
+ Cha nel oo lhaih.
+ Cha nel oo gynsagh çhengaghyn.
+ Cha nel oo gynsagh Gaelg.
+ Cha nel oo shappal.
+ Cha nel oo jeeaghyn er y chellveeish.
+ Cha nel oo cloie kiaull.
  T'eh lhaih.
  T'eh roie.
  T'eh shooyl.
@@ -327,6 +353,20 @@
  T'eh snaue.
  T'eh gynsagh çhengaghyn.
  T'eh gynsagh Gaelg.
+ T'eh shappal.
+ T'eh jeeaghyn er y chellveeish.
+ T'eh cloie kiaull.
+ Cha nel eh lhaih.
+ Cha nel eh roie.
+ Cha nel eh shooyl.
+ Cha nel eh cloie bluckan coshey.
+ Cha nel eh snaue.
+ Cha nel eh gynsagh çhengaghyn.
+ Cha nel eh gynsagh Gaelg.
+ Cha nel eh shappal.
+ Cha nel eh jeeaghyn er y chellveeish.
+ Cha nel eh cloie kiaull.
+ T'ee cloie kiaull.
  T'ee lhiah.
  T'ee lhaih lioar.
  T'ee roie.
@@ -335,6 +375,20 @@
  T'ee snaue.
  T'ee gynsagh çhengaghyn.
  T'ee gynsagh Gaelg.
+ T'ee shappal.
+ T'ee jeeaghyn er y chellveeish.
+ Cha nel ee cloie kiaull.
+ Cha nel ee lhiah.
+ Cha nel ee lhaih lioar.
+ Cha nel ee roie.
+ Cha nel ee shooyl.
+ Cha nel ee cloie bluckan coshey.
+ Cha nel ee snaue.
+ Cha nel ee gynsagh çhengaghyn.
+ Cha nel ee gynsagh Gaelg.
+ Cha nel ee shappal.
+ Cha nel ee jeeaghyn er y chellveeish.
+ Ta shin cloie kiaull.
  Ta shin gynsagh çhengaghyn.
  Ta shin gynsagh Gaelg.
  Ta shin lhiah.
@@ -344,6 +398,21 @@
  Ta shin snaue.
  Ta shin gynsagh çhengaghyn.
  Ta shin gynsagh Gaelg.
+ Ta shin shappal.
+ Cha nel shin jeeaghyn er y chellveeish.
+ Cha nel shin cloie kiaull.
+ Cha nel shin gynsagh çhengaghyn.
+ Cha nel shin gynsagh Gaelg.
+ Cha nel shin lhiah.
+ Cha nel shin roie.
+ Cha nel shin shooyl.
+ Cha nel shin cloie bluckan coshey.
+ Cha nel shin snaue.
+ Cha nel shin gynsagh çhengaghyn.
+ Cha nel shin gynsagh Gaelg.
+ Cha nel shin shappal.
+ Cha nel shin jeeaghyn er y chellveeish.
+ Ta shiu cloie kiaull.
  Ta shiu lhiah.
  Ta shiu roie.
  Ta shiu shooyl.
@@ -351,6 +420,19 @@
  Ta shiu snaue.
  Ta shiu gynsagh çhengaghyn.
  Ta shiu gynsagh Gaelg.
+ Ta shiu shappal.
+ Ta shiu jeeaghyn er y chellveeish.
+ Cha nel shiu cloie kiaull.
+ Cha nel shiu lhiah.
+ Cha nel shiu roie.
+ Cha nel shiu shooyl.
+ Cha nel shiu cloie bluckan coshey.
+ Cha nel shiu snaue.
+ Cha nel shiu gynsagh çhengaghyn.
+ Cha nel shiu gynsagh Gaelg.
+ Cha nel shiu shappal.
+ Cha nel shiu jeeaghyn er y chellveeish.
+ T'ad cloie kiaull.
  T'ad snaue.
  T'ad lhiah.
  T'ad roie.
@@ -358,6 +440,18 @@
  T'ad cloie bluckan coshey.
  T'ad gynsagh çhengaghyn.
  T'ad gynsagh Gaelg.
+ T'ad shappal.
+ T'ad jeeaghyn er y chellveeish.
+ Cha nel ad cloie kiaull.
+ Cha nel ad snaue.
+ Cha nel ad lhiah.
+ Cha nel ad roie.
+ Cha nel ad shooyl.
+ Cha nel ad cloie bluckan coshey.
+ Cha nel ad gynsagh çhengaghyn.
+ Cha nel ad gynsagh Gaelg.
+ Cha nel ad shappal.
+ Cha nel ad jeeaghyn er y chellveeish.
  C’raad t’ou?
  Ta mee ayns shoh.
  T’ou ayns shen.
@@ -1066,7 +1160,7 @@
  Cha bare lhiat gee peetsey.
  Cha bare lesh goll magh.
  Cha bare lhee giu feeyn jiarg.
- Cha bare lhien jeeagyhn er y chellveeish.
+ Cha bare lhien jeeaghyn er y chellveeish.
  Cha bare lhiu cloie gitar.
  Cha bare lhieu goll dys y thie-bee.
  Cha bare lesh Juan gee arran.
