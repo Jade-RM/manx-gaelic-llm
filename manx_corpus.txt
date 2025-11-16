@@ -221,109 +221,132 @@
  [USER] Kys t'an emshyr ayns Nerin jiu? [BOT] T'an emshyr braew ayns Nerin jiu.
  [USER] Kys t'an emshyr ayns Nalbin jiu? [BOT] T'eh feayr jiu.
  [USER] Kys t'an emshyr ayns Nalbin jiu? [BOT] T'eh ceau sniaghtey jiu.
- Cred t'ou jannoo dagh laa?
- Cre gollrish yn emshyr jiu?
- T'eh fliugh ayns Mannin.
- T'eh ceau fliaghey ayns Sostyn.
- Vel oo beaghey ayns Doolish?
- Vel oo gobbragh ayns Doolish?
- Cha nel mee beaghey ayns Doolish. Ta mee beaghey ayns Purt le Moirrey.
- Ta mee cummal ayns Doolish.
- Cha nel mee cummal ayns Doolish.
- C'raad voish t'ou?
- Ta mee voish Mannin.
-  C'raad voish t'ou?
- Ta mee voish Sostyn.
-  C'raad voish t'ou?
- Ta mee voish Nalbin.
-  C'raad voish t'ou?
- Ta mee voish Nerin.
-  C'raad voish t'ou?
- Ta mee voish Bretyn.
- C'raad voish t'eh?
- T'eh voish Mannin.
- C'raad voish t'ee?
- T'ee voish Sostyn.
- C'raad voish ta shin?
- Ta shin voish Nalbin.
- C'raad voish ta shiu?
- Ta shiu voish Nerin.
- C'raad voish t'ad?
- T'ad voish Bretyn.
- C'raad voish t'ad?
- T'ad voish Mannin.
- Ta shin voish Sostyn.
- Vel Gaelg ayd?
- Ta. Ta Gaelg aym.
- Vel Baarle ayd?
- Ta. Ta Baarle as Gaelg ayd.
- C'red s'mie lhiat jannoo?
- S'mie lhiam roie.
- C'red s'mie lhiat jannoo?
- S'mie lhiam lhaih.
- C'red s'mie lhiat jannoo?
- S'mie lhiam gynsagh çhengaghyn.
- C'red s'mie lhiat jannoo?
- S'mie lhiam snaue.
- C'red s'laik lhiat jannoo?
- S'laik lhiam gee caashey.
- C'red s'laik lhiat jannoo?
- S'laik lhiat giu caffee.
- C'red s'laik lesh jannoo?
- S'laik lesh giu feeyn.
- C'red s'laik lhee jannoo?
- S'laik lhee cloie gitar.
- Cha laik lhiam giu feeyn.
- Cha laik lhiat cloie gitar.
- Cha laik lesh snaue.
- Cha laik lhee roie.
- S'laik lhien roie.
- S'laik lhiu giu tey.
- S'laik lhieu giu tey.
- S'laik lesh Juan giu caffee.
- Cha laik lhien lhiah.
- Cha laik lhiu gee ooylyn.
- Cha laik lhieu gobbragh.
- Cha laik lesh Brian gee pishy.
- Laik lhiam snaue?
- Cha laik lhiam snaue.
- Laik lhiat cloie bluckan coshey?
- Cha laik lhiat cloie bluckan coshey.
- Laik lesh giu lhune?
- S'laik lesh giu lhune.
- Laik lhee moddee?
- S'laik lhee moddee.
- Nagh laik lhiam kiyt?
- Nagh laik lhiat conningyn?
- Nagh laik lesh praaseyn?
- Nagh laik lhee gobbragh?
- Laik lhien gobbragh?
- Cha laik lhien gobbragh.
- Laik lhiu gynsagh çhengaghyn?
- S'laik lhiu gynsagh çhengaghyn.
- Laik lhieu cloie kiaull?
- S'laik lhieu cloie kiuall.
- Laik lesh Moirrey shappal?
- Cha laik lhee shappal.
- Nagh laik lhien peetsey?
- Nagh laik lhiu peearyn?
- Nagh laik lhieu gynsagh çhengaghyn?
- Nagh laik lesh Paayl cloie feeal?
- S'laik lesh cloie feeal.
- Ta mee laccal cadley.
- Cha nel mee laccal cadley.
- Ta mee laccal cloie kiaull.
- Cha nel mee laccal cloie kiaull.
- Ta mee laccal lhiah lioar.
- Cha nel mee laccal lhiah lioar.
- Ta mee roie.
- Ta mee shooyl.
- Ta mee cloie bluckan coshey.
- Ta mee lhaih.
- Ta mee gynsagh çhengaghyn.
- Ta mee gynsagh Gaelg.
- Ta mee shappal.
- Ta mee jeeaghyn er y chellveeish.
+ [USER] Cred t'ou jannoo dagh laa? [BOT] Ta mee gobbragh dagh laa.
+ [USER] Cred t'ou jannoo dagh laa? [BOT] Ta mee gynsagh Gaelg dagh laa.
+ [USER] Cred t'ou jannoo dagh laa? [BOT] Ta mee roie dagh laa.
+ [USER] Cred t'ou jannoo dagh laa? [BOT] Ta mee snaue dagh laa.
+ [USER] Cred t'ou jannoo dagh laa? [BOT] Ta mee cloie gitar dagh laa.
+ [USER] Cred t'ou jannoo dagh laa? [BOT] Ta mee lhiah lioar dagh laa.
+ [USER] Cre gollrish yn emshyr jiu? [BOT] T'eh fliugh ayns Mannin.
+ [USER] Cre gollrish yn emshyr jiu? [BOT] T'eh ceau fliaghey ayns Sostyn.
+ [USER] Cre gollrish yn emshyr jiu? [BOT] T'an emshyr braew jiu.
+ [USER] Cre gollrish yn emshyr jiu? [BOT] T'an emshyr aalin jiu.
+ [USER] Cre gollrish yn emshyr jiu? [BOT] T'eh bodjallagh jiu.
+ [USER] Cre gollrish yn emshyr jiu? [BOT] T'eh geayagh jiu.
+ [USER] Cre gollrish yn emshyr jiu? [BOT] T'eh ceau fliaghey jiu.
+ [USER] Vel oo beaghey ayns Doolish? [BOT] Cha nel mee beaghey ayns Doolish. Ta mee beaghey ayns Purt le Moirrey.
+ [USER] Vel oo gobbragh ayns Doolish? [BOT] Cha nel mee gobbragh ayns Doolish. Ta mee gobbragh ayns Purt le Moirrey.
+ [USER] Vel oo beaghey ayns Rhumsaa? [BOT] Cha nel mee beaghey ayns Rhumsaa. Ta mee beaghey ayns Purt ny Hinshey.
+ [USER] Vel oo gobbragh ayns Rhumsaa? [BOT] Cha nel mee gobbragh ayns Rhumsaa. Ta mee gobbragh ayns Purt ny Hinshey.
+ [USER] Vel oo beaghey ayns Laksaa? [BOT] Cha nel mee beaghey ayns Laksaa. Ta mee beaghey ayns Purt le Moirrey.
+ [USER] Vel oo gobbragh ayns Laksaa? [BOT] Cha nel mee gobbragh ayns Laksaa. Ta mee gobbragh ayns Purt le Moirrey.
+ [USER] Vel oo beaghey ayns Doolish? [BOT] Cha nel mee beaghey ayns Doolish. Ta mee beaghey ayns Rhumsaa.
+ [USER] Vel oo gobbragh ayns Doolish? [BOT] Cha nel mee gobbragh ayns Doolish. Ta mee gobbragh ayns Rhumsaa.
+ [USER] Vel oo beaghey ayns Laksaa? [BOT] Cha nel mee beaghey ayns Laksaa. Ta mee beaghey ayns Balley Chashtal.
+ [USER] Vel oo gobbragh ayns Laksaa? [BOT] Cha nel mee gobbragh ayns Laksaa. Ta mee gobbragh ayns Balley Chashtal.
+ [USER] Vel oo beaghey ayns Balley Chashtal? [BOT] Cha nel mee beaghey ayns Balley Chastal. Ta mee beaghey ayns Laksaa.
+ [USER] Vel oo gobbragh ayns Balley Chastal? [BOT] Cha nel mee gobbragh ayns Balley Chastal. Ta mee gobbragh ayns Laksaa.
+ [USER] C'raad voish t'ou? [BOT] Ta mee voish Mannin.
+ [USER] C'raad voish t'ou? [BOT] Ta mee voish Sostyn.
+ [USER] C'raad voish t'ou? [BOT] Ta mee voish Nalbin.
+ [USER] C'raad voish t'ou? [BOT] Ta mee voish Nerin.
+ [USER] C'raad voish t'ou? [BOT] Ta mee voish Bretyn.
+ [USER] C'raad voish t'eh? [BOT] T'eh voish Mannin.
+ [USER] C'raad voish t'ee? [BOT] T'ee voish Sostyn.
+ [USER] C'raad voish ta shin? [BOT} Ta shin voish Nalbin.
+ [USER] C'raad voish ta shiu? [BOT] Ta shiu voish Nerin.
+ [USER] C'raad voish t'ad? [BOT] T'ad voish Bretyn.
+ [USER] C'raad voish t'ad? [BOT] T'ad voish Mannin.
+ [USER] C'raad voish ta shin? [BOT] Ta shin voish Sostyn.
+ [USER] Vel Gaelg ayd? [BOT] Ta. Ta Gaelg aym.
+ [USER] Vel Baarle ayd? [BOT] Cha nel. Cha nel Baarle aym. Ta Gaelg aym.
+ [USER] Vel Baarle ayd? [BOT] Cha nel. Cha nel Baarle aym.
+ [USER] Vel Germaanish ayd? [BOT] Cha nel. Cha nel Germaanish aym.
+ [USER] Vel Sheenish ayd? [BOT] Cha nel. Cha nel Sheenish aym.
+ [USER] Vel Yernish ayd? [BOT] Cha nel. Cha nel Yernish aym.
+ [USER] Vel Gaelg ny Halbey ayd? [BOT] Cha nel. Cha nel Gaelg ny Halbey aym.
+ [USER] Vel Bretnish ayd? [BOT] Cha nel. Cha nel Bretnish aym.
+ [USER] Vel Britaanish ayd? [BOT] Cha nel. Cha nel Britaanish aym.
+ [USER] C'red mie lhiat jannoo? [BOT] S'mie lhiam roie.
+ [USER] C'red mie lhiat jannoo? [BOT] S'mie lhiam lhaih.
+ [USER] C'red mie lhiat jannoo? [BOT] S'mie lhiam lhaih lioar.
+ [USER] C'red mie lhiat jannoo? [BOT] S'mie lhiam shappal.
+ [USER] C'red mie lhiat jannoo? [BOT] S'mie lhiam shooyl.
+ [USER] C'red mie lhiat jannoo? [BOT] S'mie lhiam jeeaghyn er y chellveeish.
+ [USER] C'red mie lhiat jannoo? [BOT] S'mie lhiam cloie gitar.
+ [USER] C'red mie lhiat jannoo? [BOT] S'mie lhiam goll dys y thie-fillym.
+ [USER] C'red mie lhiat jannoo? [BOT] S'mie lhiam cloie kiaull.
+ [USER] C'red mie lhiat jannoo? [BOT] S'mie lhiam cloie bluckan coshey.
+ [USER] C'red mie lhiat jannoo? [BOT] S'mie lhiam gobbragh.
+ [USER] C'red mie lhiat jannoo? [BOT] S'mie lhiam gynsagh çhengaghyn.
+ [USER] C'red mie lhiat jannoo? [BOT] S'mie lhiam snaue.
+ [USER] C'red laik lhiat jannoo? [BOT] S'laik lhiam gee caashey.
+ [USER] C'red laik lhiat jannoo? [BOT] S'laik lhiat giu caffee.
+ [USER] C'red laik lesh jannoo? [BOT] S'laik lesh giu feeyn.
+ [USER] C'red laik lhee jannoo? [BOT] S'laik lhee cloie gitar.
+ [USER] Laik lhiat giu feeyn? [BOT] Cha laik lhiam giu feeyn.
+ [USER] Nagh laik lhiam cloie gitar? [BOT] Cha laik lhiat cloie gitar.
+ [USER] Laik lesh snaue? [BOT] Cha laik lesh snaue.
+ [USER] Laik lhee roie? [BOT] Cha laik lhee roie.
+ [USER] Laik lhiu roie? [BOT] S'laik lhien roie.
+ [USER] Nagh laik lhien giu tey? [BOT] S'laik lhiu giu tey.
+ [USER] Laik lhieu giu tey? [BOT] S'laik lhieu giu tey.
+ [USER] Laik lesh Juan giu caffee? [BOT] S'laik lesh Juan giu caffee.
+ [USER] Laik lhiu lhiah? [BOT] Cha laik lhien lhiah.
+ [USER] Nagh laik lhien gee ooylyn? [BOT] Cha laik lhiu gee ooylyn.
+ [USER] Laik lhieu gobbragh? [BOT] Cha laik lhieu gobbragh.
+ [USER] Laik lesh Brian gee pishy? [BOT] Cha laik lesh Brian gee pishy.
+ [USER] Laik lhiam snaue? [BOT] S'laik lhiat snaue.
+ [USER] Laik lhiat snaue? [BOT] Cha laik lhiam snaue.
+ [USER] Laik lhiat cloie bluckan coshey? [BOT] S'laik lhiam cloie bluckan coshey.
+ [USER] Laik lhiat cloie bluckan coshey? [BOT] Cha laik lhiat cloie bluckan coshey.
+ [USER] Laik lesh giu lhune? [BOT] Cha laik lesh giu lhune.
+ [USER] Laik lesh giu lhune? [BOT] S'laik lesh giu lhune.
+ [USER] Laik lhee moddee? [BOT] Cha laik lhee moddee.
+ [USER] Laik lhee moddee? [BOT] S'laik lhee moddee.
+ [USER] Nagh laik lhiam kiyt? [BOT] S'laik lhiat kiyt.
+ [USER] Nagh laik lhiat conningyn? [BOT] S'laik lhiam conningyn.
+ [USER] Nagh laik lesh praaseyn? [BOT] S'laik lesh praaseyn.
+ [USER] Nagh laik lhee gobbragh? [BOT] S'laik lhee gobbragh.
+ [USER] Laik lhien gobbragh? [BOT] S'laik lhiu gobbragh.
+ [USER] Laik lhiu gobbragh? [BOT] Cha laik lhien gobbragh.
+ [USER] Laik lhiu gynsagh çhengaghyn? [BOT] S'laik lhien gynsagh çhengaghyn.
+ [USER] Laik lhien gynsagh çhengaghyn? [BOT] S'laik lhiu gynsagh çhengaghyn.
+ [USER] Laik lhieu cloie kiaull? [BOT] Cha laik lhieu cloie kiaull.
+ [USER] Laik lhieu cloie kiaull? [BOT] S'laik lhieu cloie kiuall.
+ [USER] Laik lesh Moirrey shappal? [BOT] S'laik lhee shappal.
+ [USER] Laik lesh Moirrey shappal? [BOT] Cha laik lhee shappal.
+ [USER] Nagh laik lhien peetsey? [BOT] S'laik lhiu peetsey.
+ [USER] Nagh laik lhiu peearyn? [BOT] Cha laik lhien peetsey.
+ [USER] Nagh laik lhieu gynsagh çhengaghyn? [BOT] [BOT] S'laik lhieu gynsagh çhengaghyn.
+ [USER] Nagh laik lesh Paayl cloie feeal? [BOT] Cha laik lesh cloie feeal.
+ [USER] Nagh laik lesh Paayl cloie feeal? [BOT] S'laik lesh cloie feeal.
+ [USER] Vel oo laccal cadley? [BOT] Ta. Ta mee laccal cadley.
+ [USER] Vel oo laccal cadley? [BOT] Cha nel. Cha nel mee laccal cadley.
+ [USER] Vel oo laccal cloie kiaull? [BOT] Ta. Ta mee laccal cloie kiaull.
+ [USER] Vel oo laccal cloie kiaull? [BOT] Cha nel. Cha nel mee laccal cloie kiaull.
+ [USER] Vel oo laccal lhiah lioar? [BOT] Ta. Ta mee laccal lhiah lioar.
+ [USER] Vel oo laccal lhiah liaor? [BOT] Cha nel. Cha nel mee laccal lhiah lioar.
+ [USER] Vel oo laccal cloie bluckan coshey? [BOT] Ta. Ta mee laccal cloie bluckan coshey.
+ [USER] Vel oo laccal cloie bluckan coshey? [BOT] Cha nel. Cha nel mee laccal cloie bluckan coshey.
+ [USER] Vel oo laccal gynsagh Gaelg? [BOT] Ta. Ta mee laccal gynsagh Gaelg.
+ [USER] Vel oo laccal gynsagh Gaelg? [BOT] Cha nel. Cha nel mee laccal gynsagh Gaelg.
+ [USER] Vel oo laccal cloie feeal? [BOT] Ta. Ta mee laccal cloie feeal.
+ [USER] Vel oo laccal cloie feeal? [BOT] Cha nel. Cha nel mee laccal cloie feeal.
+ [USER] Vel oo laccal goll dys y thie-fillym? [BOT] Ta. Ta mee laccal goll dys y thie-fillym.
+ [USER] Vel oo laccal goll dys y thie-fillym? [BOT] Cha nel. Cha nel mee laccal goll dys y thie-fillym.
+ [USER] Vel oo laccal goll dys y thie-lhionney? [BOT] Ta. Ta mee laccal goll dys y thie-lhionney.
+ [USER] Vel oo laccal goll dys y thie-lhionney [BOT] Cha nel. Cha nel mee laccal goll dys y thie-lhionney.
+ [USER] Vel oo laccal goll dys y thie-bee? [BOT] Ta. Ta mee laccal goll dys y thie-bee.
+ [USER] Vel oo laccal goll dys y thie-bee? [BOT] Cha nel. Cha nel mee laccal goll dys y thie-bee.
+ [USER] C'red t'ou jannoo? [BOT] Ta mee roie.
+ [USER] C'red t'ou jannoo? [BOT] Ta mee shooyl.
+ [USER] C'red t'ou jannoo? [BOT] Ta mee cloie bluckan coshey.
+ [USER] C'red t'ou jannoo? [BOT] Ta mee lhaih.
+ [USER] C'red t'ou jannoo? [BOT] Ta mee gynsagh çhengaghyn.
+ [USER] C'red t'ou jannoo? [BOT] Ta mee gynsagh Gaelg.
+ [USER] C'red t'ou jannoo? [BOT] Ta mee shappal.
+ [USER] C'red t'ou jannoo? [BOT] Ta mee jeeaghyn er y chellveeish.
  Cha nel mee roie.
  Cha nel mee shooyl.
  Cha nel mee cloie bluckan coshey.
@@ -547,30 +570,30 @@
  Cha row mee rieau ayn.
  S'mie lhiam Nerin. T'eh feeu goll.
  Vel baaghyn ayd?
- Vel biggin ayd?
- Ta, ta moddey aym.
- Vel moddey ayd hene?
- Ta kayt aym.
- Vel kayt ayd hene?
- Ta conning aym.
- Vel conning ayd hene?
- Ta cabbyl aym.
- Ta doo-oalee aym.
- Ta kayt doo aym.
- Ta conning bane aym.
- Ta conning doo aym.
- Ta moddey doo aym.
- Ta roddan puissagh aym.
- Ta muc rangagh aym.
- Ta aarnieu aym.
- Ta eeast aym.
- Ta parrad aym.
- Ta jialgheer aym.
- Ta roddan puissagh dhone aym.
- Ta aarnieu glass aym.
- Ta parrad glass as ruy aym.
- Ta jialgheer glass aym.
- Ta cabbyl dhone aym.
+ [USER] Vel biggin ayd? [BOT] Ta moddey aym.
+ [USER] Vel biggin ayd? [BOT] Ta, ta moddey aym.
+ [USER] Vel biggin ayd? [BOT] Ta, ta moddey aym. Vel moddey ayd hene?
+ [USER] Vel biggin ayd? [BOT] Ta kayt aym.
+ [USER] Vel biggin ayd? [BOT] Ta, ta kayt aym. Vel kayt ayd hene?
+ [USER] Vel biggin ayd? [BOT] Ta conning aym.
+ [USER] Vel biggin ayd? [BOT] Ta conning aym. Vel conning ayd hene?
+ [USER] Vel biggin ayd? [BOT] Ta cabbyl aym.
+ [USER] Vel biggin ayd? [BOT] Ta doo-oalee aym.
+ [USER] Vel biggin ayd? [BOT] Ta kayt doo aym.
+ [USER] Vel biggin ayd? [BOT] Ta conning bane aym.
+ [USER] Vel biggin ayd? [BOT] Ta conning doo aym.
+ [USER] Vel biggin ayd? [BOT] Ta moddey doo aym.
+ [USER] Vel biggin ayd? [BOT] Ta roddan puissagh aym.
+ [USER] Vel biggin ayd? [BOT] Ta muc rangagh aym.
+ [USER] Vel biggin ayd? [BOT] Ta aarnieu aym.
+ [USER] Vel biggin ayd? [BOT] Ta eeast aym.
+ [USER] Vel biggin ayd? [BOT] Ta parrad aym.
+ [USER] Vel biggin ayd? [BOT] Ta jialgheer aym.
+ [USER] Vel biggin ayd? [BOT] Ta roddan puissagh dhone aym.
+ [USER] Vel biggin ayd? [BOT] Ta aarnieu glass aym.
+ [USER] Vel biggin ayd? [BOT] Ta parrad glass as ruy aym.
+ [USER] Vel biggin ayd? [BOT] Ta jialgheer glass aym.
+ [USER] Vel biggin ayd? [BOT] Ta cabbyl dhone aym.
  C'red t'ou jannoo jiu?
  Ta mee shappal jiu. C'red t'ou jannoo jiu?
  Ta mee gobbragh jiu. C'red t'ou jannoo fastyr jiu?
