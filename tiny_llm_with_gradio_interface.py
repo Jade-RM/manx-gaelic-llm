@@ -267,7 +267,7 @@ optimizer = optim.AdamW(model.parameters(), lr=5e-4)
 
 print("\n--- Starting model training ---")
 # Increased training steps for larger corpus
-num_training_steps = 20000
+num_training_steps = 25000
 for step in range(num_training_steps):
     xb, yb = get_batch(batch_size=16, block_size=block_size)
     logits, loss = model(xb, yb)
@@ -364,3 +364,4 @@ iface = gr.Interface(
 
 print("\n--- Launching Gradio Interface ---")
 iface.launch(share=True)
+
