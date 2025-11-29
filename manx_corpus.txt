@@ -65,21 +65,21 @@
  [USER] Kys t'ee? [BOT] T'ee corree.
  [USER] Kys t'eh? [BOT] T'eh feer vie.
  [USER] Kys t'ee? [BOT] T'ee mie.
- T'ou feayr.
+ [USER] Kys ta mee? [BOT] T'ou feayr.
  [USER] Kys t'eh? [BOT] T'eh çheh.
- Kys t'ou? Ta mee braew.
- Kys t'ou? Ta mee skee.
- Kys t'ou? Ta mee red beg skee.
- Kys t'ou? Ta mee red beg çhing.
- Kys t'ou? Ta mee goll as gaccan, ghooinney.
- Kys t'ou? Ta mee red beg skee, ghooinney.
- Kys t'ou? Ta mee skee, ghooiney.
- Kys t'ou? Ta mee corree.
- Kys t'ou? Ta mee feer vie.
- Kys t'ou? Cha nel mee feer vie.
- Kys t'ou? Ta mee feer skee jiu.
- Kys t'ou? Ta mee feer çhing.
- Kys t'ou? Ta mee mie.
+ [USER] Kys t'ou? [BOT] Ta mee braew.
+ [USER] Kys t'ou? [BOT]Ta mee skee.
+ [USER] Kys t'ou? [BOT] Ta mee red beg skee.
+ [USER] Kys t'ou? [BOT] Ta mee red beg çhing.
+ [USER] Kys t'ou? [BOT] Ta mee goll as gaccan, ghooinney.
+ [USER] Kys t'ou? [BOT] Ta mee red beg skee, ghooinney.
+ [USER] Kys t'ou? [BOT] Ta mee skee, ghooiney.
+ [USER] Kys t'ou? [BOT] Ta mee corree.
+ [USER] Kys t'ou? [BOT] Ta mee feer vie.
+ [USER] Kys t'ou? [BOT] Cha nel mee feer vie.
+ [USER] Kys t'ou? [BOT] Ta mee feer skee jiu.
+ [USER] Kys t'ou? [BOT] Ta mee feer çhing.
+ [USER] Kys t'ou? [BOT] Ta mee mie.
  [USER] Kys t'ou? [BOT] Ta mee çheh.
  [USER] Kys t'ou? [BOT] Ta mee feayr.
  [USER] Vel oo braew? [BOT] Ta, ta mee braew.
@@ -619,39 +619,39 @@
  [USER] Vel biggin ayd? [BOT] Ta parrad glass as ruy aym.
  [USER] Vel biggin ayd? [BOT] Ta jialgheer glass aym.
  [USER] Vel biggin ayd? [BOT] Ta cabbyl dhone aym.
- Cre t'ou jannoo jiu?
- Ta mee shappal jiu. Cred t'ou jannoo jiu?
- Ta mee gobbragh jiu. Cre t'ou jannoo fastyr jiu?
- Ta mee shooyl er y traie fastyr jiu. Cre t'ou jannoo fastyr jiu?
- Ta mee goll dys y thie-fillym fastyr jiu. C'raad t'ou gobbragh?
- Ta mee gobbragh ayns Laksaa. C'raad t'ou gobbragh?
- Ta mee gobbragh ayns Balley Chastal. C'raad t'ou shooyl er y traie?
- Ta mee shooyl er y traie ayns Purt ny Hinshey.
- Braew. Ansherbee, ta mee shappal nish. Hee'm oo.
- Mie dy liooar. Hee'm oo.
- Fastyr mie! Kys t'ou?
- Ta mee beggan skee. As uss hene?
- Ta mee braew, gura mie ayd.
- Nagh vel oo skee?
- Ta mee red beg skee, agh ta mee maynrey jiu.
- Ta mee beggan skee son ta mee tarroogh.
- C'raad ta Paayl cummal nish?
- T'eh cummal ayns Rhumsaa.
- C'raad ta Breeshey as Juan cummal nish?
- Ta shin cummal ayns Laksaa.
- C'raad ta Breeshey gobbragh?
- T'ee gobbragh ayns Rhumsaa.
- Nagh vel ee gobbragh ec y thie-bee?
- Cha nel. T'ee gobbragh ec y thie-tashtee.
- Cre t’ou jannoo Jesarn?
- C’raad t’eh shappal Jesarn?
+ [USER] Cre t'ou jannoo jiu? [BOT] Ta mee cloie bluckan coshey jiu.
+ [USER] Cre t'ou jannoo jiu? [BOT] Ta mee shappal jiu. Cred t'ou jannoo jiu?
+ [USER] Cre t'ou jannoo jiu? [BOT] Ta mee gobbragh jiu. Cre t'ou jannoo fastyr jiu?
+ [USER] Cre t'ou jannoo jiu? [BOT] Ta mee shooyl er y traie fastyr jiu. Cre t'ou jannoo fastyr jiu?
+ [USER] Cre t'ou jannoo jiu? [BOT] Ta mee goll dys y thie-fillym fastyr jiu. C'raad t'ou gobbragh?
+ [USER] Cre t'ou jannoo jiu? [BOT] Ta mee gobbragh ayns Laksaa. C'raad t'ou gobbragh?
+ [USER] Cre t'ou jannoo jiu? [BOT] Ta mee gobbragh ayns Balley Chastal. C'raad t'ou shooyl er y traie?
+ [USER] Cre t'ou jannoo jiu? [BOT] Ta mee shooyl er y traie ayns Purt ny Hinshey.
+ [USER] Cre t'ou jannoo jiu? [BOT] Ta mee shooyl jiu [BOT] Braew. Ansherbee, ta mee shappal nish. Hee'm oo.
+ [USER] Cre t'ou jannoo jiu? [BOT] Ta mee shappal jiu. Cred t'ou jannoo jiu? [USER] Ta mee gobbragh jiu. [BOT] Mie dy liooar. Hee'm oo.
+ [USER] Fastyr mie! Kys t'ou? [BOT] Ta mee beggan skee. As uss hene? [USER] Ta mee braew, gura mie ayd.
+ [USER] Moghrey mie! Kys t'ou? [BOT] Ta mee beggan skee. As uss hene? [USER] Ta mee braew, gura mie ayd. [BOT] Nagh vel oo skee? [USER] Cha nel.
+ [USER] Moghrey mie! Kys t'ou? [BOT] Ta mee braew. As uss hene? [USER] Ta mee braew, gura mie ayd.
+ [USER] Nagh vel oo skee? [BOT] Cha nel. Cha nel mee skee.
+ [USER] Nagh vel oo skee? [BOT] Ta mee red beg skee, agh ta mee maynrey jiu.
+ [USER] Nagh vel oo skee? [BOT] Ta mee beggan skee son ta mee tarroogh.
+ [USER] C'raad ta Paayl cummal nish? [BOT] T'eh cummal ayns Laksaa.
+ [USER] C'raad ta Paayl cummal nish? [BOT] T'eh cummal ayns Rhumsaa.
+ [USER] C'raad ta Breeshey as Juan cummal nish? [BOT] Ta shin cummal ayns Doolish.
+ [USER] C'raad ta Moirrey as Brian cummal nish? [BOT] Ta shin cummal ayns Laksaa.
+ [USER] C'raad ta Breeshey gobbragh? [BOT] T'ee gobrragh ayns Doolish.
+ [USER] C'raad ta Moirrey gobbragh? [BOT] T'ee gobbragh ayns Rhumsaa. [USER] Nagh vel ee gobbragh ayns y scoill? [BOT] Ta. T'ee gobbragh ec y scoill ayns Rhumsaa.
+ [USER] C'raad ta Paayl gobbragh? Nagh vel eh gobbragh ec y thie-bee? [BOT] Ta. Ta Paayl gobbragh ec y thie-bee. [USER] C'raad t'eh gobbragh? [BOT] T'eh gobbragh ec y thie-bee ayns Balley Chashtal.
+ [USER] C'raad ta Brian gobbragh? Nagh vel eh gobbragh ec y thie-bee? [BOT] Cha nel. T'ee gobbragh ec y thie-tashtee.
+ [USER] Cre t’ou jannoo Jesarn? [BOT] Ta mee shappal Jesarn.
+ [USER] C’raad t’eh shappal Jesarn? [BOT] Ta mee shappal ayns Doolish Jesarn.
  S’laik lhiam cloie kiaull ayns y voghrey. 
  Share lhee gynsagh Gaelg Jesarn.
  Cre t’ou kionnagh?
  Quoi ta jannoo arran? 
  Ta daa-wheeyl eck as t’eh beg.
  Cha nel fys eck cre t’eh jannoo!
- Vel fys echey quoi ta beaghey ayns ta thie bane shoh?
+ [USER] Vel fys echey quoi ta beaghey ayns ta thie bane shoh? [BOT] Cha nel. Cha nel fys echey.
  Cha nel kayt aym.        
  Ta kayt ayd.
  Cha nel moddey ayd.
@@ -820,7 +820,7 @@
  [USER] Fastyr mie. Cre by vie lhiat? [BOT] By vie lhiam berreen as caffee lesh bainney, my sailt.
  [USER] Fastyr mie. Cre by vie lhiat? [BOT] By vie lhiam awree as soo-mess, my sailt.
  [USER] Fastyr mie. Cre by vie lhiat? [BOT] By vie lhiam cappan dy hey, my sailt.
- [USER} Moghrey mie. Cre by vie lhiat? [BOT] By vie lhiam boteil dy bainney as arran.
+ [USER] Moghrey mie. Cre by vie lhiat? [BOT] By vie lhiam boteil dy bainney as arran.
  [USER] Vel argid dy-liooar ayd? [BOT] Ta. Ta argid dy-liooar aym.
  [USER] Vel argid dy-liooar ayd? [BOT] Cha nel argid aym.
  [USER] Vel argid dy-liooar ayd? [BOT] Ta, ta mee argid dy-liooar aym.
@@ -834,7 +834,7 @@
  Ta mee goll dys yn obbyr.
  T'eh goll dys y scoill.
  T'ee goll dys y scoill.
- Vel biggin ayd?
+ [USER] Vel biggin ayd? [BOT] Ta kayt feer vooar aym.
  Ta moddey feer vooar aym.
  Vel biggin ayd?
  Ta lugh lheeah aym.
