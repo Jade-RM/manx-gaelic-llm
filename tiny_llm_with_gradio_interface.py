@@ -13,6 +13,12 @@ with open("manx_corpus.txt", "r", encoding="utf-8") as f:
 
 print(f"Loaded corpus with {len(corpus)} lines.")
 
+# Define special tokens early
+start_token = "[SOS]"
+stop_token = "[EOS]"
+user_token = "[USER]"
+bot_token = "[BOT]"
+
 # Initial vocabulary (chars + </w>)
 unique_chars = set()
 for doc in corpus:
@@ -23,19 +29,31 @@ vocab = sorted(list(unique_chars))
 end_of_word = "</w>"
 vocab.append(end_of_word)
 
+# Add special conversational tokens to the initial vocab so BPE doesn't try to break them up 
+if user_token not in vocab:
+    vocab.append(user_token)
+if bot_token not in vocab:
+    vocab.append(bot_token)
+
 print("\nInitial vocabulary:")
 print(vocab)
 print(f"Vocabulary size: {len(vocab)}")
 
-# Word splits
+# Word splits - Modified to handle special tokens as atomic units
 word_splits = {}
 for doc in corpus:
     words = doc.split(" ")
     for word in words:
-        if word:
+        if not word:
+            continue
+        # If it's a special token, treat it as a single unit without splitting characters or adding </w>
+        if word == user_token or word == bot_token:
+            word_tuple = (word,)
+        else:
+            # For regular words, split into characters and append </w>
             char_list = list(word) + [end_of_word]
             word_tuple = tuple(char_list)
-            word_splits[word_tuple] = word_splits.get(word_tuple, 0) + 1
+        word_splits[word_tuple] = word_splits.get(word_tuple, 0) + 1
 
 print("\nPre-tokenized word frequencies:")
 # Limit printing for large corpora
@@ -96,15 +114,18 @@ print("...")
 
 # Build lookup tables
 # Modified: Include start and stop tokens in vocabulary
-start_token = "[SOS]"
-stop_token = "[EOS]"
-user_token = "[USER]"
-bot_token = "[BOT]"
 final_vocab_list = sorted(list(set(vocab)))
-final_vocab_list.append(start_token)
-final_vocab_list.append(stop_token)
-final_vocab_list.append(user_token)
-final_vocab_list.append(bot_token)
+
+# Ensure all special tokens are in the final vocabulary list (tokens moved to the start of program)
+if start_token not in final_vocab_list:
+    final_vocab_list.append(start_token)
+if stop_token not in final_vocab_list:
+    final_vocab_list.append(stop_token)
+if user_token not in final_vocab_list:
+    final_vocab_list.append(user_token)
+if bot_token not in final_vocab_list:
+    final_vocab_list.append(bot_token)
+
 stoi = {s: i for i, s in enumerate(final_vocab_list)}
 itos = {i: s for s, i in stoi.items()}
 vocab_size = len(stoi)
@@ -112,10 +133,16 @@ vocab_size = len(stoi)
 print(f"\nFinal vocabulary size (including start and stop tokens): {vocab_size}")
 print(f"Start token ID: {stoi[start_token]}")
 print(f"Stop token ID: {stoi[stop_token]}")
+print(f"User token ID: {stoi[user_token]}")
+print(f"Bot token ID: {stoi[bot_token]}")
 
 
 # Apply merges
 def bpe_encode_word(word):
+    # If the word itself is a special token, return it as a single unit
+    if word == user_token or word == bot_token:
+        return [word]
+
     symbols = list(word) + [end_of_word]
     while True:
         pairs = [(symbols[i], symbols[i+1]) for i in range(len(symbols)-1)]
@@ -195,7 +222,7 @@ class MultiHeadAttention(nn.Module):
         return self.proj(out)
 
 class FeedForward(nn.Module):
-    def __init__(self, n_embd):
+    def __init__(self, n_embd): # Corrected: Add n_embd to init signature
         super().__init__()
         self.net = nn.Sequential(
             nn.Linear(n_embd, 4*n_embd),
@@ -267,7 +294,7 @@ optimizer = optim.AdamW(model.parameters(), lr=5e-4)
 
 print("\n--- Starting model training ---")
 # Increased training steps for larger corpus
-num_training_steps = 25000
+num_training_steps = 30000
 for step in range(num_training_steps):
     xb, yb = get_batch(batch_size=16, block_size=block_size)
     logits, loss = model(xb, yb)
@@ -278,26 +305,21 @@ for step in range(num_training_steps):
 
     if step % 1000 == 0: # Print loss less frequently for more steps
         print(f"Step {step}, Loss: {loss.item():.4f}")
-print("--- Model training complete ---")
+print("---- Model training complete ---")
 
 # Text generation
-# Modified: Added temperature and Top-K parameters, and stop token logic
 def generate(model, start, max_new_tokens=30, temperature=0.8, top_k=None, top_p=None):
     model.eval()
-    # Modified: Start with the start token followed by the encoded prompt
     sos_token_id = stoi[start_token]
     eos_token_id = stoi[stop_token]
-    # Get ids for the new conversational tokens
     user_token_id = stoi[user_token]
     bot_token_id = stoi[bot_token]
 
     start_ids = [sos_token_id] + encode(start)
     idx = torch.tensor([start_ids], dtype=torch.long)
 
-
-    # Initialize generated tokens with the prompt tokens
-    generated_tokens = idx[0].tolist()
-
+    # Keep track of the length of the prompt to extract only newly generated tokens in the displayed response
+    prompt_length = idx.shape[1]
 
     for _ in range(max_new_tokens):
         idx_cond = idx[:, -block_size:]
@@ -307,12 +329,12 @@ def generate(model, start, max_new_tokens=30, temperature=0.8, top_k=None, top_p
         # Apply temperature
         logits = logits / temperature
 
-        # Apply Top-K sampling if top_k is specified
-        if top_k is not None:
+        # Apply Top-K sampling if top_k is not None and top_k > 0
+        if top_k is not None and top_k > 0:
             v, _ = torch.topk(logits, min(top_k, logits.size(-1)))
             logits[logits < v[:, [-1]]] = float('-inf')
 
-        # Apply Top-P (Nucleus) sampling if top_p is specified
+        # Apply Top-P (Nucleus) sampling if top_p is not None and top_p < 1.0
         if top_p is not None and top_p < 1.0:
             sorted_logits, sorted_indices = torch.sort(logits, descending=True)
             cumulative_probs = torch.cumsum(F.softmax(sorted_logits, dim=-1), dim=-1)
@@ -329,39 +351,81 @@ def generate(model, start, max_new_tokens=30, temperature=0.8, top_k=None, top_p
         probs = F.softmax(logits, dim=-1)
         next_id = torch.multinomial(probs, num_samples=1)
 
-        # Check if the sampled token is the stop token
-        if next_id.item() == eos_token_id:
-            break # Stop generation if the end of sequence is predicted
+        # Check if the sampled token is a stop token (EOS, USER, or BOT)
+        if next_id.item() == eos_token_id or next_id.item() == user_token_id or next_id.item() == bot_token_id:
+            break # Stop generation if any of these special tokens are predicted
 
         idx = torch.cat((idx, next_id), dim=1)
-        generated_tokens.append(next_id.item()) # Store generated tokens
 
-    # Decode generated tokens (excluding the start, stop, user and bot tokens if present)
-    generated_indices = [i for i in generated_tokens if i != sos_token_id and i != eos_token_id and i != user_token_id and i != bot_token_id]
-    return decode(generated_indices)
+    # Decode *only* the newly generated tokens after the prompt
+    newly_generated_indices = idx[0, prompt_length:].tolist()
 
-# Gradio interface
-# Modified: Added temperature and Top-K sliders
-def generate_for_ui(prompt, max_tokens, temperature, top_k, top_p):
+    # Filter out special tokens from the newly generated indices during decoding so that they are not displayed
+    # This specifically removes SOS, EOS, USER, BOT from the final decoded string,
+    # as the model might generate them before breaking, or they might be part of the prompt.
+    filtered_generated_indices = [i for i in newly_generated_indices if i != sos_token_id and i != eos_token_id and i != user_token_id and i != bot_token_id]
+
+    return decode(filtered_generated_indices)
+
+# Build and continue a conversation from prompts and chat history
+def build_prompt_from_history(history):
+    parts = []
+    for msg in history:
+        if msg["role"] == "user":
+            parts.append(f"{user_token} {msg['content']}")
+        elif msg["role"] == "assistant":
+            parts.append(f"{bot_token} {msg['content']}")
+    parts.append(bot_token) # Add the bot_token to indicate it's the chatbot's turn to respond
+    return " ".join(parts)
+
+# Generate a response based on the prompt and chat history
+def generate_response(history, user_message_content, temperature, max_tokens, top_k, top_p):
+    history = history or []
+    user_message_content = user_message_content.strip()
+    if not user_message_content:
+        return history, None
+
+    # Add the current user message to the history
+    history.append({"role": "user", "content": user_message_content})
+
+    # Build the chatbot's prompt from the updated history
+    prompt = build_prompt_from_history(history)
+
     top_k_val = int(top_k) if top_k is not None and top_k > 0 else None
-    top_p_val = top_p if top_p is not None else None # Use None if slider is at default 1.0
-    return generate(model, prompt, max_new_tokens=int(max_tokens), temperature=temperature, top_k=top_k_val, top_p=top_p_val)
+    top_p_val = float(top_p) if top_p is not None else None
 
+    # Generate the response, returning only the new part and not displaying the history
+    response_text = generate(model, prompt, max_new_tokens=int(max_tokens),
+                          temperature=float(temperature), top_k=top_k_val, top_p=top_p_val)
+    response_text = response_text.strip() # Ensure no leading/trailing whitespace
 
-iface = gr.Interface(
-    fn=generate_for_ui,
-    inputs=[
-        gr.Textbox(lines=2, placeholder="Enter starting text here...", label="Prompt"),
-        gr.Slider(minimum=10, maximum=150, value=30, step=1, label="Max New Tokens"),
-        gr.Slider(minimum=0.1, maximum=2.0, value=0.8, step=0.1, label="Temperature"), # Added Temperature slider
-        gr.Slider(minimum=0, maximum=vocab_size, value=0, step=1, label="Top-K (0 to disable)"), # Added Top-K slider
-        gr.Slider(minimum=0.1, maximum=1.0, value=1.0, step=0.05, label="Top-P (Nucleus)"), # Added Top-P slider
-    ],
-    outputs=gr.Textbox(label="Generated Text"),
-    title="Tiny Manx LLM",
-    description="A small model trained on a Manx (Gaelg) corpus. Enter a prompt to generate text."
-)
+    # Append only the bot's new response to the history
+    history.append({"role": "assistant", "content": response_text})
 
-print("\n--- Launching Gradio Interface ---")
-iface.launch(share=True)
+    return history, None
 
+# Gradio interface, conversational chatbot with chat bubbles
+with gr.Blocks() as demo:
+    gr.Markdown("# Tiny Manx Chatbot")
+    with gr.Row():
+        with gr.Column(scale=4):
+            chatbot = gr.Chatbot(elem_id="chatbox", height=420, type='messages')
+            user_input = gr.Textbox(label="Your message", placeholder="Say something to the Manx chatbot...")
+            with gr.Row():
+                send_btn = gr.Button("Send")
+                clear_btn = gr.Button("Clear chat")
+        with gr.Column(scale=1):
+            max_tokens = gr.Slider(10, 256, value=30, step=1, label="Max new tokens")
+            temperature = gr.Slider(0.1, 2.0, value=0.8, step=0.1, label="Temperature")
+            top_k = gr.Slider(0, vocab_size, value=0, step=1, label="Top-K (0 to disable)")
+            top_p = gr.Slider(0.1, 1.0, value=1.0, step=0.05, label="Top-P (nucleus)")
+
+    def submit_fn(history, user_message_content, temperature, max_tokens, top_k, top_p):
+        return generate_response(history, user_message_content, temperature, max_tokens, top_k, top_p)
+
+    user_input.submit(submit_fn, inputs=[chatbot, user_input, temperature, max_tokens, top_k, top_p], outputs=[chatbot, user_input])
+    send_btn.click(submit_fn, inputs=[chatbot, user_input, temperature, max_tokens, top_k, top_p], outputs=[chatbot, user_input])
+    clear_btn.click(lambda: [], None, chatbot)
+
+print("\n--- Launching Gradio chat interface ---")
+demo.launch(share=True)
