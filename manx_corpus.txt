@@ -619,6 +619,14 @@
  [USER] Vel biggin ayd? [BOT] Ta parrad glass as ruy aym.
  [USER] Vel biggin ayd? [BOT] Ta jialgheer glass aym.
  [USER] Vel biggin ayd? [BOT] Ta cabbyl dhone aym.
+ [USER] Vel biggin ayd? [BOT] Ta kayt doo aym. Vel biggin ayd?
+ [USER] Vel biggin ayd? [BOT] Ta conning bane aym. Vel biggin ayd?
+ [USER] Vel biggin ayd? [BOT] Ta conning doo aym. Vel biggin ayd?
+ [USER] Vel biggin ayd? [BOT] Ta moddey doo aym. Vel biggin ayd?
+ [USER] Vel biggin ayd? [BOT] Ta roddan puissagh aym. Vel biggin ayd?
+ [USER] Vel biggin ayd? [BOT] Ta muc rangagh aym. Vel biggin ayd?
+ [USER] Vel biggin ayd? [BOT] Ta moddey aym. Vel biggin ayd?
+ [USER] Vel biggin ayd? [BOT] Ta kayt aym. Vel biggin ayd?
  [USER] Cre t'ou jannoo jiu? [BOT] Ta mee cloie bluckan coshey jiu.
  [USER] Cre t'ou jannoo jiu? [BOT] Ta mee shappal jiu. Cred t'ou jannoo jiu?
  [USER] Cre t'ou jannoo jiu? [BOT] Ta mee gobbragh jiu. Cre t'ou jannoo fastyr jiu?
@@ -645,19 +653,19 @@
  [USER] C'raad ta Brian gobbragh? Nagh vel eh gobbragh ec y thie-bee? [BOT] Cha nel. T'ee gobbragh ec y thie-tashtee.
  [USER] Cre t’ou jannoo Jesarn? [BOT] Ta mee shappal Jesarn.
  [USER] C’raad t’eh shappal Jesarn? [BOT] Ta mee shappal ayns Doolish Jesarn.
- S’laik lhiam cloie kiaull ayns y voghrey. 
+ [USER] Cre t'ou jannoo ayns y voghrey? [BOT] S’laik lhiam cloie kiaull ayns y voghrey. 
  Share lhee gynsagh Gaelg Jesarn.
  Cre t’ou kionnagh?
  Quoi ta jannoo arran? 
  Ta daa-wheeyl eck as t’eh beg.
  Cha nel fys eck cre t’eh jannoo!
  [USER] Vel fys echey quoi ta beaghey ayns ta thie bane shoh? [BOT] Cha nel. Cha nel fys echey.
- Cha nel kayt aym.        
- Ta kayt ayd.
- Cha nel moddey ayd.
- Ta thie echey.   
- Cha nel thie echey.
- Ta kayt eck.
+ [USER] Vel kayt ayd? [BOT] Cha nel kayt aym.        
+ [USER] Vel kayt ayd? [BOT] Ta kayt ayd.
+ [USER] Vel moddey ayd? [BOT] Cha nel moddey ayd.
+ [USER] Vel thie echey? [BOT] Ta thie echey.   
+ [USER] Vel thie echey? [BOT] Cha nel thie echey.
+ [USER] Vel kayt eck? [BOT] Ta kayt eck.
  Ta mee red beg çhing jiu, son ren mee giu feeyn jea.
  Share lhiam tey, agh cha nel tey aym.
  Cha nel mee laccal giu feeyn jiarg reesht.
@@ -676,9 +684,12 @@
  Ta mee laccal beaghey ayns ta thie bane shoh.
  Ta mee toiggal yn doilleeid.
  Ta fys aym.
- Cre t’ou jannoo ayns y voghrey?
- Cre t’ou giu ayns y voghrey?
- Cre t’ou gee ayns y voghrey?
+ [USER] Cre t’ou jannoo ayns y voghrey? [BOT] Ta mee roie ayns y voghrey.
+ [USER] Cre t’ou jannoo ayns y voghrey? [BOT] Ta mee giu tey ayns y voghrey.
+ [USER] Cre t’ou jannoo ayns y voghrey? [BOT] Ta mee shappal ayns y voghrey.
+ [USER] Cre t’ou jannoo ayns y voghrey? [BOT] Ta mee gobbragh ayns y voghrey.
+ [USER] Cre t’ou giu ayns y voghrey? [BOT] Ta mee giu caffee ayns y voghrey.
+ [USER] Cre t’ou gee ayns y voghrey? [BOT] Ta mee gee arran greddan ayns y voghrey.
  Ta Gaelg ain.
  Cha nel argid ain.
  Ta argid eu. 
@@ -824,16 +835,30 @@
  [USER] Vel argid dy-liooar ayd? [BOT] Ta. Ta argid dy-liooar aym.
  [USER] Vel argid dy-liooar ayd? [BOT] Cha nel argid aym.
  [USER] Vel argid dy-liooar ayd? [BOT] Ta, ta mee argid dy-liooar aym.
- Ta mee goll dys y thie.
- Ta mee goll dys y scoill.
- Ta mee goll dys y thie-bee.
- Ta mee goll dys y thie-tashtee.
- Ta mee goll dys y thie-fillym.
- Ta mee goll dys y thie-cloie.
- Ta mee goll dys y thie-lhionney.
- Ta mee goll dys yn obbyr.
- T'eh goll dys y scoill.
- T'ee goll dys y scoill.
+ [USER] C'raad t'ou goll? [BOT] Ta mee goll dys y thie.
+ [USER] C'raad t'ou goll? [BOT] Ta mee goll dys y scoill.
+ [USER] C'raad t'ou goll? [BOT] Ta mee goll dys y thie-bee.
+ [USER] C'raad t'ou goll? [BOT] Ta mee goll dys y thie-tashtee.
+ [USER] C'raad t'ou goll? [BOT] Ta mee goll dys y thie-fillym.
+ [USER] C'raad t'ou goll? [BOT] Ta mee goll dys y thie-cloie.
+ [USER] C'raad t'ou goll? [BOT] Ta mee goll dys y thie-lhionney.
+ [USER] C'raad t'ou goll? [BOT] Ta mee goll dys yn obbyr.
+ [USER] C'raad ta mee goll? [BOT] T'ou goll dys y thie.
+ [USER] C'raad ta mee goll? [BOT] T'ou goll dys y scoill.
+ [USER] C'raad ta mee goll? [BOT] T'ou goll dys y thie-bee.
+ [USER] C'raad ta mee goll? [BOT] T'ou goll dys y thie-tashtee.
+ [USER] C'raad ta mee goll? [BOT] T'ou goll dys y thie-fillym.
+ [USER] C'raad ta mee goll? [BOT] T'ou goll dys y thie-cloie.
+ [USER] C'raad ta mee goll? [BOT] T'ou goll dys y thie-lhionney.
+ [USER] C'raad ta mee goll? [BOT] T'ou goll dys yn obbyr.
+ [USER] C'raad t'eh goll? [BOT] T'eh goll dys y thie.
+ [USER] C'raad t'eh goll? [BOT] T'eh goll dys y scoill.
+ [USER] C'raad t'eh goll? [BOT] T'eh goll dys y thie-bee.
+ [USER] C'raad t'eh goll? [BOT] T'eh goll dys y thie-tashtee.
+ [USER] C'raad t'eh goll? [BOT] T'eh goll dys y thie-fillym.
+ [USER] C'raad t'eh goll? [BOT] T'eh goll dys y thie-cloie.
+ [USER] C'raad t'eh goll? [BOT] T'eh goll dys y thie-lhionney.
+ [USER] C'raad t'eh goll? [BOT] T'eh goll dys yn obbyr.
  [USER] Vel biggin ayd? [BOT] Ta kayt feer vooar aym.
  Ta moddey feer vooar aym.
  Vel biggin ayd?
