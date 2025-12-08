@@ -428,4 +428,5 @@ with gr.Blocks() as demo:
     clear_btn.click(lambda: [], None, chatbot)
 
 print("\n--- Launching Gradio chat interface ---")
-demo.launch(share=True)
+
+demo.launch(share=False)
