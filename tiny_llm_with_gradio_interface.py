@@ -7,7 +7,6 @@ import torch.optim as optim
 import gradio as gr
 
 # Plug corpus into llm
-# Use the uploaded file directly
 with open("manx_corpus.txt", "r", encoding="utf-8") as f:
     corpus = [line.strip() for line in f if line.strip()]
 
@@ -29,7 +28,7 @@ vocab = sorted(list(unique_chars))
 end_of_word = "</w>"
 vocab.append(end_of_word)
 
-# Add special conversational tokens to the initial vocab so BPE doesn't try to break them up 
+# Add conversational tokens to the initial vocab 
 if user_token not in vocab:
     vocab.append(user_token)
 if bot_token not in vocab:
@@ -88,7 +87,7 @@ def merge_pair(pair_to_merge, splits):
         new_splits[tuple(new_symbols)] = freq
     return new_splits
 
-num_merges = 250
+num_merges = 350
 merges = {}
 current_splits = word_splits.copy()
 
@@ -111,12 +110,8 @@ print("\nFinal vocabulary (sorted):")
 print(final_vocab_sorted[:50])
 print("...")
 
-
-# Build lookup tables
-# Modified: Include start and stop tokens in vocabulary
 final_vocab_list = sorted(list(set(vocab)))
 
-# Ensure all special tokens are in the final vocabulary list (tokens moved to the start of program)
 if start_token not in final_vocab_list:
     final_vocab_list.append(start_token)
 if stop_token not in final_vocab_list:
@@ -268,10 +263,8 @@ class TinyTransformer(nn.Module):
 
 # Training
 data = []
-# Modified: Get id for all special tokens and append/prepend to each line in the corpus
 sos_token_id = stoi[start_token]
 eos_token_id = stoi[stop_token]
-# Get ids for the new conversational tokens
 user_token_id = stoi[user_token]
 bot_token_id = stoi[bot_token]
 
@@ -290,11 +283,11 @@ def get_batch(batch_size=16, block_size=64):
 
 model = TinyTransformer()
 # Adjusted learning rate
-optimizer = optim.AdamW(model.parameters(), lr=5e-4)
+optimizer = optim.AdamW(model.parameters(), lr=2e-4)
 
 print("\n--- Starting model training ---")
 # Increased training steps for larger corpus
-num_training_steps = 30000
+num_training_steps = 36000
 for step in range(num_training_steps):
     xb, yb = get_batch(batch_size=16, block_size=block_size)
     logits, loss = model(xb, yb)
@@ -430,3 +423,4 @@ with gr.Blocks() as demo:
 print("\n--- Launching Gradio chat interface ---")
 
 demo.launch(share=False)
+
