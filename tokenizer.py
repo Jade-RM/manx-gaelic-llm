@@ -191,7 +191,9 @@ def load_tokenizer(path="tokenizer.pt"):
     data = torch.load(path, map_location="cpu")
     return data
     
+# functionality check    
 if __name__ == "__main__":
     print("Tokenizer OK")
     print("Vocab size:", vocab_size)
     print("Test encode/decode:", decode(encode("hello")))
+
