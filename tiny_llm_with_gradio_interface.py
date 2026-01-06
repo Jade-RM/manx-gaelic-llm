@@ -6,61 +6,16 @@ import torch.nn.functional as F
 import torch.optim as optim
 import gradio as gr
 
-# Plug corpus into llm
-with open("manx_corpus.txt", "r", encoding="utf-8") as f:
-    corpus = [line.strip() for line in f if line.strip()]
-
-print(f"Loaded corpus with {len(corpus)} lines.")
-
-# Define special tokens early
 start_token = "[SOS]"
 stop_token = "[EOS]"
 user_token = "[USER]"
 bot_token = "[BOT]"
 
-# Initial vocabulary (chars + </w>)
-unique_chars = set()
-for doc in corpus:
-    for char in doc:
-        unique_chars.add(char)
-
-vocab = sorted(list(unique_chars))
+vocab = [] # populated from loaded tokenizer
 end_of_word = "</w>"
-vocab.append(end_of_word)
 
-# Add conversational tokens to the initial vocab 
-if user_token not in vocab:
-    vocab.append(user_token)
-if bot_token not in vocab:
-    vocab.append(bot_token)
+merges = {}
 
-print("\nInitial vocabulary:")
-print(vocab)
-print(f"Vocabulary size: {len(vocab)}")
-
-# Word splits - Modified to handle special tokens as atomic units
-word_splits = {}
-for doc in corpus:
-    words = doc.split(" ")
-    for word in words:
-        if not word:
-            continue
-        # If it's a special token, treat it as a single unit without splitting characters or adding </w>
-        if word == user_token or word == bot_token:
-            word_tuple = (word,)
-        else:
-            # For regular words, split into characters and append </w>
-            char_list = list(word) + [end_of_word]
-            word_tuple = tuple(char_list)
-        word_splits[word_tuple] = word_splits.get(word_tuple, 0) + 1
-
-print("\nPre-tokenized word frequencies:")
-# Limit printing for large corpora
-print(list(word_splits.items())[:20])
-print("...")
-
-
-# BPE training
 def get_pair_stats(splits):
     pair_counts = collections.defaultdict(int)
     for word_tuple, freq in splits.items():
@@ -87,51 +42,6 @@ def merge_pair(pair_to_merge, splits):
         new_splits[tuple(new_symbols)] = freq
     return new_splits
 
-num_merges = 350
-merges = {}
-current_splits = word_splits.copy()
-
-print("\n--- Starting BPE Merges ---")
-for i in range(num_merges):
-    pair_stats = get_pair_stats(current_splits)
-    if not pair_stats:
-        break
-    best_pair = max(pair_stats, key=pair_stats.get)
-    current_splits = merge_pair(best_pair, current_splits)
-    new_token = best_pair[0] + best_pair[1]
-    vocab.append(new_token)
-    merges[best_pair] = new_token
-
-print("\n--- BPE merges complete ---")
-print(f"Final vocabulary size: {len(vocab)}")
-final_vocab_sorted = sorted(list(set(vocab)))
-print("\nFinal vocabulary (sorted):")
-# Limit printing for large vocabularies
-print(final_vocab_sorted[:50])
-print("...")
-
-final_vocab_list = sorted(list(set(vocab)))
-
-if start_token not in final_vocab_list:
-    final_vocab_list.append(start_token)
-if stop_token not in final_vocab_list:
-    final_vocab_list.append(stop_token)
-if user_token not in final_vocab_list:
-    final_vocab_list.append(user_token)
-if bot_token not in final_vocab_list:
-    final_vocab_list.append(bot_token)
-
-stoi = {s: i for i, s in enumerate(final_vocab_list)}
-itos = {i: s for s, i in stoi.items()}
-vocab_size = len(stoi)
-
-print(f"\nFinal vocabulary size (including start and stop tokens): {vocab_size}")
-print(f"Start token ID: {stoi[start_token]}")
-print(f"Stop token ID: {stoi[stop_token]}")
-print(f"User token ID: {stoi[user_token]}")
-print(f"Bot token ID: {stoi[bot_token]}")
-
-
 # Apply merges
 def bpe_encode_word(word):
     # If the word itself is a special token, return it as a single unit
@@ -143,11 +53,8 @@ def bpe_encode_word(word):
         pairs = [(symbols[i], symbols[i+1]) for i in range(len(symbols)-1)]
         merge_candidates = [(p, merges[p]) for p in pairs if p in merges]
         if not merge_candidates:
-            # Initialize new_symbols here before breaking
             new_symbols = symbols
             break
-        # Upgrade this BPE later find the highest priority merge.
-        # Taking the first merge is fine at this stage.
         best_pair, merged_token = merge_candidates[0]
         new_symbols, i = [], 0
         while i < len(symbols):
@@ -162,7 +69,6 @@ def bpe_encode_word(word):
 
 def encode(text):
     ids = []
-    # Ensure user_token and bot_token are defined within this scope for direct use
     user_token_id_local = stoi[user_token]
     bot_token_id_local = stoi[bot_token]
 
@@ -182,7 +88,18 @@ def decode(indices):
     text = "".join([t.replace(end_of_word, " ") for t in tokens])
     return text.strip()
 
-# Transformer
+def save_tokenizer(path="tokenizer.pt"):
+    torch.save({
+        "stoi": stoi,
+        "itos": itos,
+        "merges": merges,
+        "vocab_size": vocab_size
+    }, path)
+
+def load_tokenizer(path="tokenizer.pt"):
+    data = torch.load(path, map_location="cpu")
+    return data
+
 block_size = 64
 n_embd = 128
 n_head = 4
@@ -209,15 +126,15 @@ class MultiHeadAttention(nn.Module):
         super().__init__()
         self.heads = nn.ModuleList([Head(head_size) for _ in range(num_heads)])
         self.proj = nn.Linear(n_embd, n_embd)
-        self.dropout = nn.Dropout(0.1) # Added dropout
+        self.dropout = nn.Dropout(0.1)
 
     def forward(self, x):
         out = torch.cat([h(x) for h in self.heads], dim=-1)
-        out = self.dropout(self.proj(out)) # Applied dropout here
+        out = self.dropout(self.proj(out))
         return self.proj(out)
 
 class FeedForward(nn.Module):
-    def __init__(self, n_embd): # Corrected: Add n_embd to init signature
+    def __init__(self, n_embd):
         super().__init__()
         self.net = nn.Sequential(
             nn.Linear(n_embd, 4*n_embd),
@@ -241,7 +158,7 @@ class Block(nn.Module):
         return x
 
 class TinyTransformer(nn.Module):
-    def __init__(self):
+    def __init__(self, vocab_size):
         super().__init__()
         self.token_embedding = nn.Embedding(vocab_size, n_embd)
         self.pos_embedding = nn.Embedding(block_size, n_embd)
@@ -261,46 +178,16 @@ class TinyTransformer(nn.Module):
         loss = F.cross_entropy(logits.view(-1, vocab_size), targets.view(-1))
         return logits, loss
 
-# Training
-data = []
-sos_token_id = stoi[start_token]
-eos_token_id = stoi[stop_token]
-user_token_id = stoi[user_token]
-bot_token_id = stoi[bot_token]
+tok_data = load_tokenizer("tokenizer.pt")
+stoi = tok_data["stoi"]
+itos = tok_data["itos"]
+merges = tok_data["merges"] # Assign merges here as it's used by bpe_encode_word
+vocab_size = tok_data["vocab_size"]
 
-for line in corpus:
-    encoded_line = encode(line)
-    # Prepend start token and append stop token
-    data.extend([sos_token_id] + encoded_line + [eos_token_id])
+model = TinyTransformer(vocab_size)
+model.load_state_dict(torch.load("manx_model.pt", map_location="cpu"))
+model.eval()
 
-data = torch.tensor(data, dtype=torch.long)
-
-def get_batch(batch_size=16, block_size=64):
-    ix = torch.randint(len(data)-block_size, (batch_size,))
-    x = torch.stack([data[i:i+block_size] for i in ix])
-    y = torch.stack([data[i+1:i+block_size+1] for i in ix])
-    return x, y
-
-model = TinyTransformer()
-# Adjusted learning rate
-optimizer = optim.AdamW(model.parameters(), lr=2e-4)
-
-print("\n--- Starting model training ---")
-# Increased training steps for larger corpus
-num_training_steps = 36000
-for step in range(num_training_steps):
-    xb, yb = get_batch(batch_size=16, block_size=block_size)
-    logits, loss = model(xb, yb)
-
-    optimizer.zero_grad()
-    loss.backward()
-    optimizer.step()
-
-    if step % 1000 == 0: # Print loss less frequently for more steps
-        print(f"Step {step}, Loss: {loss.item():.4f}")
-print("---- Model training complete ---")
-
-# Text generation
 def generate(model, start, max_new_tokens=30, temperature=0.8, top_k=None, top_p=None):
     model.eval()
     sos_token_id = stoi[start_token]
@@ -311,7 +198,6 @@ def generate(model, start, max_new_tokens=30, temperature=0.8, top_k=None, top_p
     start_ids = [sos_token_id] + encode(start)
     idx = torch.tensor([start_ids], dtype=torch.long)
 
-    # Keep track of the length of the prompt to extract only newly generated tokens in the displayed response
     prompt_length = idx.shape[1]
 
     for _ in range(max_new_tokens):
@@ -319,22 +205,17 @@ def generate(model, start, max_new_tokens=30, temperature=0.8, top_k=None, top_p
         logits = model(idx_cond)
         logits = logits[:, -1, :]
 
-        # Apply temperature
         logits = logits / temperature
 
-        # Apply Top-K sampling if top_k is not None and top_k > 0
         if top_k is not None and top_k > 0:
             v, _ = torch.topk(logits, min(top_k, logits.size(-1)))
             logits[logits < v[:, [-1]]] = float('-inf')
 
-        # Apply Top-P (Nucleus) sampling if top_p is not None and top_p < 1.0
         if top_p is not None and top_p < 1.0:
             sorted_logits, sorted_indices = torch.sort(logits, descending=True)
             cumulative_probs = torch.cumsum(F.softmax(sorted_logits, dim=-1), dim=-1)
 
-            # Remove tokens with cumulative probability above the threshold
             sorted_indices_to_remove = cumulative_probs > top_p
-            # Shift the indices to the right to keep the first token above the threshold
             sorted_indices_to_remove[..., 1:] = sorted_indices_to_remove[..., :-1].clone()
             sorted_indices_to_remove[..., 0] = False
 
@@ -344,23 +225,17 @@ def generate(model, start, max_new_tokens=30, temperature=0.8, top_k=None, top_p
         probs = F.softmax(logits, dim=-1)
         next_id = torch.multinomial(probs, num_samples=1)
 
-        # Check if the sampled token is a stop token (EOS, USER, or BOT)
         if next_id.item() == eos_token_id or next_id.item() == user_token_id or next_id.item() == bot_token_id:
-            break # Stop generation if any of these special tokens are predicted
+            break
 
         idx = torch.cat((idx, next_id), dim=1)
 
-    # Decode *only* the newly generated tokens after the prompt
     newly_generated_indices = idx[0, prompt_length:].tolist()
 
-    # Filter out special tokens from the newly generated indices during decoding so that they are not displayed
-    # This specifically removes SOS, EOS, USER, BOT from the final decoded string,
-    # as the model might generate them before breaking, or they might be part of the prompt.
     filtered_generated_indices = [i for i in newly_generated_indices if i != sos_token_id and i != eos_token_id and i != user_token_id and i != bot_token_id]
 
     return decode(filtered_generated_indices)
 
-# Build and continue a conversation from prompts and chat history
 def build_prompt_from_history(history):
     parts = []
     for msg in history:
@@ -368,36 +243,30 @@ def build_prompt_from_history(history):
             parts.append(f"{user_token} {msg['content']}")
         elif msg["role"] == "assistant":
             parts.append(f"{bot_token} {msg['content']}")
-    parts.append(bot_token) # Add the bot_token to indicate it's the chatbot's turn to respond
+    parts.append(bot_token)
     return " ".join(parts)
 
-# Generate a response based on the prompt and chat history
 def generate_response(history, user_message_content, temperature, max_tokens, top_k, top_p):
     history = history or []
     user_message_content = user_message_content.strip()
     if not user_message_content:
         return history, None
 
-    # Add the current user message to the history
     history.append({"role": "user", "content": user_message_content})
 
-    # Build the chatbot's prompt from the updated history
     prompt = build_prompt_from_history(history)
 
     top_k_val = int(top_k) if top_k is not None and top_k > 0 else None
     top_p_val = float(top_p) if top_p is not None else None
 
-    # Generate the response, returning only the new part and not displaying the history
     response_text = generate(model, prompt, max_new_tokens=int(max_tokens),
                           temperature=float(temperature), top_k=top_k_val, top_p=top_p_val)
-    response_text = response_text.strip() # Ensure no leading/trailing whitespace
+    response_text = response_text.strip()
 
-    # Append only the bot's new response to the history
     history.append({"role": "assistant", "content": response_text})
 
     return history, None
 
-# Gradio interface, conversational chatbot with chat bubbles
 with gr.Blocks() as demo:
     gr.Markdown("# Tiny Manx Chatbot")
     with gr.Row():
@@ -423,4 +292,3 @@ with gr.Blocks() as demo:
 print("\n--- Launching Gradio chat interface ---")
 
 demo.launch(share=False)
-
