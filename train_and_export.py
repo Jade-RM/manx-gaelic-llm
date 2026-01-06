@@ -12,9 +12,6 @@ from tokenizer import (
 
 from model import TinyTransformer, block_size
 
-# ----------------------------
-# Build training data
-# ----------------------------
 data = []
 sos_token_id = stoi[start_token]
 eos_token_id = stoi[stop_token]
@@ -30,15 +27,9 @@ def get_batch(batch_size=16):
     y = torch.stack([data[i+1:i+block_size+1] for i in ix])
     return x, y
 
-# ----------------------------
-# Model + optimizer
-# ----------------------------
 model = TinyTransformer(vocab_size=len(stoi))
 optimizer = optim.AdamW(model.parameters(), lr=2e-4)
 
-# ----------------------------
-# Training loop
-# ----------------------------
 print("🚀 Training started")
 num_steps = 36000
 
@@ -53,11 +44,9 @@ for step in range(num_steps):
     if step % 1000 == 0:
         print(f"Step {step:05d} | Loss {loss.item():.4f}")
 
-# ----------------------------
-# Save everything
-# ----------------------------
 torch.save(model.state_dict(), "manx_model.pt")
 save_tokenizer("tokenizer.pt")
 
 print("Training complete")
 print("Exported: manx_model.pt + tokenizer.pt")
+
