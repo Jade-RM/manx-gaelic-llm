@@ -6,6 +6,9 @@
  [USER] Oie vie, kys t'ou? [BOT] Ta mee braew, gura mie ayd.
  [USER] Oie vie, kys t'ou? [BOT] Ta mee braew, gura mie ayd. As oo hene?
  [USER] Oie vie, kys t'ou? [BOT] Oie vie! Ta mee goll as gaccan, gura mie ayd. As uss hene?
+ [USER] Nollick Ghennal! [BOT] Nollick Ghennal!
+ [USER] Blein feer vie! [BOT] Blein feer vie!
+ [USER] Blein vie noa! [BOT] Blein vie noa!
  [USER] Kys t'ou? [BOT] Ta mee goll as gaccan.
  [USER] Kys t'ou? [BOT] Ta mee braew.
  [USER] Kys t'ou? [BOT] Ta mee my dy-liooar.
@@ -36,7 +39,9 @@
  [USER] Cre’n ennym t’ort? [BOT] T'an ennym orrym Stubbin. Cre'n ennym t'ort?
  [USER] Cre'n ennym t'ort? [BOT] Ta'n ennym orrym Stubbin. Quoi uss?
  [USER] Quoi uss? [BOT] Mish Stubbin.
+ [USER] Quoi uss? [BOT] Mish Stubbin. [USER] Fastyr mie, Stubbin! [USER] Fastyr mie, ghooinney!
  [USER] Cre'n ennym t'ort? [BOT] Mish Stubbin.
+ [USER] Cre'n ennym t'ort? [BOT] Mish Stubbin. [USER] Fastyr mie, Stubbin! [USER] Fastyr mie, ghooinney!
  [USER] Bannaghtyn Stubbin! [BOT] Bannaghtyn, ghooinney!
  [USER] Bannaghtyn! [BOT] Bannaghtyn!
  [USER] Kys t'ou, bwo? [BOT] Ta mee braew, gura mie ayd.
@@ -334,6 +339,7 @@
  [USER] Vel oo laccal cloie bluckan coshey? [BOT] Cha nel. Cha nel mee laccal cloie bluckan coshey.
  [USER] Vel oo laccal gynsagh Gaelg? [BOT] Ta. Ta mee laccal gynsagh Gaelg.
  [USER] Vel oo laccal gynsagh Gaelg? [BOT] Cha nel. Cha nel mee laccal gynsagh Gaelg.
+ [USER] Vel oo laccal loayr Gaelg? [BOT] Ta. Ta mee laccal loayr Gaelg.
  [USER] Vel oo laccal cloie feeal? [BOT] Ta. Ta mee laccal cloie feeal.
  [USER] Vel oo laccal cloie feeal? [BOT] Cha nel. Cha nel mee laccal cloie feeal.
  [USER] Vel oo laccal goll dys y thie-fillym? [BOT] Ta. Ta mee laccal goll dys y thie-fillym.
@@ -912,40 +918,40 @@
  [USER] Cre ren oo jannoo Jelune? [BOT] Ren mee goll dys y scoill Jelune.
  [USER] Cre ren oo jannoo Jemayrt? [BOT] Ren mee shooyl er y traie Jemayrt.
  [USER] Cre ren oo jannoo Jemayrt? [BOT] Ren mee gobbragh Jemayrt.
- [USER] Cre ren oo jannoo Jecrean? [BOT] Ren mee roie er y traie Jecrean.
- [USER] Cre ren oo jannoo Jecrean? [BOT] Ren mee cloie bluckan coshey Jecrean.
- Shen yn aght!
- Cre ren oo jannoo Jerdein?
- Ren mee goll dys y thie-bee Jerdein.
- Cre ren oo jannoo Jeheiney?
- Ren mee goll dys y thie jalloo Jeheiney.
- Cre ren oo jannoo Jesarn?
- Ren mee goll shappal ayns Rhumsaa Jesarn.
- Yindyssagh! S'laik lhiam Rhumsaa.
- Cre ren oo jannoo Jedoonee?
- Ren mee goll dys y traie as giu tey Jedoonee.
- Ren mee goll dys Purt ny Hinshey Jedoonee son ta mee laccal kionnagh ayns Purt ny Hinshey.
- Nagh ren oo cloie bluckan coshey Jelune?
- Cha ren mee cloie bluckan coshey Jelune.
- Nagh ren oo gobbragh Jemayrt?
- Ren, ren mee gobbragh Jemayrt. Ren oo gobbragh Jemayrt?
- Nagh ren oo shappal ayns Doolish Jesarn?
- Cha ren. Ren mee shappal ayns Rhumsaa Jesarn.
- Ren oo gobbragh Jecrean?
- Cha ren mee gobbragh Jecrean son mee feer litçheragh.
- Nagh laik lhiat gobbragh?
- Cha laik lhiam gobbragh son mee feer litçheragh.
- Cre’n fa t’ou beaghey ayns Rhumsaa?
- Ta mee beaghey ayns Rhumsaa son s'laik lhiam Rhumsaa.
- Cre’n fa t’ou skee?
- Ta mee skee son ren mee gobbragh ayns y voghrey.
- S’laik lhiam yn moddey ayd agh share lhiam yn kayt aym.
- Vel fys ayd c’raad ta’n lioar aym? 
+ [USER] Cre ren oo jannoo Jecrean? [BOT] Ren mee roie er y traie Jecrean. [USER] Yindyssagh!
+ [USER] Cre ren oo jannoo Jecrean? [BOT] Ren mee cloie bluckan coshey Jecrean. [USER] Shen yn aght!
+ [USER] Cre ren oo jannoo Jerdein? [BOT] Ren mee shooyl er y traie Jerdein. [USER] Shen yn aght!
+ [USER] Cre ren oo jannoo Jerdein? [BOT] Ren mee cloie bluckan coshey Jerdein.
+ [USER] Cre ren oo jannoo Jerdein? [BOT] Ren mee goll dys y thie-bee Jerdein.
+ [USER] Cre ren oo jannoo Jeheiney? [BOT] Ren mee goll dys y thie-bee Jeheiney.
+ [USER] Cre ren oo jannoo Jeheiney? [BOT] Ren mee goll dys y thie jalloo Jeheiney.
+ [USER] Cre ren oo jannoo Jesarn? [BOT] Ren mee goll dys y thie lhionney Jesarn.
+ [USER] Cre ren oo jannoo Jesarn? [BOT] Ren mee goll shappal ayns Rhumsaa Jesarn. [USER] Yindyssagh! S'laik lhiam Rhumsaa.
+ [USER] Ren mee beaghey ayns Rhumsaa. [BOT] Yindyssagh! S'laik lhiam Rhumsaa.
+ [USER] Cre ren oo jannoo Jedoonee? [BOT] Ren mee shappal Jedoonee.
+ [USER] Cre ren oo jannoo Jedoonee? [BOT] Ren mee goll dys y traie as giu tey Jedoonee.
+ [USER] Cre ren oo jannoo Jedoonee? [BOT] Ren mee goll dys Purt ny Hinshey Jedoonee son ta mee laccal kionnagh ayns Purt ny Hinshey.
+ [USER] Nagh ren oo cloie bluckan coshey Jelune? [BOT] Ren mee cloie bluckan coshey Jelune.
+ [USER] Nagh ren oo cloie bluckan coshey Jelune? [BOT] Cha ren mee cloie bluckan coshey Jelune.
+ [USER] Nagh ren oo gobbragh Jemayrt? [BOT] Cha ren mee gobbragh Jemayrt.
+ [USER] Nagh ren oo gobbragh Jemayrt? [BOT] Ren, ren mee gobbragh Jemayrt. Ren oo gobbragh Jemayrt?
+ [USER] Nagh ren oo shappal ayns Doolish Jesarn? [BOT] Ren. Ren mee shappal ayns Doolish Jesarn.
+ [USER] Nagh ren oo shappal ayns Doolish Jesarn? [BOT] Cha ren. Ren mee shappal ayns Rhumsaa Jesarn.
+ [USER] Ren oo gobbragh Jecrean? [BOT] Ren. Ren mee gobbragh Jecrean.
+ [USER] Ren oo gobbragh Jecrean? [BOT] Cha ren mee gobbragh Jecrean son mee feer litçheragh.
+ [USER] Nagh laik lhiat gobbragh? [BOT] Cha laik lhiam gobbragh.
+ [USER] Nagh laik lhiat gobbragh? [BOT] Cha laik lhiam gobbragh son mee feer litçheragh.
+ [USER] Cre’n fa t’ou beaghey ayns Rhumsaa? [BOT] Ta mee beaghey ayns Rhumsaa son ta mee gobbragh ayns Rhumsaa.
+ [USER] Cre’n fa t’ou beaghey ayns Doolish? [BOT] Ta mee beaghey ayns Doolish son s'laik lhiam Rhumsaa.
+ [USER] Cre’n fa t’ou skee? [BOT] Ta mee skee son cha ren mee cadley.
+ [USER] Cre’n fa t’ou skee? [BOT] Ta mee skee son ren mee gobbragh ayns y voghrey.
+ [USER] S'laik lhiat yn moddey aym? [BOT] S’laik lhiam yn moddey ayd agh share lhiam yn kayt aym.
+ [USER] Vel fys ayd c’raad ta’n lioar aym? [BOT] Cha nel fys aym.
  [USER] Ta'n conning aym feer skee. [BOT] Conning boght! Cre’n oyr ta’n conning ayd feer skee? [BOT] Ta'n conning aym feer skee son t'eh feer litçheragh.
- Ta'n conning aym feer vooar son t'eh feer jollysagh.
- T'an kayt aym feer çhing.
- Gow my leshtal. Cre’n oyr ta’n kayt ayd feer çhing?
- T’ee çhing son ren ee gee peetsey jea.
+ [USER] Cre'n fa t'an conning ayd feer vooar? [BOT] Ta'n conning aym feer vooar son t'eh feer jollysagh.
+ [USER] T'an kayt aym feer çhing. [BOT] Kayt boght!
+ [USER] T'an kayt aym feer çhing. [BOT] Gow my leshtal. Cre’n oyr ta’n kayt ayd feer çhing? [USER] T'an kayt aym feer çhing son ren ee gee carradjyn.
+ [USER] T'an kayt aym feer çhing. [BOT] Gow my leshtal. Cre’n oyr ta’n kayt ayd feer çhing? [USER] T’ee çhing son ren ee gee peetsey jea. [BOT] Kayt boght!
  Kayt boght!
  T'an kayt aym gee yn eeast eck.
  T'an conning aym gee yn carradjyn echey.
@@ -960,6 +966,7 @@
  T'an arkan sonney giu ushtey.
  Ren yn moddey gee rour jea.
  Ren eh giu rour jea.
+ [USER] T'an moddey aym feer çhing. [BOT] Gow my leshtal. Cre’n oyr ta’n moddey ayd feer çhing? [USER] Son t'eh gee rour jea. [BOT] Moddey boght!
  [USER] Kys t'ou? [BOT] Ta mee maynrey tra mee goll magh.
  [USER] Kys t'ou? [BOT] Ta mee maynrey tra mee gee shocklaid.
  [USER] Kys t'ou? [BOT] Ta mee maynrey tra mee goll dys y traie.
@@ -986,29 +993,29 @@
  [USER] Ren yn kayt ayd gee yn eeast ayd? [BOT] Ren. Ren yn kayt aym gee yn eeast ayd. T'an kayt jollysagh aym!
  [USER] Row oo ayns y thie bee jea? [BOT] Va. Va mee ayns y thie-bee jea.
  [USER] Row oo ayns y thie bee jea? [BOT] Cha row. Cha row mee ayns y thie bee jea.
- Va mee ayns y thie bee Jelune.
- Row yn carrey ayd skee jea?
- Va yn carrey aym skee jea.
- Row oo skee jea?
- Cha row mee skee jea. Ta mee skee jiu.
- Cha row oo braew jea?
- Va. Va mee braew jea.
- Nagh row oo çhing jea?
- Va. Va mee çhing jea.
- Kys t'an moddey ayd?
- V'eh feer vie jea.
- Kys t'an kayt ayd?
- V'ee feer skee jea.
- Cha row mee skee Jesarn. Va mee skee Jeheiney.
+ [USER] Row oo ayns y thie bee jea? [BOT] Cha row. Va mee ayns y thie bee Jelune.
+ [USER] Row yn carrey ayd skee jea? [BOT] Cha row. Cha row yn carrey aym skee jea.
+ [USER] Row yn carrey ayd skee jea? [BOT] Va yn carrey aym skee jea.
+ [USER] Row oo skee jea? [BOT] Va. Va mee skee jea.
+ [USER] Row oo skee jea? [BOT] Cha row mee skee jea. Ta mee skee jiu.
+ [USER] Row oo braew jea? [BOT] Va. Va mee braew jea.
+ [USER] Row oo braew jea? [BOT] Va. Va mee braew jea.
+ [USER] Nagh row oo çhing jea? [BOT] Cha row. Cha row mee çhing jea.
+ [USER] Nagh row oo çhing jea? [BOT] Va. Va mee çhing jea.
+ [USER] Kys t'an moddey ayd? [BOT] V'eh çhing jea agh v'eh feer vie jiu.
+ [USER] Kys t'an moddey ayd? [BOT] V'eh feer vie jea agh v'eh çhing jiu.
+ [USER] Kys t'an kayt ayd? [BOT] T'ee braew jiu.
+ [USER] Kys t'an kayt ayd? [BOT] V'ee feer skee jea.
+ [USER] Row oo skee Jesarn? [BOT] Cha row mee skee Jesarn. Va mee skee Jeheiney.
  Va shin çheh jea.
  Va Juan çhing jea.
  Va Jamys skee jea.
  Va Brian maynrey jea.
- Va Breeshey skee jea son ren ee gobbragh dagh laa.
- Ta'n braar aym goll dys y traie jiu.
- Ta'n shuyr aym goll dys y thie bee jiu.
- Ren yn braar aym goll dys y thie bee Jeheiney.
- Ren yn shuyr aym goll dys y traie Jesarn.
+ [USER] Cre'n fa va Breeshey skee jea? [BOT] Va Breeshey skee jea son ren ee gobbragh dagh laa.
+ [USER] C'raad t'an braar goll jiu? [BOT] Ta'n braar aym goll dys y traie jiu.
+ [USER] C'raad t'an shuyr goll jiu? [BOT] Ta'n shuyr aym goll dys y thie bee jiu.
+ [USER] C'raad ren yn braar goll Jeheiney? [BOT] Ren yn braar aym goll dys y thie bee Jeheiney.
+ [USER] C'raad ren yn shuyr goll Jesarn? [BOT] Ren yn shuyr aym goll dys y traie Jesarn.
  Row mee ayns y thie bee jea?
  Va mee anys y thie bee jea.
  Row oo ayns y thie bee Jesarn?
@@ -1163,7 +1170,7 @@
  [USER] Vel ee corree? [BOT] Er-lhiam nagh vel ee corree.
  [USER] Vel ee maynrey? [BOT] Er-lhiam dy vel ee maynrey.
  [USER] Vel ee maynrey? [BOT] Er-lhiam nagh vel ee maynrey.
- Er-lhiam dy vel ee trimshagh.
+ [USER] Vel ee trimsagh? [BOT] Er-lhiam dy vel ee trimshagh.
  Er-lhiam nagh vel ee trimsagh.
  Er-lhiam dy vel ee skee.
  Er-lhiam nagh vel ee skee.
@@ -1344,12 +1351,14 @@
  Bare lhiam beaghey ayns Mannin.
  Bare lhiat gee peetsey ny curry?
  Bare lhiam gee curry.
- Bare lhiat gee feeyn bane ny feeyn jiarg?
+ Bare lhiat gee feeyn bane ny feeyn jiarg? 
  Bare lhiam gee feeyn bane.
- Bare lhiat gynsagh Germaanish ny Sheenish?
- Bare lhiat gynsagh Germaanish.
- Bare lhiant roie ny snaue?
- Bare lhiam snaue.
+ [USER] Bare lhiat gynsagh Germaanish ny Sheenish? [BOT] Bare lhiam gynsagh Sheenish.
+ [USER] Bare lhiat gynsagh Germaanish ny Yernish? [BOT] Bare lhiat gynsagh Germaanish.
+ [USER] Bare lhiat gynsagh Frangish ny Sheenish? [BOT] Bare lhiam gynsagh Frangish.
+ [USER] Bare lhiat gynsagh Frangish ny Gaelg? [BOT] Bare lhiam gynsagh Gaelg.
+ [USER] Bare lhiat roie ny snaue? [BOT] Bare lhiam roie.
+ [USER] Bare lhiat roie ny snaue? [BOT] Bare lhiam snaue.
  C'raad bare lhiat shappal, ayns Doolish ny ayns Rhumsaa?
  Bare lhiam shappal ayns Rhumsaa.
  C'raad bare lhiat goll dys y scoill, ayns Purt ny Hinshey ny ayns Laksaa?
@@ -1410,6 +1419,7 @@
  Vel ort goll dys y thie-lhionney dagh laa?
  Cha nel ee gobbragh dagh laa agh er-lhiam dy laik lhee gobbragh dagh laa.
  Ta mee laccal goll dys y thie-fillym fastyr mairagh agh ta orrym gobbragh.
+ [USER] Vel oo laccal goll dys y thie-fillym jiu? [BOT] Ta mee laccal goll dys y thie-fillym agh ta orrym gobbragh jiu.
  [USER] Cuin v'ou ayns Laksaa? [BOT] Va mee ayns Laksaa Jesarn.
  [USER] Cuin v'ou ayns Rhumsaa? [BOT] Va mee ayns Rhumsaa Jedoonee.
  [USER] Cuin v'ou ayns Purt ny Hinshey? [BOT] Va mee ayns Purt ny Hinshey Jecrean.
@@ -1417,5 +1427,30 @@
  [USER] Kys t'ou? [BOT] Ta mee skee. [USER] Cre'n oyr t'ou skee? [BOT] Ta mee skee son ren mee gobbragh moghrey jiu.
  [USER] C'raad t'ou beaghey? [BOT] Ta mee beaghey ayns Sostyn, agh cha laik lhiam Sostyn. [USER] Cre'n fa cha laik lhiat Sostyn? [BOT] Cha laik lhiam Sostyn son t'an emshyr olk ayns Sostyn.
  [USER] C'raad t'ou laccal beaghey? [BOT] Ta mee laccal beaghey ayns Laksaa. [USER] C'ren oyr t'ou laccal beaghey ayns Laksaa? [BOT] Ta mee laccal beaghey ayns Laksaa son ta mee gobbragh ayns Laksaa.
- 
- 
+ [USER] C'raad bare lhiat gee? [BOT] Bare lhiam gee ayns y thie-bee ayns Laksaa.
+ [USER] Cuin bare lhiat gee? [BOT] Bare lhiam gee fastyr jiu.
+ [USER] Bare lhiat giu feeyn ny caffee nish? [BOT] Bare lhiam giu caffee nish.
+ [USER] C'raad bare lhiat goll, dys y thie-bee ny dys y thie-fillym? [BOT] Bare lhiam goll dys y thie-fillym son laik lhiam jeeaghyn er fillym.
+ [USER] Cre bare t'ou jannoo? [BOT] Bare lhiam shooyl er y traie.
+ [USER] Bare lhiat beaghey ayns Doolish ny Purt ny Hinshey? [BOT] Bare lhiam beaghey ayns Doolish son cha laik lhiam Purt ny Hinshey.
+ [USER] Vel oo laccal goll dys y rhullick? [BOT] Cha nel. Cha laik lhiam goll dys y rhullick.
+ [USER] Cre'n oyr cha laik lhiat goll dys y rhullick? [BOT] Cha laik lhiam goll dys y rhullick son ren mee fakin buggane ayns y rhullick.
+ [USER] Cre'n oyr cha laik lhiat goll dys y rhullick? [BOT] Cha laik lhiam goll dys y rhullick son ren mee fakin scaanjoon ayns y rhullick.
+ [USER] Ren oo fakin scaanjoon? [BOT] Ren mee fakin scaanjoon as v'eh jeeaghyn accryssagh. [USER] Row oo scooriyt? [BOT] Cha row! Cha ren mee giu agh pint.
+ [USER] Ren oo fakin scaanjoon ayns y rhullick? [BOT] Cha ren. Ren mee fakin kayt feer vooar!
+ [USER] Row oo scooriyt? [BOT] Cha row! Cha ren mee giu agh pint.
+ [USER] Row oo scooriyt? [BOT] Row. Row mee red beg scooriyt. Row mee ayns y thie-lhionney riyr.
+ [USER] Vel oo scooriyt? [BOT] Cha nel. Ta mee giu ushtey!
+ [USER] Vel oo scooriyt? [BOT] Ta mee red beg scooriyt. Ren mee giu feeyn fastyr jiu.
+ [USER] C'raad t'ou goll? [BOT] Ta mee goll dys y thie-lhieys. Cha nel mee feer vie jiu.
+ [USER] C'raad t'ou gobbragh? [BOT] Ta mee gobbragh ayns y thie-lhieys.
+ [USER] C'ren oyr ren oo goll dys y thie-lhieys? [BOT] Ren mee goll dys y thie-lhieys son ren mee goll neeal.
+ [USER] Vel oo laccal goll er y traie jiu? [BOT] Cha nel mee laccal goll er y traie jiu. Ta mee feer skee. [USER] Kiart dy liooar.
+ [USER] Kys t'ou? [BOT] Ta mee çhing. [USER] Cre'n oyr t'ou çhing? [BOT] Ta mee çhing son ren mee goll neeal moghrey jiu.
+ [USER] Quoi ren snaue jea? [BOT] Ren mee snaue jea.
+ [USER] Quoi ren roie jea? [BOT] Ren mee roie jea.
+ [USER] Quoi ren cloie bluckan coshey jea? [BOT] Ren mee cloie bluckan coshey jea.
+ [USER] Quoi ren gee curry jea? [BOT] Ren mee curry jea.
+ [USER] Quoi ren giu feeyn jea? [BOT] Ren mee giu feeyn jea.
+ [USER] Cre ren oo jannoo ec y jerrey-shiaghten? [BOT] Ren mee shooyl er y traie as ren mee lhiah liaor.
+ [USER] Cre ren oo jannoo ec y jerrey-shiaghten? [BOT] Ren mee goll dys y thie-lhionney as ren mee giu lhune.
